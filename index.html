@@ -1,0 +1,1602 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Китай · Гонконг · Вьетнам</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@500;600;800&display=swap">
+<style>
+html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}
+</style>
+<style>
+/* Layout: poster-style stacked bands; one loud hero, a hand-drawn route map, city "tickets" as a strip, Beijing as a day-rail. */
+:root{
+  --bg:#F4F6FF;        /* cool paper */
+  --bg-2:#FFFFFF;
+  --ink:#14122B;
+  --ink-2:#4A4769;
+  --line:#D9DCF2;
+  --pink:#FF3D8A;
+  --blue:#2E5BFF;
+  --yellow:#FFD60A;
+  --orange:#FF6B1A;
+  --lime:#8CF53D;
+  --violet:#7B3DFF;
+  --card:#FFFFFF;
+  --shadow:0 18px 40px -20px rgba(20,18,43,.35);
+  --display:'Unbounded', 'Arial Black', Impact, sans-serif;
+  --body:'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  --route-stroke:#14122B;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12102A; --bg-2:#1A1736; --ink:#F6F5FF; --ink-2:#B9B6D6; --line:#33305A;
+    --card:#1E1B3D; --shadow:0 18px 40px -18px rgba(0,0,0,.7); --route-stroke:#F6F5FF; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12102A; --bg-2:#1A1736; --ink:#F6F5FF; --ink-2:#B9B6D6; --line:#33305A;
+  --card:#1E1B3D; --shadow:0 18px 40px -18px rgba(0,0,0,.7); --route-stroke:#F6F5FF; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5;overflow-x:hidden}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.05}
+h2{font-size:clamp(28px,5vw,52px);font-weight:900;letter-spacing:-.01em}
+h3{font-size:clamp(18px,2.4vw,24px);font-weight:700}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:clamp(48px,8vw,96px)}
+.eyebrow{font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:28px;height:4px;border-radius:4px;background:var(--pink)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(56px,9vw,120px) clamp(40px,6vw,80px);background:var(--bg)}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;pointer-events:none}
+.hero .b1{width:46vw;height:46vw;max-width:560px;max-height:560px;background:var(--pink);top:-18%;right:-10%}
+.hero .b2{width:38vw;height:38vw;max-width:460px;max-height:460px;background:var(--blue);bottom:-20%;left:-8%}
+.hero .b3{width:22vw;height:22vw;max-width:260px;max-height:260px;background:var(--yellow);top:40%;left:40%}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(40px,9.5vw,124px);font-weight:900;letter-spacing:-.03em;line-height:.95;display:flex;flex-direction:column;gap:.04em}
+.hero h1 span{display:inline-block}
+.hero h1 .w1{color:var(--ink)}
+.hero h1 .w2{color:var(--pink);margin-left:clamp(0px,6vw,90px)}
+.hero h1 .w3{color:var(--blue);margin-left:clamp(0px,12vw,180px)}
+.hero h1 .arrow{font-size:.55em;color:var(--ink-2);vertical-align:middle;margin:0 .1em}
+.hero-sub{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:800;font-size:15px;background:var(--card);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.chip.y{background:var(--yellow);color:#14122B}
+.chip.p{background:var(--pink);color:#fff}
+.chip.b{background:var(--blue);color:#fff}
+.chip.l{background:var(--lime);color:#14122B}
+.chip.o{background:var(--orange);color:#fff}
+.chip.v{background:var(--violet);color:#fff}
+.countdown{margin-top:40px;display:inline-grid;grid-template-columns:repeat(3,auto);gap:10px;align-items:stretch}
+.cd{background:var(--ink);color:var(--bg);border-radius:18px;padding:14px 18px;min-width:96px;text-align:center;transform:rotate(-1.5deg)}
+.cd:nth-child(2){transform:rotate(1deg);background:var(--pink);color:#fff}
+.cd:nth-child(3){transform:rotate(-.5deg);background:var(--blue);color:#fff}
+.cd b{display:block;font-family:var(--display);font-size:clamp(28px,5vw,44px);font-weight:900;font-variant-numeric:tabular-nums;line-height:1}
+.cd small{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.sticker{position:absolute;font-family:var(--display);font-weight:900;padding:10px 16px;border-radius:14px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);font-size:clamp(12px,1.6vw,18px);white-space:nowrap}
+.sticker.s1{right:4%;top:12%;background:var(--yellow);color:#14122B;transform:rotate(8deg)}
+.sticker.s2{right:10%;bottom:18%;background:var(--lime);color:#14122B;transform:rotate(-6deg)}
+@media (max-width:760px){.sticker{display:none}}
+
+/* ---------- MARQUEE ---------- */
+.marquee{background:var(--ink);color:var(--bg);overflow:hidden;padding:12px 0;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.marquee .track{display:flex;gap:40px;white-space:nowrap;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;animation:slide 28s linear infinite;width:max-content}
+.marquee .track span{display:inline-flex;gap:40px}
+.marquee i{font-style:normal;color:var(--yellow)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- ROUTE / MAP ---------- */
+.route{background:var(--bg-2)}
+.route-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center;margin-top:28px}
+@media (max-width:860px){.route-grid{grid-template-columns:minmax(0,1fr)}}
+.map{position:relative;background:var(--card);border:3px solid var(--ink);border-radius:28px;box-shadow:8px 8px 0 var(--ink);padding:14px;max-width:100%;min-width:0}
+.map svg{width:100%;max-width:100%;height:auto;display:block}
+.map .legend{position:absolute;left:18px;bottom:18px;display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:800}
+.map .legend span{display:inline-flex;align-items:center;gap:8px}
+.map .legend i{width:22px;height:0;border-top:3px dashed var(--route-stroke)}
+.map .legend i.air{border-top-style:solid}
+.legs{display:flex;flex-direction:column;gap:12px;min-width:0}
+.leg{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:14px 16px;transition:transform .2s,border-color .2s}
+.leg:hover{transform:translateX(6px);border-color:var(--ink)}
+.leg .n{font-family:var(--display);font-weight:900;font-size:22px;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#14122B}
+.leg .t{font-weight:800;font-size:17px}
+.leg .d{color:var(--ink-2);font-size:14px}
+.leg .how{font-family:var(--display);font-size:12px;font-weight:700;text-align:right;color:var(--ink-2);white-space:nowrap;max-width:46%}
+.leg .how b{display:block;color:var(--ink);font-size:15px;white-space:normal}
+@media (max-width:480px){.leg{grid-template-columns:auto 1fr}.leg .how{grid-column:2;text-align:left;white-space:normal}.leg .how b{display:inline;margin-left:6px}}
+.nights{margin-top:36px}
+.bar{display:flex;height:54px;border-radius:16px;overflow:hidden;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.bar div{display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:clamp(11px,1.6vw,16px);color:#14122B;min-width:0;overflow:hidden;white-space:nowrap}
+.bar .bj{background:var(--orange);color:#fff;flex:5}
+.bar .sh{background:var(--blue);color:#fff;flex:4}
+.bar .gz{background:var(--violet);color:#fff;flex:3}
+.bar .hk{background:var(--pink);color:#fff;flex:3}
+.bar .vn{background:var(--lime);flex:6}
+.bar-cap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;font-weight:800;color:var(--ink-2);margin-top:10px}
+
+/* ---------- CITY TICKETS ---------- */
+.cities{background:var(--bg)}
+.tickets{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;margin-top:28px}
+@media (max-width:1100px){.tickets{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:800px){.tickets{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ticket.gz{background:var(--violet);color:#fff}
+@media (max-width:560px){.tickets{grid-template-columns:1fr}}
+.ticket{position:relative;border-radius:24px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:22px 20px 20px;color:#14122B;min-width:0;display:flex;flex-direction:column;gap:14px;transition:transform .25s}
+.ticket:hover{transform:translateY(-6px) rotate(-.6deg)}
+.ticket.bj{background:var(--orange);color:#fff}
+.ticket.sh{background:var(--blue);color:#fff}
+.ticket.hk{background:var(--pink);color:#fff}
+.ticket.vn{background:var(--lime)}
+.ticket .k{font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.ticket h3{font-size:clamp(26px,3vw,34px);font-weight:900;letter-spacing:-.02em}
+.ticket .big{font-family:var(--display);font-size:64px;font-weight:900;line-height:.9;letter-spacing:-.04em;opacity:.95}
+.ticket .big small{font-size:14px;letter-spacing:.08em;display:block;margin-top:6px;font-weight:700}
+.ticket ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:15px}
+.ticket li::before{content:"★ ";opacity:.8}
+.ticket .temp{margin-top:auto;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.22);border-radius:999px;padding:6px 12px;font-weight:800;font-size:13px;width:fit-content}
+.ticket.vn .temp{background:rgba(20,18,43,.12)}
+.ticket::after{content:"";position:absolute;right:-14px;top:50%;width:24px;height:24px;border-radius:50%;background:var(--bg);border:3px solid var(--ink);transform:translateY(-50%)}
+.ticket::before{content:"";position:absolute;left:-14px;top:50%;width:24px;height:24px;border-radius:50%;background:var(--bg);border:3px solid var(--ink);transform:translateY(-50%)}
+
+/* ---------- REELS ---------- */
+.reels{background:var(--bg-2)}
+.reel-group{margin-top:32px}
+.reel-group+.reel-group{margin-top:40px}
+.reel-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.reel-head h3{font-size:clamp(20px,2.6vw,28px);font-weight:900}
+.reel-head .cnt{font-family:var(--display);font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px;border:2px solid var(--ink);background:var(--yellow);color:#14122B}
+.reel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:18px}
+.reel{min-width:0;display:flex;flex-direction:column;gap:10px}
+.reel .frame{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:22px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);overflow:hidden;background:#000;cursor:pointer;transform:rotate(var(--tilt,0deg));transition:transform .25s}
+.reel .frame:hover{transform:rotate(0deg) translateY(-4px)}
+.reel video{width:100%;height:100%;object-fit:cover;display:block}
+.reel .play{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+.reel .play span{width:64px;height:64px;border-radius:50%;background:var(--pink);border:3px solid #14122B;display:grid;place-items:center;color:#fff;font-size:26px;box-shadow:4px 4px 0 #14122B;transition:transform .2s,opacity .2s}
+.reel .frame.playing .play span{opacity:0;transform:scale(.6)}
+.reel .cap{font-weight:800;font-size:15px}
+.reel .by{font-size:13px;color:var(--ink-2)}
+.reel .by a{text-decoration:none;border-bottom:2px solid var(--pink)}
+.reel .by a:hover{color:var(--pink)}
+.reel .where{display:inline-block;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.reel-empty{margin-top:18px;border:3px dashed var(--line);border-radius:22px;padding:22px;color:var(--ink-2);font-weight:700;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ticket .vid{display:inline-flex;align-items:center;gap:6px;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14122B;color:#fff;border-radius:999px;padding:5px 10px;width:fit-content}
+.ticket .vid a{color:inherit;text-decoration:none}
+
+/* ---------- BEIJING DAYS ---------- */
+.beijing{background:var(--bg-2)}
+.days{margin-top:32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:980px){.days{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.days{grid-template-columns:1fr}}
+.day{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0;box-shadow:var(--shadow)}
+.day.anchor{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.day .head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.day .date{font-family:var(--display);font-weight:900;font-size:30px;letter-spacing:-.02em;line-height:1}
+.day .date small{display:block;font-size:12px;letter-spacing:.1em;font-weight:700;color:var(--ink-2);margin-top:4px;text-transform:uppercase}
+.tag{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:7px 11px;border-radius:999px;border:2px solid var(--ink);white-space:nowrap}
+.tag.chill{background:var(--lime);color:#14122B}
+.tag.anch{background:var(--yellow);color:#14122B}
+.tag.move{background:var(--violet);color:#fff}
+.day h3{font-size:20px}
+.day ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.day li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.day li .tm{font-family:var(--display);font-size:11px;font-weight:700;color:var(--ink-2);padding-top:4px;min-width:46px;font-variant-numeric:tabular-nums}
+.day li.free .tm{color:var(--pink)}
+.day .note{font-size:13px;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.ratio{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-weight:800}
+.ratio .pill{display:inline-flex;gap:6px;align-items:center;padding:8px 14px;border-radius:999px;border:2px solid var(--ink);font-size:14px}
+.ratio .pill i{width:14px;height:14px;border-radius:4px;display:inline-block}
+
+
+/* day rows: plan + reels side by side */
+.days{grid-template-columns:1fr}
+.dayrow{background:var(--card);border:2px solid var(--line);border-radius:24px;padding:22px;display:grid;grid-template-columns:minmax(280px,1fr) minmax(0,622px);gap:22px;align-items:start;min-width:0;box-shadow:var(--shadow)}
+.dayrow>.day-reels{max-width:100%}
+@media (max-width:1100px){.dayrow{grid-template-columns:minmax(280px,1fr) minmax(0,416px)}}
+@media (max-width:900px){.dayrow{grid-template-columns:minmax(0,1fr)}.dayrow.one{grid-template-columns:minmax(0,1fr) 212px}}
+@media (max-width:560px){.dayrow.one{grid-template-columns:minmax(0,1fr)}}
+.dayrow.anchor{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.dayrow .plan{display:flex;flex-direction:column;gap:12px;min-width:0}
+.dayrow .head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.dayrow .date{font-family:var(--display);font-weight:900;font-size:30px;letter-spacing:-.02em;line-height:1}
+.dayrow .date small{display:block;font-size:12px;letter-spacing:.1em;font-weight:700;color:var(--ink-2);margin-top:4px;text-transform:uppercase}
+.dayrow h3{font-size:22px}
+.dayrow ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px;max-width:62ch}
+.dayrow li{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.dayrow li a{color:var(--blue);font-weight:800;text-decoration:none;border-bottom:2px solid var(--blue)}
+.alt-head{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-top:6px;padding-top:12px;border-top:2px dashed var(--line)}
+.dayrow ul.alt li .tm{color:var(--violet)}
+.dayrow li .tm{font-family:var(--display);font-size:11px;font-weight:700;color:var(--ink-2);padding-top:4px;min-width:46px;font-variant-numeric:tabular-nums}
+.dayrow li.free .tm{color:var(--pink)}
+.dayrow .note{font-size:13px;color:var(--ink-2);border-top:2px dashed var(--line);padding-top:10px}
+.day-reels{display:flex;gap:16px;align-items:flex-start;min-width:0;overflow-x:auto;overflow-y:hidden;padding:6px 10px 14px 6px;scroll-snap-type:x proximity;scrollbar-width:thin}
+.day-reels .reel{width:190px;flex:0 0 190px;scroll-snap-align:start}
+.day-reels .reel .frame{box-shadow:6px 6px 0 var(--ink)}
+.day-reels .reel .cap{font-size:14px}
+.day-reels .reel .by{font-size:12px}
+.dayrow.hotels{border:3px solid var(--orange);box-shadow:8px 8px 0 var(--orange)}
+.dayrow.vibe{background:linear-gradient(135deg,var(--card),var(--bg));border:2px dashed var(--ink)}
+.reel.pic .frame{aspect-ratio:3/4;cursor:default}
+.day-reels .reel.pic{width:253.3px;flex-basis:253.3px}
+.reel.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.reel.pic .frame:hover{transform:rotate(0deg)}
+.reel-slot{width:190px;flex:0 0 190px;aspect-ratio:9/16;border:3px dashed var(--line);border-radius:22px;display:grid;place-items:center;text-align:center;padding:16px;font-weight:700;font-size:13px;color:var(--ink-2)}
+@media (max-width:900px){.day-reels{padding-left:0}}
+
+/* ---------- VIETNAM PICK ---------- */
+.vn-pick{background:var(--bg)}
+.opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+@media (max-width:860px){.opts{grid-template-columns:1fr}}
+.opt{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.opt.rec{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--lime)}
+.opt .rec-tag{align-self:flex-start;background:var(--lime);color:#14122B;border:2px solid var(--ink);border-radius:999px;padding:5px 10px;font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.opt dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:14px}
+.opt dt{font-weight:800;color:var(--ink-2)}
+.opt dd{margin:0}
+
+/* ---------- BOOKINGS ---------- */
+.book{background:var(--bg-2)}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:28px}
+@media (max-width:1000px){.cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.cols{grid-template-columns:1fr}}
+.col{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:18px;min-width:0}
+.col h3{display:flex;align-items:center;gap:10px;font-size:16px;margin-bottom:12px}
+.col h3 i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.col label{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:8px 0;border-top:1px solid var(--line);font-size:15px;font-weight:600;cursor:pointer}
+.col label:first-of-type{border-top:0}
+.col input{width:20px;height:20px;accent-color:var(--pink);margin-top:2px}
+.col label:has(input:checked){text-decoration:line-through;color:var(--ink-2)}
+.progress{margin-top:22px;display:flex;align-items:center;gap:14px;font-weight:800;font-variant-numeric:tabular-nums}
+.progress .pb{flex:1;height:14px;border-radius:999px;border:2px solid var(--ink);overflow:hidden;background:var(--card)}
+.progress .pb div{height:100%;background:linear-gradient(90deg,var(--pink),var(--yellow));width:0;transition:width .4s}
+
+/* ---------- PRACTICAL ---------- */
+.prac{background:var(--ink);color:var(--bg)}
+.prac .eyebrow{color:var(--bg);opacity:.8}
+.prac h2{color:var(--bg)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+.pc{border:2px solid rgba(255,255,255,.25);border-radius:22px;padding:20px;min-width:0}
+.pc h3{font-size:18px;margin-bottom:10px}
+.pc h3 span{display:inline-block;padding:4px 10px;border-radius:8px;margin-right:6px;color:#14122B}
+.pc p,.pc li{font-size:15px;opacity:.9}
+.pc ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+
+footer{padding:36px 0 56px;color:var(--ink-2);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+
+/* zoom / lightbox */
+.reel .zoom{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:10px;border:2px solid #14122B;background:var(--yellow);color:#14122B;font-size:18px;font-weight:900;line-height:1;cursor:pointer;box-shadow:3px 3px 0 #14122B;z-index:2;display:grid;place-items:center;padding:0}
+.reel .zoom:hover{transform:translateY(-1px)}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(10,8,30,.92);display:none;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lightbox.open{display:flex}
+.lightbox .lb-wrap{position:relative;height:min(92vh,calc(100vh - 40px));aspect-ratio:9/16;max-width:min(96vw,560px);border-radius:24px;overflow:hidden;border:3px solid #fff;box-shadow:0 30px 80px rgba(0,0,0,.6);background:#000}
+.lightbox video{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+.lightbox .lb-close{position:absolute;top:max(14px,env(safe-area-inset-top,0px));right:max(14px,env(safe-area-inset-right,0px));width:44px;height:44px;border-radius:50%;border:3px solid #fff;background:var(--pink);color:#fff;font-size:22px;font-weight:900;cursor:pointer;display:grid;place-items:center;padding:0;box-shadow:4px 4px 0 #14122B;z-index:2}
+.lightbox .lb-cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px 16px;color:#fff;font-weight:800;font-size:14px;background:linear-gradient(transparent,rgba(0,0,0,.75));pointer-events:none}
+.lightbox .lb-cap small{display:block;font-weight:600;opacity:.85;margin-top:3px}
+body.lb-open{overflow:hidden}
+@media (prefers-reduced-motion:no-preference){.lightbox .lb-wrap{animation:lbpop .25s cubic-bezier(.2,1.4,.4,1)}}
+@keyframes lbpop{from{transform:scale(.92);opacity:0}to{transform:scale(1);opacity:1}}
+
+/* motion */
+.route-path{stroke-dasharray:8 8;animation:dash 1.6s linear infinite}
+.route-path.air{stroke-dasharray:none;animation:none}
+@keyframes dash{to{stroke-dashoffset:-32}}
+.pin{animation:pop .6s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){
+  .marquee .track,.route-path,.pin{animation:none}
+  .ticket,.leg{transition:none}
+}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+</style>
+</head>
+<body>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="sticker s1">18 дек → 8 янв</div>
+  <div class="sticker s2">21 ночь · 4 переезда</div>
+  <div class="wrap">
+    <span class="eyebrow">Зима 2026/27 · режим чилла</span>
+    <h1 style="margin-top:18px">
+      <span class="w1">Китай</span>
+      <span class="w2"><span class="arrow">→</span> Гонконг</span>
+      <span class="w3"><span class="arrow">→</span> Вьетнам</span>
+    </h1>
+    <div class="hero-sub">
+      <span class="chip">✈️ из Москвы · ~8 ч туда, ~10 ч обратно</span>
+      <span class="chip o">🏯 Пекин · 5 ночей</span>
+      <span class="chip b">🌆 Шанхай · 4</span>
+      <span class="chip v">🏮 Гуанчжоу · 3</span>
+      <span class="chip p">🎆 Гонконг · 3 + НГ</span>
+      <span class="chip l">🏖 Вьетнам · 6</span>
+    </div>
+    <div class="countdown" id="cd" aria-live="polite">
+      <div class="cd"><b id="cd-d">—</b><small>дней</small></div>
+      <div class="cd"><b id="cd-h">—</b><small>часов</small></div>
+      <div class="cd"><b id="cd-m">—</b><small>минут</small></div>
+    </div>
+    <p style="margin-top:14px;font-weight:700;color:var(--ink-2)">до вылета в Пекин, 18 декабря</p>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Великая стена <i>★</i> Хогвартс в снегу <i>★</i> Бунд на Рождество <i>★</i> Новый год над гаванью <i>★</i> димсам в Гуанчжоу <i>★</i> фонари Хойана <i>★</i> пиво в хутунах <i>★</i> утка по-пекински <i>★</i></span>
+    <span>Великая стена <i>★</i> Хогвартс в снегу <i>★</i> Бунд на Рождество <i>★</i> Новый год над гаванью <i>★</i> димсам в Гуанчжоу <i>★</i> фонари Хойана <i>★</i> пиво в хутунах <i>★</i> утка по-пекински <i>★</i></span>
+  </div>
+</div>
+
+<!-- ============ ROUTE ============ -->
+<section class="route" id="route">
+  <div class="wrap">
+    <span class="eyebrow">Маршрут</span>
+    <h2 style="margin-top:14px">С севера на юг, от −5° до +28°</h2>
+    <div class="route-grid">
+      <div class="map" id="map">
+        <svg viewBox="0 0 440 720" role="img" aria-label="Схема маршрута: Пекин, Шанхай, Гонконг, Гуанчжоу, Дананг"></svg>
+        <div class="legend"><span><i></i>поезд</span><span><i class="air"></i>самолёт</span></div>
+      </div>
+      <div class="legs">
+        <div class="leg"><div class="n" style="background:var(--yellow)">✈</div><div><div class="t">Москва</div><div class="d">18 дек, вечерний вылет из Шереметьево · прямой Аэрофлот или Air China</div></div><div class="how">→ Пекин<b>самолёт ~8 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--orange);color:#fff">1</div><div><div class="t">Пекин</div><div class="d">прилёт утром 19-го · 4 ночи в отеле · Стена, Universal, хутуны</div></div><div class="how">→ Шанхай<b>поезд 4,5 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--blue);color:#fff">2</div><div><div class="t">Шанхай</div><div class="d">23–27 дек · 4 ночи · Рождество на Бунде</div></div><div class="how">→ Гуанчжоу<b>самолёт 2,5 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--violet);color:#fff">3</div><div><div class="t">Гуанчжоу</div><div class="d">27–30 дек · 3 ночи · Canton Tower, димсам, дешёвые отели</div></div><div class="how">→ Гонконг<b>поезд 50 мин</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--pink);color:#fff">4</div><div><div class="t">Гонконг</div><div class="d">30 дек – 2 янв · 3 ночи · Новый год и день отойти</div></div><div class="how">→ Дананг<b>самолёт 2 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--lime)">5</div><div><div class="t">Вьетнам</div><div class="d">2–8 янв · 6 ночей · одна база, пляж</div></div><div class="how">→ Москва 8 янв<b>~10 ч прямой · 13–14 ч со стыковкой</b></div></div>
+      </div>
+    </div>
+    <div class="nights">
+      <div class="bar" aria-label="21 ночь по городам">
+        <div class="bj">Пекин 5</div><div class="sh">Шанхай 4</div><div class="gz">Гуанчжоу 3</div><div class="hk">Гонконг 3</div><div class="vn">Вьетнам 6</div>
+      </div>
+      <div class="bar-cap"><span>18 дек</span><span>Новый год — 31 дек в Гонконге</span><span>8 янв</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CITIES ============ -->
+<section class="cities" id="cities">
+  <div class="wrap">
+    <span class="eyebrow">Пять билетов</span>
+    <h2 style="margin-top:14px">Каждому городу свой вайб</h2>
+    <div class="tickets">
+      <article class="ticket bj">
+        <div class="k">Билет 01 · 18–23 дек</div>
+        <h3>Пекин</h3>
+        <div class="big">5<small>НОЧЕЙ · 1 В САМОЛЁТЕ</small></div>
+        <ul>
+          <li>Стена Мутяньюй, канатка и тобогган</li>
+          <li>Universal: Хогвартс в рождественских огнях</li>
+          <li>Запретный город и закат с Jingshan</li>
+          <li>Хутуны, крафт, утка</li>
+        </ul>
+        <div class="temp">🥶 −5…+3° · сухо и ясно</div>
+        <div class="vid"><a href="#beijing">🎬 16 рилсов по дням</a></div>
+      </article>
+      <article class="ticket sh">
+        <div class="k">Билет 02 · 23–27 дек</div>
+        <h3>Шанхай</h3>
+        <div class="big">4<small>НОЧИ</small></div>
+        <ul>
+          <li>Рождество 24–25 на Бунде</li>
+          <li>Французская концессия: кофе, бутики</li>
+          <li>Баня Shui Guo на Рождество</li>
+          <li>Сучжоу на полдня, если захочется</li>
+        </ul>
+        <div class="temp">🌫 +3…+10° · сыро</div>
+        <div class="vid"><a href="#shanghai">🎬 15 рилсов по дням</a></div>
+      </article>
+      <article class="ticket gz">
+        <div class="k">Билет 03 · 27–30 дек</div>
+        <h3>Гуанчжоу</h3>
+        <div class="big">3<small>НОЧИ</small></div>
+        <ul>
+          <li>Картинг в горах Gulong Gorge</li>
+          <li>Canton Tower в подсветке с набережной</li>
+          <li>Димсам на родине димсама</li>
+          <li>Shamian и Yongqing Fang</li>
+          <li>Отели вдвое дешевле Гонконга</li>
+        </ul>
+        <div class="temp">🌤 +12…+20° · тепло</div>
+      </article>
+      <article class="ticket hk">
+        <div class="k">Билет 04 · 30 дек – 2 янв</div>
+        <h3>Гонконг</h3>
+        <div class="big">3<small>НОЧИ + НГ</small></div>
+        <ul>
+          <li>Новый год: countdown в Central или салют</li>
+          <li>Victoria Peak, Star Ferry, димсам</li>
+          <li>1 января: отходить, димсам, Lantau</li>
+          <li>Lantau, Большой Будда, пляжи</li>
+        </ul>
+        <div class="temp">🌤 +15…+20° · весна</div>
+        <div class="vid"><a href="#hongkong">🎬 7 рилсов по дням</a></div>
+      </article>
+      <article class="ticket vn">
+        <div class="k">Билет 05 · 2–8 янв</div>
+        <h3>Вьетнам</h3>
+        <div class="big">6<small>НОЧЕЙ</small></div>
+        <ul>
+          <li>Одна база, никаких переездов</li>
+          <li>Пляж днём, старый город вечером</li>
+          <li>Лучшая еда поездки</li>
+          <li>Домой 8 января</li>
+        </ul>
+        <div class="temp">☀️ +24…+28° · сухой сезон</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEIJING DAYS ============ -->
+<section class="beijing" id="beijing">
+  <div class="wrap">
+    <span class="eyebrow">Пекин по дням</span>
+    <h2 style="margin-top:14px">Три главных места, два свободных дня</h2>
+    <div class="ratio">
+      <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
+      <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
+      <span class="pill"><i style="background:var(--violet)"></i>Переезд</span>
+      <span class="pill"><i style="background:var(--pink)"></i>🎬 Рилсы про места дня, тап = звук</span>
+    </div>
+    <div class="days">
+      <article class="dayrow hotels">
+        <div class="plan">
+          <div class="head"><div class="date">🏨 Отель<small>19–23 дек · 4 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <h3>Отели до 10 тысяч, у каждого свой тикток</h3>
+          <ul>
+            <li><span class="tm">1</span><span><b>SSAW Garden Hotel</b>, Beixinqiao. Наш район, 9.5, ¥635–675 ≈ 7 300–7 800 ₽. Мой выбор. <a href="https://www.trip.com/hotels/beijing-hotel-detail-116869379/ssaw-garden-hotel-beijing/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">2</span><span><b>Stey Wangfujing</b>, апарт-отель с кухней, 8.6, ¥659–700 ≈ 7 600–8 000 ₽, 20 минут пешком до хутунов. <a href="https://www.trip.com/hotels/beijing-hotel-detail-436918/stey-wangfujing/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">3</span><span><b>TRUE GO</b>, твой вариант. Филиал Lanyue в Dongsi, двор-сыхэюань, 9.3, ¥388–411 ≈ 4 500–4 700 ₽, единственный в бюджете, <a href="https://www.trip.com/hotels/beijing-hotel-detail-76482399/true-go-hotel-lanyue/" target="_blank" rel="noopener">Trip.com</a>. Филиал Xidan из ролика: 9.5, ¥438–464 ≈ 5 000–5 300 ₽, <a href="https://www.trip.com/hotels/beijing-hotel-detail-45825753/true-go-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">4</span><span><b>Atour Nanluoguxiang Shichahai</b>, из подборки, сетевой с китайским дизайном, в хутуне Xiyangwei, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">5</span><span><b>JI Hotel Tian'anmen Wangfujing</b>, из подборки, минимализм, 9.6, ¥662–702 ≈ 7 600–8 100 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-67228147/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="alt-head">Ещё три с Trip.com по параметрам: до 5 тысяч, центр, оценка 9+, тысячи отзывов, без тиктоков</div>
+          <ul class="alt">
+            <li><span class="tm">A</span><span><b>The Yard Hotel, Tian'anmen Square</b>, хутунный стиль у Qianmen, 9.3 по 7 800 отзывам, ¥361 ≈ 4 200 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-8986081/the-yard-hotel-beijing-tian-anmen-square/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>Manxin Hotel Temple of Heaven</b>, у Храма Неба и метро, 9.7 по 4 300 отзывам, ¥420 ≈ 4 800 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-61134552/manxin-hotel-beijing-temple-of-heaven/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Atour Nanluoguxiang Shichahai</b>, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽, чуть выше бюджета, зато в хутуне. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="note">Фильтр для 1–2: ролик с 500+ лайками. У True Go ролик на 55 лайков, добавлен по твоей просьбе. Всё дороже 10 тысяч за ночь убрано (Qianmen Shàn, Atour Wangfujing). Цены Trip.com на наши даты, за двоих</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/beijing-hotel-ssaw.mp4" poster="reels/beijing-hotel-ssaw.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Beixinqiao · 5 минут до Wudaoying</span>
+            <div class="cap">SSAW Garden Hotel · ¥635–675 ≈ 7 300–7 800 ₽</div>
+            <div class="by">Оценка 9.5, наш район, китайский фасад и спокойные номера, обзор на русском · 528 лайков · <a href="https://www.tiktok.com/@sanyuchhh/video/7668748035244969224" target="_blank" rel="noopener">@sanyuchhh</a> · <a href="https://www.trip.com/hotels/beijing-hotel-detail-116869379/ssaw-garden-hotel-beijing/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/beijing-hotel-stey.mp4" poster="reels/beijing-hotel-stey.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Wangfujing · 300 м до метро</span>
+            <div class="cap">Stey Wangfujing · ¥659–700 ≈ 7 600–8 000 ₽</div>
+            <div class="by">Апарт-отель с кухней, общими зонами и залом, оценка 8.6, 20 минут пешком до Nanluoguxiang · 1 762 лайка · <a href="https://www.tiktok.com/@makisantos_/video/7558419598907886856" target="_blank" rel="noopener">@makisantos_</a> · <a href="https://www.trip.com/hotels/beijing-hotel-detail-436918/stey-wangfujing/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel" style="--tilt:.7deg">
+            <div class="frame"><video src="reels/beijing-hotel-truego.mp4" poster="reels/beijing-hotel-truego.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">TRUE GO · Xidan, в ролике</span>
+            <div class="cap">TRUE GO Hotel · Xidan ¥438–464 · Dongsi ¥388–411</div>
+            <div class="by">Уютный номер, спокойно, завтраки так себе · 55 лайков · <a href="https://www.tiktok.com/@lana.kshn/video/7642303542992162078" target="_blank" rel="noopener">@lana.kshn</a> · <a href="https://www.trip.com/hotels/beijing-hotel-detail-76482399/true-go-hotel-lanyue/" target="_blank" rel="noopener">Dongsi</a> · <a href="https://www.trip.com/hotels/beijing-hotel-detail-45825753/true-go-hotel/" target="_blank" rel="noopener">Xidan</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.5deg">
+            <div class="frame"><img src="photos/beijing-hotels-top-budget.jpg" alt="Слайд из подборки: бюджетные отели Пекина JI Hotel Wangfujing и Atour"></div>
+            <span class="where">Справочник · топ отелей по уровням</span>
+            <div class="cap">Бюджет: JI Wangfujing, Atour. Атмосфера: The Orchid, сыхэюань</div>
+            <div class="by">Фото-пост, 6 слайдов от люкса до бюджета · 1 313 лайков · <a href="https://www.tiktok.com/@sveta.svetis/photo/7624111056943648032" target="_blank" rel="noopener">@sveta.svetis</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.6deg">
+            <div class="frame"><img src="photos/bj-yard-1.jpg" alt="The Yard Hotel · ¥361"></div>
+            <span class="where">A · The Yard Hotel, Qianmen</span>
+            <div class="cap">The Yard Hotel · ¥361</div>
+            <div class="by">Фото Trip.com. На сайте сейчас также под именем Xinmingji Hotel Qianmen · <a href="https://www.trip.com/hotels/beijing-hotel-detail-8986081/the-yard-hotel-beijing-tian-anmen-square/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.7deg">
+            <div class="frame"><img src="photos/bj-yard-2.jpg" alt="Номер в The Yard"></div>
+            <span class="where">A · The Yard Hotel, номер</span>
+            <div class="cap">Номер в The Yard</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/beijing-hotel-detail-8986081/the-yard-hotel-beijing-tian-anmen-square/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.8deg">
+            <div class="frame"><img src="photos/bj-manxin-th-1.jpg" alt="Manxin Hotel · ¥420"></div>
+            <span class="where">B · Manxin Temple of Heaven</span>
+            <div class="cap">Manxin Hotel · ¥420</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/beijing-hotel-detail-61134552/manxin-hotel-beijing-temple-of-heaven/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.6deg">
+            <div class="frame"><img src="photos/bj-manxin-th-2.jpg" alt="Номер в Manxin"></div>
+            <span class="where">B · Manxin, номер</span>
+            <div class="cap">Номер в Manxin</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/beijing-hotel-detail-61134552/manxin-hotel-beijing-temple-of-heaven/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.7deg">
+            <div class="frame"><img src="photos/bj-atour-1.jpg" alt="Atour NLGX · ¥567–602"></div>
+            <span class="where">C · Atour Nanluoguxiang</span>
+            <div class="cap">Atour NLGX · ¥567–602</div>
+            <div class="by">Фото Trip.com, хутун Xiyangwei · <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.8deg">
+            <div class="frame"><img src="photos/bj-atour-2.jpg" alt="Номер в Atour"></div>
+            <span class="where">C · Atour, номер</span>
+            <div class="cap">Номер в Atour</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow vibe">
+        <div class="plan">
+          <div class="head"><div class="date">❄️ Вайб<small>зимний Пекин</small></div><span class="tag chill">настрой</span></div>
+          <h3>Красные стены, серое небо, иногда снег</h3>
+          <ul>
+            <li><span class="tm">погода</span><span>−5…+3°, сухо, часто ясно. Снег бывает, но редко и быстро тает</span></li>
+            <li><span class="tm">свет</span><span>Темнеет к 17:00, утро самое красивое: низкое солнце на красных стенах</span></li>
+            <li><span class="tm">одежда</span><span>Пуховик, шапка, перчатки, тёплая обувь. Внутри везде жарко, слои</span></li>
+          </ul>
+          <div class="note">Если повезёт со снегом, бросаем план и идём к Запретному городу или на озёра</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video src="reels/beijing-first-snow.mp4" poster="reels/beijing-first-snow.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Запретный город · первый снег</span>
+            <div class="cap">Красные стены под снегом</div>
+            <div class="by">Просто для настроения · <a href="https://www.tiktok.com/@lamartin183/video/7583915378749836558" target="_blank" rel="noopener">@lamartin183</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video src="reels/beijing-winter-vibe-2.mp4" poster="reels/beijing-winter-vibe-2.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Пекин · декабрь</span>
+            <div class="cap">«Декабрь худшее время для Пекина?» Спойлер: нет</div>
+            <div class="by">Полторы минуты зимнего города · <a href="https://www.tiktok.com/@china.tour.callie/video/7577264878516227346" target="_blank" rel="noopener">@china.tour.callie</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/beijing-winter-vibe-3.mp4" poster="reels/beijing-winter-vibe-3.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Летний дворец · зима</span>
+            <div class="cap">Замёрзшее озеро Куньмин и павильоны</div>
+            <div class="by">В плане его нет: далеко и полдня. Если зацепит, можно поставить вместо свободного дня · <a href="https://www.tiktok.com/@ult.th/video/7571745422381812999" target="_blank" rel="noopener">@ult.th</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">18 дек<small>пятница · вылет</small></div><span class="tag move">перелёт</span></div>
+          <h3>Москва → Пекин, ночь в самолёте</h3>
+          <ul>
+            <li class="free"><span class="tm">день</span><span>Дома. Собраться, выспаться, поесть нормально</span></li>
+            <li><span class="tm">18:00</span><span>Шереметьево. Аэрофлот SU 204 в 21:05 или Air China CA 910 в 19:30, оба прямые</span></li>
+            <li><span class="tm">~8 ч</span><span>В пути 7,5–8,5 часа. Разница с Москвой +5 часов, в Пекине утро 19-го</span></li>
+          </ul>
+          <div class="note">С собой в салон: паспорт, адрес отеля на китайском для карточки прилёта, VPN уже установлен, Alipay с привязанной картой</div>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">19 дек<small>суббота · прилёт</small></div><span class="tag chill">чилл</span></div>
+          <h3>Приземлились, день без плана</h3>
+          <ul>
+            <li><span class="tm">10:00</span><span>Прилёт. Didi или аэроэкспресс до отеля, около часа</span></li>
+            <li><span class="tm">12:00</span><span>Заселиться, бросить вещи, обед рядом с отелем</span></li>
+            <li class="free"><span class="tm">день</span><span>Озёра Houhai: лёд, коньки, санки-стулья, чай</span></li>
+            <li class="free"><span class="tm">16:00</span><span>Прогулка по Gulou East Street: винтаж, винил, скейт-шопы, мелкие бары</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Хутуны вокруг Nanluoguxiang, стритфуд, лапша или хого</span></li>
+            <li class="free"><span class="tm">21:00</span><span>Первое пиво в Great Leap Brewing #6 во дворике в хутуне</span></li>
+            <li class="free"><span class="tm">если силы</span><span>Панк-концерт в School Bar на Wudaoying или коктейли в баре-трубе</span></li>
+          </ul>
+          <div class="note">Жить: Gulou / Nanluoguxiang / Dongsi, всё пешком, метро 2/5/8. Джетлаг +5 часов: спать сколько хочется</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-1deg">
+            <div class="frame"><video src="reels/beijing-nanluoguxiang-food.mp4" poster="reels/beijing-nanluoguxiang-food.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Nanluoguxiang</span>
+            <div class="cap">Стритфуд и лавки в главном хутуне</div>
+            <div class="by">Фаворит автора: пекинский йогурт в глиняной баночке · <a href="https://www.tiktok.com/@jyu.eats/video/7635475556095626526" target="_blank" rel="noopener">@jyu.eats</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:1deg">
+            <div class="frame"><img src="photos/beijing-great-leap-courtyard.jpg" alt="Дворик Great Leap Brewing #6 вечером, столики под гирляндами"></div>
+            <span class="where">Great Leap Brewing #6 · Doujiao hutong</span>
+            <div class="cap">Дворик-сыхэюань, гирлянды, столики на улице</div>
+            <div class="by">Зимой сидеть внутри, но двор видно из окон</div>
+          </article>
+          <article class="reel pic" style="--tilt:-.8deg">
+            <div class="frame"><img src="photos/beijing-great-leap-bar.jpg" alt="Бар Great Leap: длинная стойка, краны, доски с пивом"></div>
+            <span class="where">Great Leap · внутри</span>
+            <div class="cap">Стойка, краны, деревянные лавки</div>
+            <div class="by">Первая крафтовая пивоварня Пекина, с 2010 года</div>
+          </article>
+          <article class="reel pic" style="--tilt:.6deg">
+            <div class="frame"><img src="photos/beijing-great-leap-menu.jpg" alt="Меловая доска с сортами Great Leap: Honey Ma Gold, Pale Ale #6, Iron Buddha Blonde"></div>
+            <span class="where">Great Leap · меню</span>
+            <div class="cap">Honey Ma Gold с сычуаньским перцем, Pale Ale #6, Iron Buddha Blonde</div>
+            <div class="by">Вс–чт 12:00–23:00, пт–сб до 00:00, кружка 35–60 ¥</div>
+          </article>
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video src="reels/beijing-gulou-east.mp4" poster="reels/beijing-gulou-east.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Gulou East Street · 16:00</span>
+            <div class="cap">Улица от Барабанной башни: винтаж и винил</div>
+            <div class="by">Между Houhai и Wudaoying, всё пешком · <a href="https://www.tiktok.com/@chewyvoyage/video/7662233896746093831" target="_blank" rel="noopener">@chewyvoyage</a></div>
+          </article>
+          <article class="reel" style="--tilt:1.1deg">
+            <div class="frame"><video src="reels/beijing-school-bar.mp4" poster="reels/beijing-school-bar.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">School Bar · Wudaoying hutong</span>
+            <div class="cap">Панк и метал в хутуне, концерты каждый вечер</div>
+            <div class="by">Локальные группы, вход 100–200 ¥, в 5 минутах от храма Ламы · <a href="https://www.tiktok.com/@bella_adame_/video/7566507489752141070" target="_blank" rel="noopener">@bella_adame_</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/beijing-chimney-bar.mp4" poster="reels/beijing-chimney-bar.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Бар в заводской трубе · адрес уточнить</span>
+            <div class="cap">Коктейльный бар внутри старой трубы</div>
+            <div class="by">Полки с бутылками на всю высоту. Похоже на 751 D·Park у 798, проверить · <a href="https://www.tiktok.com/@valeriechloee/video/7624537699906538759" target="_blank" rel="noopener">@valeriechloee</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor">
+        <div class="plan">
+          <div class="head"><div class="date">20 дек<small>воскресенье</small></div><span class="tag anch">главное</span></div>
+          <h3>Великая стена</h3>
+          <ul>
+            <li><span class="tm">10:00</span><span>Выезд с водителем на Мутяньюй, 1,5 ч</span></li>
+            <li><span class="tm">11:30</span><span>Канатка вверх, башни 14→20, вниз тобогган. На Стене 2–2,5 часа</span></li>
+            <li><span class="tm">15:30</span><span>Обратно в городе: поздний обед, душ, лежать</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Sanlitun: Taikoo Li, потом коктейли в Botany (топ-50 баров Азии) или спикизи Janes &amp; Hooch</span></li>
+            <li class="free"><span class="tm">или</span><span>Не ехать в Sanlitun: Modernista, хутунный бар в стиле 1930-х с живым джазом, или Mao Mao Chong с коктейлями на байцзю</span></li>
+          </ul>
+          <div class="note">Канатка зимой 8:30–16:30, при гололёде могут закрыть. Наличные с собой</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/beijing-great-wall.mp4" poster="reels/beijing-great-wall.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Мутяньюй</span>
+            <div class="cap">Стена: как добраться и сколько стоит</div>
+            <div class="by">Didi 150–300 ¥ в одну сторону, вход 40 ¥, канатка 100–120 ¥, тобогган 100 ¥, подъём к 14-й башне, спуск к 6-й · <a href="https://www.tiktok.com/@natravkaa/video/7633423227854834951" target="_blank" rel="noopener">@natravkaa</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/beijing-great-wall-snow.mp4" poster="reels/beijing-great-wall-snow.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Стена · зимой</span>
+            <div class="cap">Стена в снегу, почти без людей</div>
+            <div class="by">Так выглядит декабрь, если повезёт · <a href="https://www.tiktok.com/@backpackingmirre/video/7317191064144694561" target="_blank" rel="noopener">@backpackingmirre</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video src="reels/beijing-sanlitun-mall.mp4" poster="reels/beijing-sanlitun-mall.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Sanlitun · вечер</span>
+            <div class="cap">«Самый крутой молл», шопинг после Стены</div>
+            <div class="by">Taikoo Li и соседние моллы, рядом Botany и Janes &amp; Hooch · <a href="https://www.tiktok.com/@giatort/video/7544775769440980255" target="_blank" rel="noopener">@giatort</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor one">
+        <div class="plan">
+          <div class="head"><div class="date">21 дек<small>понедельник</small></div><span class="tag anch">главное</span></div>
+          <h3>Universal Beijing</h3>
+          <ul>
+            <li><span class="tm">10:00</span><span>К открытию сразу в Wizarding World: Forbidden Journey, Hippogriff, сливочное пиво</span></li>
+            <li><span class="tm">день</span><span>Transformers, Kung Fu Panda, Jurassic, Minions по настроению</span></li>
+            <li><span class="tm">вечер</span><span>Вечернее шоу, закрытие ~19–20</span></li>
+            <li class="free"><span class="tm">21:00</span><span>Ужин в CityWalk у парка или по возвращении, без плана</span></li>
+          </ul>
+          <div class="note">Будний день = очереди короче. Express-пропуск дорогой, но убирает очереди совсем</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/beijing-universal.mp4" poster="reels/beijing-universal.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Universal Beijing</span>
+            <div class="cap">Обзор парка от «Вани про Китай»</div>
+            <div class="by">Гид по аттракционам у автора в телеграме rempelchina · <a href="https://www.tiktok.com/@rempel.ivan/video/7606041700489792801" target="_blank" rel="noopener">@rempel.ivan</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor">
+        <div class="plan">
+          <div class="head"><div class="date">22 дек<small>вторник</small></div><span class="tag anch">главное</span></div>
+          <h3>Запретный город, потом ничего</h3>
+          <ul>
+            <li><span class="tm">10:30</span><span>Вход, 2,5 часа по центральной оси, без попыток обойти всё</span></li>
+            <li><span class="tm">13:00</span><span>Северные ворота → парк Jingshan, вид сверху, 40 минут</span></li>
+            <li class="free"><span class="tm">14:00</span><span>Поздний обед: чжацзянмянь в No 69 Fangzhuanchang, хутун у Qianmen</span></li>
+            <li class="free"><span class="tm">день</span><span>Qianmen и Dashilan: старые улицы, лавки, кофе на Yangmeizhu Xiejie</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Утка по-пекински: Siji Minfu или Da Dong</span></li>
+          </ul>
+          <div class="note">Билет продаётся за 7 дней, брать утренний слот (вход до 11:00), паспорт с собой. Закат ~16:40. Сегодня Дунчжи, зимнее солнцестояние: по пекинской традиции хотя бы раз за день съесть цзяоцзы, пельмени</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video src="reels/beijing-forbidden-city.mp4" poster="reels/beijing-forbidden-city.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Запретный город</span>
+            <div class="cap">Самый большой дворец в мире, с дрона</div>
+            <div class="by">720 000 м², больше 8700 комнат · <a href="https://www.tiktok.com/@bastien.larnaud/video/7548182645105085718" target="_blank" rel="noopener">@bastien.larnaud</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video src="reels/beijing-food-spots.mp4" poster="reels/beijing-food-spots.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Qianmen · Da Dong</span>
+            <div class="cap">Где есть в Пекине: три места</div>
+            <div class="by">No 69 Fangzhuanchang (лапша), Beijing Pie, Da Dong (утка) · <a href="https://www.tiktok.com/@rach.is.hungry/video/7693223039034543392" target="_blank" rel="noopener">@rach.is.hungry</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/beijing-noodles-69.mp4" poster="reels/beijing-noodles-69.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">No 69 Fangzhuanchang · обед</span>
+            <div class="cap">Чжацзянмянь: лапша с соевой пастой</div>
+            <div class="by">Хутун Fangzhuanchang 69, метро Qianmen, мишленовский Bib Gourmand · <a href="https://www.tiktok.com/@jescbites/video/7658947751593528597" target="_blank" rel="noopener">@jescbites</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">23 дек<small>среда</small></div><span class="tag move">переезд</span></div>
+          <h3>Поезд в Шанхай</h3>
+          <ul>
+            <li class="free"><span class="tm">10:00</span><span>Поздний завтрак на Wudaoying hutong: кофейни и лавки, потом выписаться</span></li>
+            <li><span class="tm">13:00</span><span>G-поезд с Beijing South, 4,5 часа. Из отеля в 11:45</span></li>
+            <li><span class="tm">17:30</span><span>Шанхай, заселение, Бунд вечером</span></li>
+          </ul>
+          <div class="note">На вокзал за 45 минут. Билеты за 2 недели</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/beijing-wudaoying.mp4" poster="reels/beijing-wudaoying.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Wudaoying hutong · 23 дек, утро</span>
+            <div class="cap">Хутун с кофейнями у храма Ламы</div>
+            <div class="by">Поздний завтрак перед поездом, School Bar на той же улице · <a href="https://www.tiktok.com/@18.rmm/video/7676942487327395105" target="_blank" rel="noopener">@18.rmm</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/beijing-shanghai-train.mp4" poster="reels/beijing-shanghai-train.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Поезд Пекин → Шанхай</span>
+            <div class="cap">Скоростной поезд: 5 вещей, которые стоит знать</div>
+            <div class="by">Широкие кресла, доставку еды привозят прямо к месту · <a href="https://www.tiktok.com/@reglivinglife/video/7637515326413950216" target="_blank" rel="noopener">@reglivinglife</a></div>
+          </article>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHANGHAI DAYS ============ -->
+<section class="beijing" id="shanghai" style="background:var(--bg)">
+  <div class="wrap">
+    <span class="eyebrow">Шанхай по дням</span>
+    <h2 style="margin-top:14px">Рождество на Бунде, баня на весь день, остальное пешком</h2>
+    <div class="ratio">
+      <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
+      <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
+      <span class="pill"><i style="background:var(--violet)"></i>Переезд</span>
+    </div>
+    <div class="days">
+      <article class="dayrow hotels">
+        <div class="plan">
+          <div class="head"><div class="date">🏨 Отель<small>23–27 дек · 4 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
+          <ul>
+            <li><span class="tm">1</span><span><b>Tianhua Hotel</b>, People's Square, Huanghe Road. Обновлён в 2025, 9.3, ¥456–483 ≈ 5 200–5 600 ₽. Пешком до Nanjing Road и Бунда, вокруг едальни. Мой выбор. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-6738656/tianhua-hotel-shanghai-people-s-square-nanjing-road-walkway/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="alt-head">Ещё три с Trip.com по параметрам: до 5 тысяч, центр, оценка 9+, тысячи отзывов, без тиктоков</div>
+          <ul class="alt">
+            <li><span class="tm">A</span><span><b>Meta Tree Hotel, People's Square</b>, пешком до Бунда, 9.5 по 8 400 отзывам, ¥444 ≈ 5 100 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-431900/meta-tree-hotel-people-s-square-city-center-in-shanghai/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>Country Inn &amp; Suites Jing'an</b>, у вокзала и метро, 9.4 по 6 500 отзывам, ¥342 ≈ 3 900 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-106553471/country-inn-suites-by-radisson-shanghai-railway-station-jing-an/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>JI Hotel North Bund</b>, с завтраком, 9.6 по 4 900 отзывам, ¥333 ≈ 3 800 ₽, до Бунда 15 минут на метро. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-110435807/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="note">Фильтр: ролик с 500+ лайками и до 10 тысяч за ночь. JOYA и Intercity из роликов дороже 10 тысяч и убраны. Yitel Premium за ¥250 из ролика на 3 тысячи лайков сейчас не принимает брони. Цены Trip.com за двоих</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/shanghai-hotel-tianhua.mp4" poster="reels/shanghai-hotel-tianhua.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">People's Square · Tianhua</span>
+            <div class="cap">Tianhua Hotel · ¥456–483</div>
+            <div class="by">«Меньше 30 долларов за ночь», локация 10/10 · 9 тысяч лайков · <a href="https://www.tiktok.com/@tashalized/video/7666119864775642389" target="_blank" rel="noopener">@tashalized</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.6deg">
+            <div class="frame"><img src="photos/sh-meta-1.jpg" alt="Meta Tree · ¥444"></div>
+            <span class="where">A · Meta Tree, People's Square</span>
+            <div class="cap">Meta Tree · ¥444</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-431900/meta-tree-hotel-people-s-square-city-center-in-shanghai/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.7deg">
+            <div class="frame"><img src="photos/sh-meta-2.jpg" alt="Номер в Meta Tree"></div>
+            <span class="where">A · Meta Tree, номер</span>
+            <div class="cap">Номер в Meta Tree</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-431900/meta-tree-hotel-people-s-square-city-center-in-shanghai/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.8deg">
+            <div class="frame"><img src="photos/sh-country-1.jpg" alt="Country Inn & Suites · ¥342"></div>
+            <span class="where">B · Country Inn Jing'an</span>
+            <div class="cap">Country Inn & Suites · ¥342</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-106553471/country-inn-suites-by-radisson-shanghai-railway-station-jing-an/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.6deg">
+            <div class="frame"><img src="photos/sh-country-2.jpg" alt="Номер в Country Inn"></div>
+            <span class="where">B · Country Inn, номер</span>
+            <div class="cap">Номер в Country Inn</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-106553471/country-inn-suites-by-radisson-shanghai-railway-station-jing-an/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.7deg">
+            <div class="frame"><img src="photos/sh-ji-1.jpg" alt="JI Hotel · ¥333 с завтраком"></div>
+            <span class="where">C · JI Hotel North Bund</span>
+            <div class="cap">JI Hotel · ¥333 с завтраком</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-110435807/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.8deg">
+            <div class="frame"><img src="photos/sh-ji-2.jpg" alt="Номер в JI"></div>
+            <span class="where">C · JI Hotel, номер</span>
+            <div class="cap">Номер в JI</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/shanghai-hotel-detail-110435807/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">23 дек<small>среда · приезд</small></div><span class="tag move">переезд</span></div>
+          <h3>Поезд пришёл, Бунд вечером</h3>
+          <ul>
+            <li><span class="tm">17:30</span><span>Hongqiao, метро или Didi до отеля, 40–50 минут</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Nanjing East Road: пешеходная улица до набережной, по дороге магазин сладостей</span></li>
+            <li class="free"><span class="tm">20:00</span><span>Бунд в огнях: вид на Пудун с набережной, это главный вид Шанхая</span></li>
+            <li class="free"><span class="tm">21:00</span><span>Ужин: раменная в аниме-молле Bailian ZX, если хочется странного, или что-то у Бунда</span></li>
+          </ul>
+          <div class="note">Жить: People's Square или Бунд, оттуда всё пешком и 10 минут метро до концессии</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video src="reels/shanghai-bund-night.mp4" poster="reels/shanghai-bund-night.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Бунд · ночь</span>
+            <div class="cap">Бунд в огнях за 10 секунд</div>
+            <div class="by">604 тысячи лайков, просто вид · <a href="https://www.tiktok.com/@deliaxi/video/7579620877780700424" target="_blank" rel="noopener">@deliaxi</a></div>
+          </article>
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video src="reels/shanghai-bund-7pm.mp4" poster="reels/shanghai-bund-7pm.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Бунд · 19:00</span>
+            <div class="cap">Набережная в семь вечера, когда включают свет</div>
+            <div class="by">25 тысяч лайков, наше время прихода · <a href="https://www.tiktok.com/@sellytandian/video/7695389088069143828" target="_blank" rel="noopener">@sellytandian</a></div>
+          </article>
+          <article class="reel" style="--tilt:.7deg">
+            <div class="frame"><video src="reels/shanghai-speciality-food-store.mp4" poster="reels/shanghai-speciality-food-store.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shanghai National Speciality Food Store · Nanjing East Road</span>
+            <div class="cap">Сладости на подарки и на попробовать</div>
+            <div class="by">Из подборки «где есть в Шанхае», 18 слайдов, видео только часть · <a href="https://www.instagram.com/p/DfTyAjKDtyk/" target="_blank" rel="noopener">@lizademm</a></div>
+          </article>
+          <article class="reel" style="--tilt:-1.2deg">
+            <div class="frame"><video src="reels/shanghai-anime-ramen.mp4" poster="reels/shanghai-anime-ramen.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Nanjing East Road · ТЦ Bailian ZX</span>
+            <div class="cap">Раменная в аниме-молле</div>
+            <div class="by">Идти ради атмосферы: весь ТЦ про аниме и игры · <a href="https://www.instagram.com/reel/DbM9nxrBHRr/" target="_blank" rel="noopener">@dr.dimitrova</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">24 дек<small>четверг · сочельник</small></div><span class="tag chill">чилл</span></div>
+          <h3>Французская концессия и Рождество</h3>
+          <ul>
+            <li class="free"><span class="tm">11:00</span><span>Бранч в концессии: Anfu Road, кофе и выпечка</span></li>
+            <li class="free"><span class="tm">день</span><span>Платаны и виллы: Wukang Road, Wukang Mansion, маленькие магазины</span></li>
+            <li class="free"><span class="tm">15:00</span><span>Шопинг на Yongyuan Road: локальные бренды вместо Zara, плюс TX Huaihai</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Рождество на Бунде: ёлки, иллюминация, ужин с видом на Пудун, потом бокал в Condé Bar в Regent с видом на всю гавань. Бронь столика заранее</span></li>
+          </ul>
+          <div class="note">Сочельник в Шанхае празднуют по-западному, ресторанов с видом много, но на 24-е они забиты</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/shanghai-conde-bar.mp4" poster="reels/shanghai-conde-bar.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Condé Bar · Regent, North Bund</span>
+            <div class="cap">Самый нереальный вид на Бунд, без минимального чека</div>
+            <div class="by">5-й этаж, Huangpu Road 60, с 17:30. Сюда на рождественский бокал · 53 тысячи лайков · <a href="https://www.tiktok.com/@nom_life/video/7645121689201757471" target="_blank" rel="noopener">@nom_life</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/shanghai-harmay-anfu.mp4" poster="reels/shanghai-harmay-anfu.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Anfu Road · Harmay</span>
+            <div class="cap">Бьюти-склад Harmay на Anfu Road</div>
+            <div class="by">Первый магазин сети в бывшем складе, в сердце концессии · 5 тысяч лайков · <a href="https://www.tiktok.com/@offwithsam/video/7686925158581341472" target="_blank" rel="noopener">@offwithsam</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video src="reels/shanghai-solo-day.mp4" poster="reels/shanghai-solo-day.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Концессия · день</span>
+            <div class="cap">Соло-день в Шанхае: кофе, улицы, еда</div>
+            <div class="by">62 тысячи лайков, полтора минуты про то, как здесь просто гулять · <a href="https://www.tiktok.com/@maddieborge/video/7618226226339106070" target="_blank" rel="noopener">@maddieborge</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/shanghai-yongyuan-shopping.mp4" poster="reels/shanghai-yongyuan-shopping.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yongyuan Road · Французская концессия</span>
+            <div class="cap">Шопинг: локальные бренды вместо Zara</div>
+            <div class="by">Улица отдельных магазинов и флагманов, плюс TX Huaihai · <a href="https://www.instagram.com/reel/DeMk4VdPRDV/" target="_blank" rel="noopener">@meewmoore</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video src="reels/shanghai-apoli-bakery.mp4" poster="reels/shanghai-apoli-bakery.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Apoli Itabakery</span>
+            <div class="cap">Пекарня с азиатскими бейглами и матча-тортами</div>
+            <div class="by">Рисовые бейглы, фисташки, «почему так вкусно, хотя просто» · <a href="https://www.instagram.com/reel/DbphxfkNIFj/" target="_blank" rel="noopener">@anelia_macaron</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor">
+        <div class="plan">
+          <div class="head"><div class="date">25 дек<small>пятница · Рождество</small></div><span class="tag anch">главное</span></div>
+          <h3>Баня с утра, Рождество вечером</h3>
+          <ul>
+            <li><span class="tm">11:00</span><span>Shui Guo Tangquan, точка Wujiaochang: метро 10 до Wujiaochang, 25 минут от центра. Паспорт с собой</span></li>
+            <li class="free"><span class="tm">день</span><span>Горячие бассейны, сауны, соляная комната, скраб за 50–100 ¥, потом пижама, безлимитные фрукты и мороженое, обед внутри, подремать в зале с диванами</span></li>
+            <li class="free"><span class="tm">17:00</span><span>Выйти разваренными, вернуться в центр</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Рождественский ужин: Xintiandi, там ёлка, ярмарка и много ресторанов</span></li>
+          </ul>
+          <div class="note">Билет 238 ¥ за 8 часов, 298 ¥ за 16. Мокрые зоны раздельные и без купальников, телефон туда нельзя. Платить Alipay. Shanghai Tower убран по твоей просьбе</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/shanghai-spa-shuiguo.mp4" poster="reels/shanghai-spa-shuiguo.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shui Guo · Wujiaochang</span>
+            <div class="cap">Shui Guo Wujiaochang: целый день за 41 $</div>
+            <div class="by">Ровно наша точка, что входит в билет · 64 тысячи лайков · <a href="https://www.tiktok.com/@hrbrowngoes/video/7537452118307851550" target="_blank" rel="noopener">@hrbrowngoes</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/shanghai-spa-24h.mp4" poster="reels/shanghai-spa-24h.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Шанхай · 24-часовое спа</span>
+            <div class="cap">«Всё здание тёплое, как жить в большом объятии»</div>
+            <div class="by">Что входит в базовый билет · 308 тысяч лайков · <a href="https://www.tiktok.com/@cinsdaily/video/7488697019989495048" target="_blank" rel="noopener">@cinsdaily</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/shanghai-spa-land.mp4" poster="reels/shanghai-spa-land.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shui Guo Spa Land</span>
+            <div class="cap">Фрукты, напитки, игры, кино, массаж, сауны</div>
+            <div class="by">15 секунд, чтобы понять формат · 21 тысяча лайков · <a href="https://www.tiktok.com/@anniesfooddiary_/video/7398882203960151312" target="_blank" rel="noopener">@anniesfooddiary_</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/shanghai-xintiandi.mp4" poster="reels/shanghai-xintiandi.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Xintiandi · вечер</span>
+            <div class="cap">Xintiandi: кирпич, фонари, кафе</div>
+            <div class="by">9 тысяч лайков, сюда на рождественский ужин · <a href="https://www.tiktok.com/@storiesbystella/video/7655116088589421844" target="_blank" rel="noopener">@storiesbystella</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">26 дек<small>суббота</small></div><span class="tag chill">чилл</span></div>
+          <h3>Старый город и бары</h3>
+          <ul>
+            <li class="free"><span class="tm">11:00</span><span>Yu Garden и базар вокруг: старый Шанхай, пельмени сяолунбао в Nanxiang</span></li>
+            <li class="free"><span class="tm">день</span><span>Tianzifang: лабиринт переулков с лавками, или Jing'an Temple и моллы вокруг</span></li>
+            <li class="free"><span class="tm">опц.</span><span>Сучжоу на полдня: поезд 30 минут, сады и каналы. Только если очень захочется</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин где понравится, потом Speak Low: спикизи за дверью барного магазина, топ-50 Азии</span></li>
+          </ul>
+          <div class="note">Самый свободный день Шанхая, план можно выкинуть целиком</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video src="reels/shanghai-yuyuan.mp4" poster="reels/shanghai-yuyuan.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yu Garden · базар</span>
+            <div class="cap">Старый Шанхай: крыши, фонари, толпа</div>
+            <div class="by">1,4 миллиона лайков, самый залайканный ролик поездки · <a href="https://www.tiktok.com/@tepy_im/video/7554995055811939591" target="_blank" rel="noopener">@tepy_im</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video src="reels/shanghai-yuyuan-night.mp4" poster="reels/shanghai-yuyuan-night.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yu Garden · ночь</span>
+            <div class="cap">Yuyuan ночью, вход бесплатный</div>
+            <div class="by">234 тысячи лайков. Можно вернуться вечером вместо дневного визита · <a href="https://www.tiktok.com/@hangrybynature/video/7520595487737564434" target="_blank" rel="noopener">@hangrybynature</a></div>
+          </article>
+          <article class="reel" style="--tilt:.7deg">
+            <div class="frame"><video src="reels/shanghai-speak-low-en.mp4" poster="reels/shanghai-speak-low-en.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Speak Low · спикизи</span>
+            <div class="cap">Вход через книжный шкаф, один из лучших баров мира</div>
+            <div class="by">На английском, минута внутри · <a href="https://www.tiktok.com/@jaydensean522/video/7624465633849249054" target="_blank" rel="noopener">@jaydensean522</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">27 дек<small>воскресенье</small></div><span class="tag move">переезд</span></div>
+          <h3>Самолёт в Гуанчжоу</h3>
+          <ul>
+            <li class="free"><span class="tm">утро</span><span>Кофе, выписаться, последняя прогулка по Бунду</span></li>
+            <li><span class="tm">11:30</span><span>Из отеля в аэропорт, около часа. Рейс ~14:00, 2,5 часа</span></li>
+            <li><span class="tm">17:30</span><span>Гуанчжоу, заселение, вечером подсветка Canton Tower с набережной</span></li>
+          </ul>
+          <div class="note">Рейс из Hongqiao или Pudong смотря где дешевле. Поезд Шанхай → Гуанчжоу тоже есть, 7–8 часов, если захочется посмотреть страну из окна</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUANGZHOU DAYS ============ -->
+<section class="beijing" id="guangzhou" style="background:var(--bg)">
+  <div class="wrap">
+    <span class="eyebrow">Гуанчжоу по дням</span>
+    <h2 style="margin-top:14px">Картинг в горах и три ночи дешевле одной в Гонконге</h2>
+    <div class="ratio">
+      <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
+      <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
+      <span class="pill"><i style="background:var(--violet)"></i>Переезд</span>
+    </div>
+    <div class="days">
+      <article class="dayrow hotels">
+        <div class="plan">
+          <div class="head"><div class="date">🏨 Отель<small>27–30 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
+          <ul>
+            <li><span class="tm">1</span><span><b>Crowne Plaza Window of Canton</b>, Haizhu, набережная напротив Canton Tower, открыт в 2025. 9.5, ¥746–791 ≈ 8 600–9 100 ₽. Пятизвёздочный за цену трёшки, вид на башню из окна. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-131311026/crowne-plaza-guangzhou-window-of-canton-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="alt-head">Ещё три с Trip.com по параметрам: центр, оценка 9+, тысячи отзывов, без тиктоков</div>
+          <ul class="alt">
+            <li><span class="tm">A</span><span><b>Mercure Tianhe Sports Center</b>, Tianhe, у метро и East Station. 9.6 по 8 500 отзывам, ¥431–457 ≈ 5 000–5 300 ₽. Мой выбор по цене и оценке. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-90697851/mercure-guangzhou-tianhe-sports-center/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>JI Hotel Beijing Road</b>, пешеходная Beijing Road, открыт в 2025. 9.2 по 2 200 отзывам, ¥476–504 ≈ 5 500–5 800 ₽. Старый центр, еда вокруг. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-132017727/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Holiday Inn Zhujiang New Town</b>, у Canton Tower и Huacheng Square, обновлён в 2025. 9.6 по 5 500 отзывам, ¥771–818 ≈ 8 900–9 400 ₽. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-8784327/holiday-inn-guangzhou-zhujiang-new-town-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="note">Правило «не дороже 10 тысяч». voco Shifu из ролика на 882 лайка стоит ¥1 068 и LN Garden Hotel из ролика на 980 тысяч лайков ¥1 261, оба убраны. Цены Trip.com за двоих на 27–30 дек, курс 1 ¥ ≈ 11,5 ₽</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/gz-hotel-crowne.mp4" poster="reels/gz-hotel-crowne.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Haizhu · Crowne Plaza</span>
+            <div class="cap">Crowne Plaza Window of Canton · ¥746+</div>
+            <div class="by">Пять звёзд напротив Canton Tower · 4 тысячи лайков · <a href="https://www.tiktok.com/@joycehysin/video/7660484224230673672" target="_blank" rel="noopener">@joycehysin</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.7deg">
+            <div class="frame"><img src="photos/gz-mercure-1.jpg" alt="Mercure · ¥431–457"></div>
+            <span class="where">A · Mercure Tianhe</span>
+            <div class="cap">Mercure · ¥431–457</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-90697851/mercure-guangzhou-tianhe-sports-center/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.6deg">
+            <div class="frame"><img src="photos/gz-mercure-2.jpg" alt="Номер в Mercure"></div>
+            <span class="where">A · Mercure, номер</span>
+            <div class="cap">Номер в Mercure</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-90697851/mercure-guangzhou-tianhe-sports-center/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.8deg">
+            <div class="frame"><img src="photos/gz-ji-1.jpg" alt="JI Hotel · ¥476–504"></div>
+            <span class="where">B · JI Beijing Road</span>
+            <div class="cap">JI Hotel · ¥476–504</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-132017727/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.7deg">
+            <div class="frame"><img src="photos/gz-ji-2.jpg" alt="Номер в JI"></div>
+            <span class="where">B · JI, номер</span>
+            <div class="cap">Номер в JI</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-132017727/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:.6deg">
+            <div class="frame"><img src="photos/gz-holidayinn-1.jpg" alt="Holiday Inn · ¥771–818"></div>
+            <span class="where">C · Holiday Inn ZJNT</span>
+            <div class="cap">Holiday Inn · ¥771–818</div>
+            <div class="by">Фото Trip.com, у башни · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-8784327/holiday-inn-guangzhou-zhujiang-new-town-by-ihg/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+          <article class="reel pic" style="--tilt:-.8deg">
+            <div class="frame"><img src="photos/gz-holidayinn-2.jpg" alt="Номер в Holiday Inn"></div>
+            <span class="where">C · Holiday Inn, номер</span>
+            <div class="cap">Номер в Holiday Inn</div>
+            <div class="by">Фото Trip.com · <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-8784327/holiday-inn-guangzhou-zhujiang-new-town-by-ihg/" target="_blank" rel="noopener">Trip.com</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow one">
+        <div class="plan">
+          <div class="head"><div class="date">27 дек<small>воскресенье · приезд</small></div><span class="tag move">переезд</span></div>
+          <h3>Прилетели в Гуанчжоу</h3>
+          <ul>
+            <li><span class="tm">17:00</span><span>Прилёт в Baiyun, метро или Didi до отеля, 40 минут</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Заселение, ужин: кантонская кухня, утка, чар сиу</span></li>
+            <li class="free"><span class="tm">21:00</span><span>Canton Tower с набережной Haixinsha или площади Huacheng: башня меняет цвет всю ночь</span></li>
+          </ul>
+          <div class="note">Снова Китай: юани, Alipay, VPN. Теплее, чем в Шанхае, +15…+20°</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/gz-canton-tower-wheel.mp4" poster="reels/gz-canton-tower-wheel.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Canton Tower · ночь с набережной</span>
+            <div class="cap">Самое высокое колесо обозрения в мире</div>
+            <div class="by">Капсулы едут по рельсу вокруг крыши · 21 тысяча лайков · <a href="https://www.tiktok.com/@beijingchina_066/video/7679326127768210718" target="_blank" rel="noopener">@beijingchina_066</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor">
+        <div class="plan">
+          <div class="head"><div class="date">28 дек<small>понедельник</small></div><span class="tag anch">главное</span></div>
+          <h3>Картинг в горах: Gulong Gorge</h3>
+          <ul>
+            <li><span class="tm">9:30</span><span>Выезд с водителем или Didi в Цинъюань, 1,5–2 часа. Единственный день, где встаём раньше десяти</span></li>
+            <li><span class="tm">11:30</span><span>Gulong Gorge: картинг-трасса QQ Speed по склонам среди джунглей и обрывов, потом стеклянный мост и cliff coaster</span></li>
+            <li class="free"><span class="tm">14:00</span><span>Обед в парке, посидеть у воды</span></li>
+            <li class="free"><span class="tm">16:00</span><span>Обратно в город, к 18:00 в отеле</span></li>
+            <li class="free"><span class="tm">19:30</span><span>Yongqing Fang в Liwan: отреставрированный квартал с барами и лавками, ужин</span></li>
+          </ul>
+          <div class="note">Вход 98–128 ¥, карт 58–98 ¥ отдельно, на Trip.com комбо с картом от 44 $. Водителя на день брать через отель или Trip.com, 600–800 ¥. Подъём на Canton Tower и free-fall убраны</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/gz-kart-mario.mp4" poster="reels/gz-kart-mario.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Gulong Gorge · картинг</span>
+            <div class="cap">«Must visit в Китае»: Mario Kart в горах</div>
+            <div class="by">360 тысяч лайков, самый залайканный ролик про Гуанчжоу · <a href="https://www.tiktok.com/@traveltoqin/video/7652578038403632405" target="_blank" rel="noopener">@traveltoqin</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/gz-kart-gorge.mp4" poster="reels/gz-kart-gorge.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Gulong Gorge · день из Гуанчжоу</span>
+            <div class="cap">Гонка по горам, скорость и виды</div>
+            <div class="by">Day trip из Гуанчжоу · 9 тысяч лайков · <a href="https://www.tiktok.com/@golden_guangzhoutravel/video/7648190326842215693" target="_blank" rel="noopener">@golden_guangzhoutravel</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/gz-kart-mustdo.mp4" poster="reels/gz-kart-mustdo.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Gulong Gorge · must-do</span>
+            <div class="cap">«Не пожалеете»: карт-гонка как главное дело в Гуанчжоу</div>
+            <div class="by">36 секунд с трассы · 4 тысячи лайков · <a href="https://www.tiktok.com/@nicole.inchina/video/7679024595239734549" target="_blank" rel="noopener">@nicole.inchina</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">29 дек<small>вторник</small></div><span class="tag chill">чилл</span></div>
+          <h3>Старый Кантон</h3>
+          <ul>
+            <li class="free"><span class="tm">11:00</span><span>Димсам-завтрак: Tao Tao Ju или Dian Dou De, брать всё по чуть-чуть</span></li>
+            <li class="free"><span class="tm">13:00</span><span>Shamian Island: колониальные виллы под платанами, кофе, ничего не делать</span></li>
+            <li class="free"><span class="tm">14:00</span><span>Liwan: озеро, старые улицы, чай в Panxi, десерты с рынка Shangxiajiu</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин с видом на реку или круиз по Жемчужной реке, час, с башней в подсветке</span></li>
+          </ul>
+          <div class="note">Самый свободный день. Можно вообще не выходить из района, где отель</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/gz-dimsum-spots.mp4" poster="reels/gz-dimsum-spots.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Гуанчжоу · где есть</span>
+            <div class="cap">Четыре места: Xiong Ji, Tao Tao Ju, Dian Du De, Sheng Yun Lai</div>
+            <div class="by">Каша, димсам и классика · 2,3 тысячи лайков · <a href="https://www.tiktok.com/@iamcandychye/video/7627858963735792917" target="_blank" rel="noopener">@iamcandychye</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/gz-shamian.mp4" poster="reels/gz-shamian.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shamian · история</span>
+            <div class="cap">Европейский остров посреди Гуанчжоу</div>
+            <div class="by">Концессия 1860-х, виллы, церкви, платаны · 600 лайков · <a href="https://www.tiktok.com/@beijingchina_066/video/7680570970603654430" target="_blank" rel="noopener">@beijingchina_066</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/gz-shamian-love.mp4" poster="reels/gz-shamian-love.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shamian · прогулка</span>
+            <div class="cap">«Любовное письмо из Гуанчжоу»</div>
+            <div class="by">Тихие улицы острова · 800 лайков · <a href="https://www.tiktok.com/@micnienie/video/7673412574041410834" target="_blank" rel="noopener">@micnienie</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/gz-cruise.mp4" poster="reels/gz-cruise.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Жемчужная река · круиз</span>
+            <div class="cap">Ночной круиз за 14 долларов</div>
+            <div class="by">Час по реке с башней в подсветке · 2,5 тысячи лайков · <a href="https://www.tiktok.com/@vaniaaaniaaa/video/7635233575247383828" target="_blank" rel="noopener">@vaniaaaniaaa</a></div>
+          </article>
+          <article class="reel" style="--tilt:.7deg">
+            <div class="frame"><video src="reels/gz-river-neon.mp4" poster="reels/gz-river-neon.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Жемчужная река · ночь</span>
+            <div class="cap">Неоновая симфония Гуанчжоу</div>
+            <div class="by">Небоскрёбы и мосты меняют цвет · 122 тысячи лайков · <a href="https://www.tiktok.com/@chinascapelens/video/7560343794869226770" target="_blank" rel="noopener">@chinascapelens</a></div>
+          </article>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">30 дек<small>среда</small></div><span class="tag move">переезд</span></div>
+          <h3>Поезд в Гонконг</h3>
+          <ul>
+            <li class="free"><span class="tm">утро</span><span>Завтрак, выписка</span></li>
+            <li><span class="tm">10:30</span><span>Поезд с Guangzhou South или East в West Kowloon, 50–60 минут. Паспортный контроль в Гонконге</span></li>
+            <li><span class="tm">11:30</span><span>Гонконг, заселение, дальше по гонконгскому плану</span></li>
+          </ul>
+          <div class="note">Билет за 2 недели на 12306 или Trip.com. Это выезд из Китая, дни безвиза считаются до него</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/gz-train-hk.mp4" poster="reels/gz-train-hk.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Гуанчжоу → Гонконг · поезд</span>
+            <div class="cap">Час на скоростном до West Kowloon</div>
+            <div class="by">Совет: вписать поезд в карточку прибытия · 3 тысячи лайков · <a href="https://www.tiktok.com/@thechinatrips/video/7474608381232237832" target="_blank" rel="noopener">@thechinatrips</a></div>
+          </article>
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video src="reels/gz-train-food.mp4" poster="reels/gz-train-food.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Скоростной поезд · еда</span>
+            <div class="cap">Chagee и KFC привозят прямо к креслу</div>
+            <div class="by">Как заказать доставку в поезд · 4,7 тысячи лайков · <a href="https://www.tiktok.com/@sherrgoh/video/7463058140150517010" target="_blank" rel="noopener">@sherrgoh</a></div>
+          </article>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HONG KONG DAYS ============ -->
+<section class="beijing" id="hongkong" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="eyebrow">Гонконг по дням</span>
+    <h2 style="margin-top:14px">Пик, Новый год над гаванью и день отойти</h2>
+    <div class="ratio">
+      <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
+      <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
+      <span class="pill"><i style="background:var(--violet)"></i>Переезд</span>
+    </div>
+    <div class="days">
+      <article class="dayrow hotels">
+        <div class="plan">
+          <div class="head"><div class="date">🏨 Отель<small>30 дек – 2 янв · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <h3>До 10 тысяч за ночь на Новый год: почти ничего</h3>
+          <ul>
+            <li><span class="tm">1</span><span><b>Mini Central</b>, Ice House Street, самый центр. 7.4, HK$758–779 ≈ 8 100–8 300 ₽. Крошечные «смарт»-номера, зато у Mid-Levels и баров. Единственный в центре до 10 тысяч. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-370823/mini-hotel-central/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="alt-head">Ещё до 10 тысяч на эти даты, но не в центре</div>
+          <ul class="alt">
+            <li><span class="tm">A</span><span><b>Regala Skycity</b>, у аэропорта, 25 минут до центра на Airport Express. 8.7 по 13 000 отзывам, HK$894 ≈ 9 600 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-92764015/regala-skycity-hotel-by-regal-hotels/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>South Nest</b>, юг острова у Ocean Park, 25 минут до Central на метро. 8.0 по 590 отзывам, HK$847 ≈ 9 100 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-99817230/south-nest/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Harbour Plaza Resort City</b>, Tin Shui Wai, Новые территории, 45 минут до центра. 8.4 по 10 600 отзывам, HK$813 ≈ 8 700 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-436835/harbour-plaza-resort-city/" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="note">Новогодняя неделя: всё приличное в центре стоит 16–25 тысяч и убрано по правилу «не дороже 10». Остаётся крошечный Mini Central в центре или отели у аэропорта и в Новых территориях. Курс 1 HK$ ≈ 10,7 ₽</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video src="reels/hk-hotel-mini-central.mp4" poster="reels/hk-hotel-mini-central.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Central · Mini Central</span>
+            <div class="cap">Mini Central · HK$758+</div>
+            <div class="by">Бюджет, метро, трамвай, Donki рядом, крошечные номера · 2,8 тысячи лайков · <a href="https://www.tiktok.com/@nikkapesudas/video/7582961143082175762" target="_blank" rel="noopener">@nikkapesudas</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor">
+        <div class="plan">
+          <div class="head"><div class="date">30 дек<small>среда · приезд</small></div><span class="tag anch">главное</span></div>
+          <h3>Поезд из Гуанчжоу, Пик на закате</h3>
+          <ul>
+            <li><span class="tm">10:30</span><span>Поезд из Гуанчжоу, 50 минут, паспортный контроль в West Kowloon. Octopus-карту купить на вокзале</span></li>
+            <li class="free"><span class="tm">12:00</span><span>Заселение, обед, димсам: Tim Ho Wan или Lin Heung</span></li>
+            <li><span class="tm">15:30</span><span>Peak Tram наверх, билет онлайн. Наверху Sky Terrace или бесплатная тропа Lugard Road</span></li>
+            <li><span class="tm">17:45</span><span>Закат на Пике, город включает свет. Спуск автобусом 15</span></li>
+            <li class="free"><span class="tm">20:00</span><span>Symphony of Lights с набережной TST, потом Star Ferry через гавань за 5 HK$</span></li>
+          </ul>
+          <div class="note">Гонконг: другие деньги, Google работает, VPN не нужен. Если облачно, Пик переносится на 1 января</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/hk-peak-night.mp4" poster="reels/hk-peak-night.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Victoria Peak · ночь</span>
+            <div class="cap">Пик ночью: 20 минут от трамвая до секретной точки</div>
+            <div class="by">129 тысяч лайков, тропа плюс «подозрительные камни» · <a href="https://www.tiktok.com/@grievous____/video/7523336427254336782" target="_blank" rel="noopener">@grievous____</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video src="reels/hk-peak-day.mp4" poster="reels/hk-peak-day.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Victoria Peak · день</span>
+            <div class="cap">Вид с Пика за 6 секунд</div>
+            <div class="by">96 тысяч лайков · <a href="https://www.tiktok.com/@vhafl/video/7649334509309070593" target="_blank" rel="noopener">@vhafl</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/hk-star-ferry.mp4" poster="reels/hk-star-ferry.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Star Ferry · гавань</span>
+            <div class="cap">Star Ferry: сто лет через Victoria Harbour</div>
+            <div class="by">Официальный ролик Discover Hong Kong · 20 тысяч лайков · <a href="https://www.tiktok.com/@discoverhongkong/video/7661947527352175879" target="_blank" rel="noopener">@discoverhongkong</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow anchor one">
+        <div class="plan">
+          <div class="head"><div class="date">31 дек<small>четверг · Новый год</small></div><span class="tag anch">главное</span></div>
+          <h3>Пляж днём, Новый год ночью</h3>
+          <ul>
+            <li class="free"><span class="tm">11:00</span><span>Выспаться, поздний завтрак</span></li>
+            <li class="free"><span class="tm">13:00</span><span>Автобус 6 из Central через горы в Repulse Bay: пляж, +18°, обед у воды. Дальше Stanley: рынок и набережная</span></li>
+            <li class="free"><span class="tm">18:00</span><span>Вернуться, переодеться, ужин заранее забронирован</span></li>
+            <li><span class="tm">22:00</span><span>Новый год: countdown в Central на Chater Road, как в прошлом году, или бар с видом на гавань. Если салют вернут, набережная TST или Пик</span></li>
+            <li class="free"><span class="tm">00:30</span><span>Домой пешком или на такси, метро в эту ночь ходит всю ночь</span></li>
+          </ul>
+          <div class="note">Салют на 31 декабря 2025 отменяли и делали countdown в Central. Что будет в этом году, проверить на discoverhongkong.com в декабре. Бар с видом бронировать за месяц</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video src="reels/hk-nye.mp4" poster="reels/hk-nye.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Victoria Harbour · Новый год</span>
+            <div class="cap">Как выглядит Новый год в Гонконге</div>
+            <div class="by">Салют над гаванью, встреча 2025-го · 4,8 тысячи лайков · <a href="https://www.tiktok.com/@wanderwithkara/video/7454421472506023214" target="_blank" rel="noopener">@wanderwithkara</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow">
+        <div class="plan">
+          <div class="head"><div class="date">1 янв<small>пятница</small></div><span class="tag chill">чилл</span></div>
+          <h3>Отходим</h3>
+          <ul>
+            <li class="free"><span class="tm">12:00</span><span>Спать сколько влезет, поздний димсам</span></li>
+            <li class="free"><span class="tm">день</span><span>Если есть силы: канатка Ngong Ping 360 и Большой Будда, 2 часа на всё. Если нет: Mid-Levels, PMQ, Tai Kwun, кофе</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Mong Kok и Temple Street: неон, рынок, уличная еда. Или просто кино в номере</span></li>
+          </ul>
+          <div class="note">День без обязательств. Lantau стоит брать только при ясном небе и желании</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video src="reels/hk-big-buddha.mp4" poster="reels/hk-big-buddha.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Lantau · Tian Tan Buddha · 1 янв</span>
+            <div class="cap">Day trip к Большому Будде: канатка, 268 ступеней</div>
+            <div class="by">Монастырь Po Lin и выставочные залы внутри статуи · 1,6 тысячи лайков · <a href="https://www.tiktok.com/@kathyktang/video/7592750228713884958" target="_blank" rel="noopener">@kathyktang</a></div>
+          </article>
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video src="reels/hk-lantau-route.mp4" poster="reels/hk-lantau-route.jpg" preload="none" playsinline loop></video><div class="play"><span>▶</span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Lantau · маршрут</span>
+            <div class="cap">Одно решение изменило весь день на Lantau</div>
+            <div class="by">Дешевле и интереснее канатки: автобус и розовые дельфины · 1,1 тысячи лайков · <a href="https://www.tiktok.com/@thetravelbuggs/video/7612184485911596295" target="_blank" rel="noopener">@thetravelbuggs</a></div>
+          </article>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">2 янв<small>суббота</small></div><span class="tag move">переезд</span></div>
+          <h3>Самолёт во Вьетнам</h3>
+          <ul>
+            <li class="free"><span class="tm">утро</span><span>Поздний завтрак, выписка в 12:00</span></li>
+            <li><span class="tm">13:00</span><span>Airport Express, 25 минут. Рейс в Дананг около 15:00–16:00, 2 часа</span></li>
+            <li><span class="tm">18:00</span><span>Дананг, трансфер в Хойан 40 минут, море на следующее утро</span></li>
+          </ul>
+          <div class="note">Рейс дневной, после праздника вставать не надо</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIETNAM PICK ============ -->
+<section class="vn-pick" id="vietnam">
+  <div class="wrap">
+    <span class="eyebrow">Открытый вопрос</span>
+    <h2 style="margin-top:14px">Где чилить неделю во Вьетнаме</h2>
+    <div class="opts">
+      <article class="opt rec">
+        <span class="rec-tag">рекомендую</span>
+        <h3>Хойан / Дананг</h3>
+        <p>Старый город в фонарях, пляж Ан Банг в 10 минутах, лучшая еда страны. Днём море, вечером прогулка.</p>
+        <dl><dt>Из HK</dt><dd>прямой в Дананг, 2 ч</dd><dt>Домой</dt><dd>со стыковкой</dd><dt>Погода</dt><dd>+24…+27°, сухо</dd></dl>
+      </article>
+      <article class="opt">
+        <h3>Нячанг</h3>
+        <p>Чисто пляж, море, ничего не делать. Много русскоязычного, бывают прямые рейсы в Москву.</p>
+        <dl><dt>Из HK</dt><dd>через Хошимин</dd><dt>Домой</dt><dd>прямой в Москву (проверить)</dd><dt>Погода</dt><dd>+26…+28°</dd></dl>
+      </article>
+      <article class="opt">
+        <h3>Фукуок</h3>
+        <p>Остров, широкие пляжи, закаты, спокойно. Самый «ничего не делать» вариант.</p>
+        <dl><dt>Из HK</dt><dd>прямой или через Хошимин</dd><dt>Домой</dt><dd>через Хошимин / Бангкок</dd><dt>Погода</dt><dd>+27…+30°</dd></dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKINGS ============ -->
+<section class="book" id="book">
+  <div class="wrap">
+    <span class="eyebrow">Чеклист</span>
+    <h2 style="margin-top:14px">Что бронировать и когда</h2>
+    <div class="progress"><span id="prog-t">0 / 15</span><div class="pb"><div id="prog-b"></div></div></div>
+    <div class="cols" id="checklist">
+      <div class="col">
+        <h3><i style="background:var(--pink)"></i>Сейчас</h3>
+        <label><input type="checkbox" id="c1"><span>Перелёт в Пекин, 18 дек</span></label>
+        <label><input type="checkbox" id="c2"><span>Обратный из Вьетнама, 8 янв</span></label>
+        <label><input type="checkbox" id="c3"><span>Отели: Гуанчжоу 27–30 дек, Гонконг 30 дек – 2 янв</span></label>
+      </div>
+      <div class="col">
+        <h3><i style="background:var(--orange)"></i>До 1 декабря</h3>
+        <label><input type="checkbox" id="c4"><span>Отели Пекин и Шанхай, с отменой</span></label>
+        <label><input type="checkbox" id="c5"><span>Отель во Вьетнаме</span></label>
+        <label><input type="checkbox" id="c6"><span>Рейс Шанхай → Гуанчжоу, 27 дек</span></label>
+        <label><input type="checkbox" id="c7"><span>Рейс Гонконг → Вьетнам, 2 янв</span></label>
+      </div>
+      <div class="col">
+        <h3><i style="background:var(--blue)"></i>За 2 недели</h3>
+        <label><input type="checkbox" id="c8"><span>Поезд Пекин → Шанхай, 23 дек</span></label>
+        <label><input type="checkbox" id="c9"><span>Поезд Гуанчжоу → Гонконг, 30 дек; билет Gulong Gorge с картом на 28 дек</span></label>
+        <label><input type="checkbox" id="c10"><span>Билеты в Universal, 21 дек</span></label>
+        <label><input type="checkbox" id="c11"><span>Запретный город (продажа за 7 дней)</span></label>
+      </div>
+      <div class="col">
+        <h3><i style="background:var(--lime)"></i>За неделю</h3>
+        <label><input type="checkbox" id="c12"><span>Водитель на Стену, 20 дек</span></label>
+        <label><input type="checkbox" id="c13"><span>Новогодний бар/ресторан в Гонконге</span></label>
+        <label><input type="checkbox" id="c14"><span>Проверить часы Universal зимой</span></label>
+        <label><input type="checkbox" id="c15"><span>Бронь утки: Siji Minfu / Da Dong</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICAL ============ -->
+<section class="prac" id="prac">
+  <div class="wrap">
+    <span class="eyebrow">Чтобы не споткнуться</span>
+    <h2 style="margin-top:14px">Визы, деньги, интернет</h2>
+    <div class="pgrid">
+      <div class="pc">
+        <h3><span style="background:var(--yellow)">Визы</span></h3>
+        <ul>
+          <li>Китай: безвиз 30 дней для РФ, продлён до конца 2027. Мы используем 12 дней, выезд в Гонконг 30-го</li>
+          <li>Гонконг: безвиз 14 дней. У нас 3 ночи</li>
+          <li>Вьетнам: безвиз 45 дней. У нас 6</li>
+          <li>Поезд Гуанчжоу → Гонконг это выезд из Китая, контроль в West Kowloon</li>
+        </ul>
+      </div>
+      <div class="pc">
+        <h3><span style="background:var(--lime)">Деньги</span></h3>
+        <ul>
+          <li>Российские карты в Китае не работают</li>
+          <li>Иностранную Visa/Mastercard привязать к Alipay и WeChat Pay, платить везде телефоном</li>
+          <li>Немного наличных юаней на Стену и мелочи</li>
+          <li>Гонконг: обычные карты + Octopus для транспорта</li>
+        </ul>
+      </div>
+      <div class="pc">
+        <h3><span style="background:var(--pink);color:#fff">Связь</span></h3>
+        <ul>
+          <li>VPN поставить до вылета: Google, Telegram, Instagram заблокированы</li>
+          <li>Зарубежная eSIM (Airalo, Nomad) обходит блокировки сама</li>
+          <li>Карты: Amap или Apple Maps, Google врёт</li>
+          <li>Didi для такси, Trip.com для поездов, переводчик с офлайн-китайским</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Видео на весь экран">
+  <button class="lb-close" type="button" aria-label="Закрыть">✕</button>
+  <div class="lb-wrap"><video id="lb-video" playsinline controls></video><div class="lb-cap" id="lb-cap"></div></div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Черновик от 4 ноября 2026 · визы посчитаны для паспортов РФ</span>
+    <span>Салют в Гонконге на 31 декабря ещё не подтверждён: проверить в декабре</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ---- countdown ----
+  var target = new Date('2026-12-18T00:00:00+03:00');
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var diff = Math.max(0, target - Date.now());
+    var d = Math.floor(diff/864e5), h = Math.floor(diff%864e5/36e5), m = Math.floor(diff%36e5/6e4);
+    document.getElementById('cd-d').textContent = d;
+    document.getElementById('cd-h').textContent = pad(h);
+    document.getElementById('cd-m').textContent = pad(m);
+  }
+  tick(); setInterval(tick, 30000);
+
+  // ---- map ----
+  var svg = document.querySelector('#map svg');
+  var NS = 'http://www.w3.org/2000/svg';
+  var LON0 = 99, LON1 = 126, LAT0 = 7, LAT1 = 45;
+  var W = 440, H = 720, PAD = 24;
+  var cosL = Math.cos(28*Math.PI/180);
+  var kx = (W - PAD*2) / ((LON1-LON0) * cosL);
+  var ky = (H - PAD*2) / (LAT1-LAT0);
+  var k = Math.min(kx, ky);
+  function X(lon){ return PAD + (lon-LON0)*cosL*k; }
+  function Y(lat){ return H - PAD - (lat-LAT0)*k; }
+  function el(n, a){ var e=document.createElementNS(NS,n); for(var key in a) e.setAttribute(key,a[key]); return e; }
+  function poly(pts){ var d = pts.map(function(p,i){ return (i?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1); }).join(' ')+'Z'; var e = el('path', {}); e.setAttribute('d', d); return e; }
+
+  // coarse coastline, lon/lat
+  var mainland = [[99,45],[126,45],[126,41],[121.5,40.8],[117.8,39.2],[119,37.5],[120.9,36.4],[122.4,37.1],[120.3,35],[119.3,34.7],[121,31.8],[121.9,31],[121.5,29.5],[121.1,28],[119.6,26],[118.1,24.5],[116.5,23],[114.2,22.3],[112,21.8],[110.5,20.3],[109.7,21.5],[108,21.5],[106.8,20.3],[106,19.8],[105.7,18.5],[106.5,17.5],[107.5,16.5],[108.3,15.9],[109,13.5],[109.3,12.2],[108.5,11],[107,10.4],[106,9.5],[105,8.6],[104.5,10.4],[103,10.6],[103,12],[101,13],[99,20]];
+  var hainan = [[108.6,20.1],[111,20],[110.5,18.2],[108.7,18.5]];
+  var taiwan = [[121,25.3],[122,25],[121,21.9],[120.2,23]];
+
+  // graticule
+  var g = el('g',{stroke:'currentColor','stroke-opacity':'.08','stroke-width':'1',fill:'none'});
+  for(var lon=100; lon<=125; lon+=5){ g.appendChild(el('line',{x1:X(lon),y1:Y(LAT0),x2:X(lon),y2:Y(LAT1)})); }
+  for(var lat=10; lat<=45; lat+=5){ g.appendChild(el('line',{x1:X(LON0),y1:Y(lat),x2:X(LON1),y2:Y(lat)})); }
+  svg.appendChild(g);
+
+  var land = el('g',{fill:'var(--line)',stroke:'var(--route-stroke)','stroke-width':'1.5','stroke-linejoin':'round','fill-opacity':'.7'});
+  land.appendChild(poly(mainland));
+  land.appendChild(poly(hainan));
+  land.appendChild(poly(taiwan));
+  svg.appendChild(land);
+
+  var cities = [
+    {n:'Пекин', lon:116.4, lat:39.9, c:'var(--orange)', dx:14, dy:-10, big:true},
+    {n:'Шанхай', lon:121.5, lat:31.2, c:'var(--blue)', dx:14, dy:4, big:true},
+    {n:'Гуанчжоу', lon:113.3, lat:23.1, c:'var(--violet)', dx:-14, dy:-10, anchor:'end', big:true},
+    {n:'Гонконг', lon:114.2, lat:22.3, c:'var(--pink)', dx:14, dy:12, big:true},
+    {n:'Дананг', lon:108.2, lat:16.07, c:'var(--lime)', dx:14, dy:4, big:true}
+  ];
+  var byName = {}; cities.forEach(function(c){ byName[c.n]=c; });
+  function pathBetween(a,b,curve){
+    var x1=X(a.lon),y1=Y(a.lat),x2=X(b.lon),y2=Y(b.lat);
+    var mx=(x1+x2)/2, my=(y1+y2)/2, dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy)||1;
+    var cx = mx - dy/len*curve, cy = my + dx/len*curve;
+    return 'M'+x1+' '+y1+' Q'+cx+' '+cy+' '+x2+' '+y2;
+  }
+  var legs = [
+    {a:'Пекин', b:'Шанхай', air:false, curve:-60},
+    {a:'Шанхай', b:'Гуанчжоу', air:true, curve:70},
+    {a:'Гуанчжоу', b:'Гонконг', air:false, curve:10},
+    {a:'Гонконг', b:'Дананг', air:true, curve:-50}
+  ];
+  var routes = el('g',{fill:'none',stroke:'var(--route-stroke)','stroke-width':'3.5','stroke-linecap':'round'});
+  legs.forEach(function(l){
+    var p = el('path',{d:pathBetween(byName[l.a],byName[l.b],l.curve),'class':'route-path'+(l.air?' air':'')});
+    routes.appendChild(p);
+  });
+  svg.appendChild(routes);
+
+  cities.forEach(function(c,i){
+    var grp = el('g',{'class':'pin', style:'transform-origin:'+X(c.lon)+'px '+Y(c.lat)+'px; animation-delay:'+(0.2+i*0.15)+'s'});
+    grp.appendChild(el('circle',{cx:X(c.lon),cy:Y(c.lat),r:c.big?11:7,fill:c.c,stroke:'var(--route-stroke)','stroke-width':'3'}));
+    var t = el('text',{x:X(c.lon)+c.dx, y:Y(c.lat)+c.dy, 'font-family':"'Unbounded',sans-serif", 'font-weight':'700', 'font-size': c.big?'15':'12', fill:'currentColor', 'text-anchor': c.anchor||'start', 'paint-order':'stroke', stroke:'var(--card)', 'stroke-width':'5', 'stroke-linejoin':'round'});
+    t.textContent = c.n;
+    grp.appendChild(t);
+    svg.appendChild(grp);
+  });
+  // temperature stickers on map
+  var temps = [[112,43,'−5°','var(--blue)'],[117,13,'+28°','var(--orange)']];
+  temps.forEach(function(t){
+    var grp = el('g',{});
+    var cx = X(t[0]), cy = Y(t[1]);
+    grp.appendChild(el('rect',{x:cx-26,y:cy-16,width:52,height:32,rx:10,fill:t[3],stroke:'var(--route-stroke)','stroke-width':'3',transform:'rotate(-6 '+cx+' '+cy+')'}));
+    var tx = el('text',{x:cx,y:cy+6,'text-anchor':'middle','font-family':"'Unbounded',sans-serif",'font-weight':'900','font-size':'15',fill:'#fff',transform:'rotate(-6 '+cx+' '+cy+')'});
+    tx.textContent = t[2]; grp.appendChild(tx); svg.appendChild(grp);
+  });
+
+  // ---- reels: tap to play with sound, one at a time ----
+  var frames = Array.prototype.slice.call(document.querySelectorAll('.reel .frame')).filter(function(f){ return f.querySelector('video'); });
+  function stopOthers(f){
+    frames.forEach(function(o){ if (o!==f){ var ov=o.querySelector('video'); if (!ov.paused) ov.pause(); o.classList.remove('playing'); } });
+  }
+  frames.forEach(function(f){
+    var v = f.querySelector('video');
+    f.addEventListener('click', function(){
+      if (v.paused) {
+        stopOthers(f);
+        v.muted = false;
+        var p = v.play();
+        if (p && p.then) {
+          p.then(function(){ f.classList.add('playing'); }).catch(function(){
+            v.muted = true;
+            v.play().then(function(){ f.classList.add('playing'); }).catch(function(err){
+              var n = f.querySelector('.play span'); if (n) n.textContent = '!';
+              f.title = 'Видео не запустилось: ' + (err && err.message ? err.message : err);
+            });
+          });
+        } else { f.classList.add('playing'); }
+      } else {
+        v.pause(); f.classList.remove('playing');
+      }
+    });
+    v.addEventListener('ended', function(){ f.classList.remove('playing'); });
+    v.addEventListener('error', function(){
+      var n = f.querySelector('.play span'); if (n) n.textContent = '!';
+      f.title = 'Файл не загрузился';
+    });
+  });
+
+  // ---- lightbox ----
+  var lb = document.getElementById('lightbox'), lbv = document.getElementById('lb-video'), lbcap = document.getElementById('lb-cap');
+  function closeLB(){ lbv.pause(); lbv.removeAttribute('src'); lbv.load(); lb.classList.remove('open'); document.body.classList.remove('lb-open'); }
+  function openLB(card){
+    var v = card.querySelector('video'); if (!v) return;
+    frames.forEach(function(o){ var ov=o.querySelector('video'); if (ov && !ov.paused) ov.pause(); o.classList.remove('playing'); });
+    lbv.poster = v.getAttribute('poster') || ''; lbv.src = v.getAttribute('src'); lbv.muted = false; lbv.loop = true;
+    var cap = card.querySelector('.cap'), where = card.querySelector('.where');
+    lbcap.innerHTML = (cap ? cap.textContent : '') + (where ? '<small>'+where.textContent+'</small>' : '');
+    lb.classList.add('open'); document.body.classList.add('lb-open');
+    var p = lbv.play(); if (p && p.catch) p.catch(function(){ lbv.muted = true; lbv.play().catch(function(){}); });
+  }
+  Array.prototype.slice.call(document.querySelectorAll('.reel .zoom')).forEach(function(b){
+    b.addEventListener('click', function(e){ e.stopPropagation(); openLB(b.closest('.reel')); });
+  });
+  lb.querySelector('.lb-close').addEventListener('click', closeLB);
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLB(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && lb.classList.contains('open')) closeLB(); });
+
+  // ---- checklist ----
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#checklist input'));
+  var KEY = 'china-trip-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e){ saved = {}; }
+  boxes.forEach(function(b){ if (saved[b.id]) b.checked = true; });
+  function update(){
+    var n = boxes.filter(function(b){return b.checked}).length;
+    document.getElementById('prog-t').textContent = n+' / '+boxes.length;
+    document.getElementById('prog-b').style.width = (n/boxes.length*100)+'%';
+    var o = {}; boxes.forEach(function(b){ if(b.checked) o[b.id]=1; });
+    try { localStorage.setItem(KEY, JSON.stringify(o)); } catch(e){}
+  }
+  boxes.forEach(function(b){ b.addEventListener('change', update); });
+  update();
+})();
+</script>
+</body>
+</html>
