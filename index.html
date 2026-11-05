@@ -112,7 +112,9 @@ section{padding-block:clamp(48px,8vw,96px)}
 @media (max-width:480px){.leg{grid-template-columns:auto 1fr}.leg .how{grid-column:2;text-align:left;white-space:normal}.leg .how b{display:inline;margin-left:6px}}
 .nights{margin-top:36px}
 .bar{display:flex;height:54px;border-radius:16px;overflow:hidden;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
-.bar div{display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:clamp(11px,1.6vw,16px);color:#14122B;min-width:0;overflow:hidden;white-space:nowrap}
+.bar div{display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:clamp(11px,1.6vw,16px);color:#14122B;min-width:0;overflow:hidden;white-space:nowrap;padding:0 6px}
+.bar div .s{display:none}
+@media (max-width:760px){.bar div{font-size:12px}.bar .gz .l,.bar .hk .l{display:none}.bar .gz .s,.bar .hk .s{display:inline}}
 .bar .bj{background:var(--orange);color:#fff;flex:5}
 .bar .sh{background:var(--blue);color:#fff;flex:4}
 .bar .gz{background:var(--violet);color:#fff;flex:3}
@@ -355,7 +357,7 @@ body.lb-open{overflow:hidden}
     </div>
     <div class="nights">
       <div class="bar" aria-label="21 ночь по городам">
-        <div class="bj">Пекин 5</div><div class="sh">Шанхай 4</div><div class="gz">Гуанчжоу 3</div><div class="hk">Гонконг 3</div><div class="vn">Вьетнам 6</div>
+        <div class="bj">Пекин 5</div><div class="sh">Шанхай 4</div><div class="gz"><span class="l">Гуанчжоу 3</span><span class="s">ГЧ 3</span></div><div class="hk"><span class="l">Гонконг 3</span><span class="s">ГК 3</span></div><div class="vn">Вьетнам 6</div>
       </div>
       <div class="bar-cap"><span>18 дек</span><span>Новый год — 31 дек в Гонконге</span><span>8 янв</span></div>
     </div>
