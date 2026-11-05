@@ -1666,8 +1666,11 @@ body.lb-open{overflow:hidden}
   }
   renderBudget();
   // ---- lazy posters / sources for reels ----
-  var lazyVideos = Array.prototype.slice.call(document.querySelectorAll('video[data-src]'));
-  function hydrate(v){ if (!v.getAttribute('data-src')) return; v.poster = v.getAttribute('data-poster'); v.src = v.getAttribute('data-src'); v.removeAttribute('data-src'); v.removeAttribute('data-poster'); }
+  var lazyVideos = Array.prototype.slice.call(document.querySelectorAll('video[data-poster]'));
+  // poster only: iOS keeps a small budget of media elements with a source, so src is attached on tap and detached from the others
+  function hydrate(v){ var ps = v.getAttribute('data-poster'); if (ps) { v.poster = ps; v.removeAttribute('data-poster'); } }
+  function attach(v){ if (!v.getAttribute('src')) { v.src = v.getAttribute('data-src'); } }
+  function detach(v){ if (v.getAttribute('src')) { v.pause(); v.removeAttribute('src'); v.load(); } }
   if ('IntersectionObserver' in window) {
     var vio = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { hydrate(e.target); vio.unobserve(e.target); } }); }, {rootMargin:'500px 0px'});
     lazyVideos.forEach(function(v){ vio.observe(v); });
@@ -1675,7 +1678,7 @@ body.lb-open{overflow:hidden}
   // ---- reels: tap to play with sound, one at a time ----
   var frames = Array.prototype.slice.call(document.querySelectorAll('.reel .frame')).filter(function(f){ return f.querySelector('video'); });
   function stopOthers(f){
-    frames.forEach(function(o){ if (o!==f){ var ov=o.querySelector('video'); if (!ov.paused) ov.pause(); o.classList.remove('playing'); } });
+    frames.forEach(function(o){ if (o!==f){ var ov=o.querySelector('video'); detach(ov); o.classList.remove('playing'); } });
   }
   frames.forEach(function(f){
     var v = f.querySelector('video');
@@ -1683,6 +1686,7 @@ body.lb-open{overflow:hidden}
       hydrate(v);
       if (v.paused) {
         stopOthers(f);
+        attach(v);
         v.muted = false;
         var p = v.play();
         if (p && p.then) {
@@ -1710,8 +1714,8 @@ body.lb-open{overflow:hidden}
   function closeLB(){ lbv.pause(); lbv.removeAttribute('src'); lbv.load(); lb.classList.remove('open'); document.body.classList.remove('lb-open'); }
   function openLB(card){
     var v = card.querySelector('video'); if (!v) return; hydrate(v);
-    frames.forEach(function(o){ var ov=o.querySelector('video'); if (ov && !ov.paused) ov.pause(); o.classList.remove('playing'); });
-    lbv.poster = v.getAttribute('poster') || ''; lbv.src = v.getAttribute('src'); lbv.muted = false; lbv.loop = true;
+    frames.forEach(function(o){ var ov=o.querySelector('video'); if (ov) detach(ov); o.classList.remove('playing'); });
+    lbv.poster = v.getAttribute('poster') || ''; lbv.src = v.getAttribute('data-src'); lbv.muted = false; lbv.loop = true;
     var cap = card.querySelector('.cap'), where = card.querySelector('.where');
     lbcap.innerHTML = (cap ? cap.textContent : '') + (where ? '<small>'+where.textContent+'</small>' : '');
     lb.classList.add('open'); document.body.classList.add('lb-open');
