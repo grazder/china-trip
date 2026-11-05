@@ -59,11 +59,11 @@ section{padding-block:clamp(48px,8vw,96px)}
 .hero .b2{width:38vw;height:38vw;max-width:460px;max-height:460px;background:var(--blue);bottom:-20%;left:-8%}
 .hero .b3{width:22vw;height:22vw;max-width:260px;max-height:260px;background:var(--yellow);top:40%;left:40%}
 .hero .wrap{position:relative}
-.hero h1{font-size:clamp(40px,9.5vw,124px);font-weight:900;letter-spacing:-.03em;line-height:.95;display:flex;flex-direction:column;gap:.04em}
+.hero h1{font-size:clamp(40px,7vw,100px);font-weight:900;letter-spacing:-.03em;line-height:.95;display:flex;flex-direction:column;gap:.04em}
 .hero h1 span{display:inline-block}
 .hero h1 .w1{color:var(--ink)}
-.hero h1 .w2{color:var(--pink);margin-left:clamp(0px,6vw,90px)}
-.hero h1 .w3{color:var(--blue);margin-left:clamp(0px,12vw,180px)}
+.hero h1 .w2{color:var(--pink);margin-left:clamp(0px,4vw,60px)}
+.hero h1 .w3{color:var(--blue);margin-left:clamp(0px,8vw,120px)}
 .hero h1 .arrow{font-size:.55em;color:var(--ink-2);vertical-align:middle;margin:0 .1em}
 .hero-sub{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-weight:800;font-size:15px;background:var(--card);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
@@ -241,6 +241,26 @@ section{padding-block:clamp(48px,8vw,96px)}
 .opt dt{font-weight:800;color:var(--ink-2)}
 .opt dd{margin:0}
 
+
+/* ---------- HERO COLLAGE ---------- */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) clamp(250px,30vw,380px);gap:clamp(20px,4vw,56px);align-items:center}
+.hero-text{min-width:0}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.collage{max-width:340px;margin:40px auto 0}.hero h1{font-size:clamp(40px,10vw,100px)}}
+.collage{position:relative;aspect-ratio:4/5;width:100%;margin-right:clamp(8px,2.5vw,30px)}
+.collage .paper{position:absolute;inset:16% -2% 2% -2%;background:#FFF1CF;border:3px solid var(--ink);border-radius:18px;box-shadow:10px 10px 0 var(--ink);transform:rotate(-3deg);background-image:radial-gradient(rgba(20,18,43,.10) 1px,transparent 1.2px);background-size:14px 14px}
+.collage .tape{position:absolute;width:28%;height:7%;background:rgba(255,214,10,.78);border:1px solid rgba(20,18,43,.3);transform:rotate(-14deg);top:13%;left:-8%;z-index:4}
+.collage .people{position:absolute;left:3%;right:3%;bottom:7%;aspect-ratio:620/718;z-index:2;filter:drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(8px 10px 0 rgba(20,18,43,.3))}
+.collage .people .cut{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,100% 96.5%,96% 99%,91% 96.5%,86% 99.5%,80% 97%,74% 100%,68% 97%,62% 99.5%,56% 96.5%,50% 99.5%,44% 97%,38% 100%,32% 97%,26% 99.5%,20% 96.5%,14% 99.5%,8% 97%,3% 99.5%,0 97%)}
+.collage .people img{width:100%;height:100%;display:block;object-fit:contain}
+.collage .people svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.collage .lantern{position:absolute;top:-4%;left:4%;width:16%;z-index:4;transform-origin:50% 0;animation:sway 3.4s ease-in-out infinite alternate}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+.collage .seal{position:absolute;right:-3%;bottom:7%;width:20%;z-index:4;transform:rotate(12deg);filter:drop-shadow(3px 3px 0 rgba(20,18,43,.25))}
+.collage .sticker{z-index:5}
+.collage .sticker.s1{left:auto;right:-3%;top:4%;bottom:auto;transform:rotate(8deg)}
+.collage .sticker.s2{left:-6%;right:auto;bottom:-5%;top:auto;transform:rotate(-6deg)}
+@media (max-width:760px){.collage .sticker{display:block;font-size:12px;padding:8px 12px}}
+@media (prefers-reduced-motion:reduce){.collage .lantern{animation:none}}
 /* ---------- BUDGET ---------- */
 .budget{background:var(--bg-2)}
 .bud-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:end;margin-top:22px}
@@ -330,9 +350,8 @@ body.lb-open{overflow:hidden}
 <!-- ============ HERO ============ -->
 <header class="hero">
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-  <div class="sticker s1">18 дек → 8 янв</div>
-  <div class="sticker s2">21 ночь · 4 переезда</div>
   <div class="wrap">
+    <div class="hero-text">
     <span class="eyebrow">Зима 2026/27 · режим чилла</span>
     <h1 style="margin-top:18px">
       <span class="w1">Китай</span>
@@ -353,6 +372,44 @@ body.lb-open{overflow:hidden}
       <div class="cd"><b id="cd-m">—</b><small>минут</small></div>
     </div>
     <p style="margin-top:14px;font-weight:700;color:var(--ink-2)">до вылета в Пекин, 18 декабря</p>
+    </div>
+    <div class="collage" aria-label="Мы, коллаж">
+      <div class="paper"></div>
+      <div class="tape"></div>
+      <svg class="lantern" viewBox="0 0 100 160" aria-hidden="true">
+        <path d="M50 0 V24" stroke="#14122B" stroke-width="3"/>
+        <rect x="33" y="22" width="34" height="11" rx="3" fill="#D4A017" stroke="#14122B" stroke-width="3"/>
+        <ellipse cx="50" cy="76" rx="38" ry="44" fill="#E3242B" stroke="#14122B" stroke-width="3"/>
+        <path d="M30 40 q-10 36 0 72 M42 34 q-6 42 0 84 M58 34 q6 42 0 84 M70 40 q10 36 0 72" fill="none" stroke="#FFD86B" stroke-width="2" opacity=".7"/>
+        <text x="50" y="88" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC',serif" font-weight="900" font-size="34" fill="#FFE38A">福</text>
+        <rect x="36" y="117" width="28" height="10" rx="3" fill="#D4A017" stroke="#14122B" stroke-width="3"/>
+        <path d="M50 127 V150 M44 150 q6 8 12 0" fill="none" stroke="#C8102E" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="people">
+        <div class="cut">
+        <img src="photos/collage-people.png" alt="Мы вдвоём, вырезаны из фото" width="620" height="718" decoding="async">
+        <svg viewBox="0 0 620 718" aria-hidden="true">
+          <defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE38A"/><stop offset=".5" stop-color="#D4A017"/><stop offset="1" stop-color="#FFE38A"/></linearGradient></defs>
+          <!-- folding fan in her hand -->
+          <path d="M318 559.2 L180.8 596 A170 170 0 0 1 430 404.8 L359 527.8 A28 28 0 0 0 318 559.2 Z" fill="#FFF1CF" stroke="#14122B" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M195.3 592.1 A155 155 0 0 1 422.5 417.8" fill="none" stroke="#C8102E" stroke-width="30"/>
+          <path d="M213 586 A138 138 0 0 1 414 432" fill="none" stroke="url(#gold)" stroke-width="3"/>
+          <g stroke="#8F0B1E" stroke-width="2" opacity=".8">
+            <path d="M345 552 L180.8 596 M345 552 L175 552 M345 552 L180.8 508 M345 552 L197.8 432 M345 552 L225 405 M345 552 L260 388 M345 552 L300 382.5 M345 552 L345 382 M345 552 L389 388 M345 552 L430 404.8"/>
+          </g>
+          <circle cx="345" cy="552" r="9" fill="url(#gold)" stroke="#14122B" stroke-width="3"/>
+          <path d="M345 561 q-6 22 2 44" fill="none" stroke="#C8102E" stroke-width="3"/>
+          <path d="M339 604 l16 0 l6 36 l-28 0 z" fill="#C8102E" stroke="#14122B" stroke-width="2"/>
+        </svg>
+        </div>
+      </div>
+      <svg class="seal" viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="6" y="6" width="88" height="88" rx="8" fill="#C8102E" stroke="#8F0B1E" stroke-width="4" stroke-dasharray="14 3 6 2"/>
+        <text x="50" y="68" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC',serif" font-weight="900" font-size="54" fill="#FFF1CF">出发</text>
+      </svg>
+      <div class="sticker s1">18 дек → 8 янв</div>
+      <div class="sticker s2">21 ночь · 4 переезда</div>
+    </div>
   </div>
 </header>
 
