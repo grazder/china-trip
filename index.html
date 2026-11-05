@@ -1663,9 +1663,6 @@ body.lb-open{overflow:hidden}
     document.getElementById('bud-sum').textContent=Math.round(tl/10)*10+'–'+Math.round(th/10)*10;
   }
   renderBudget();
-    });
-  });
-  renderBudget();
   // ---- reels: tap to play with sound, one at a time ----
   var frames = Array.prototype.slice.call(document.querySelectorAll('.reel .frame')).filter(function(f){ return f.querySelector('video'); });
   function stopOthers(f){
