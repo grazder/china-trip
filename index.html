@@ -1593,11 +1593,11 @@ body.lb-open{overflow:hidden}
   function renderBudget(){
     var bar=document.getElementById('bud-bar'), grid=document.getElementById('bud-grid'); if(!bar||!grid) return;
     bar.innerHTML=''; grid.innerHTML='';
-    var tl=0, th=0;
+    var tl=0, th=0, mid=BUD.reduce(function(acc,b){ return acc+(b.lo+b.hi)/2; },0);
     BUD.forEach(function(b){
       tl+=b.lo; th+=b.hi;
       var seg=document.createElement('div'); seg.style.flex=((b.lo+b.hi)/2); seg.style.background=b.c; if(b.dark) seg.className='dark';
-      seg.textContent=b.n.split(' ·')[0]; seg.title=b.n+': '+br(b.lo,b.hi)+' тыс. ₽'; bar.appendChild(seg);
+      if ((b.lo+b.hi)/2/mid>=0.07) seg.textContent=b.n.split(' ·')[0]; seg.title=b.n+': '+br(b.lo,b.hi)+' тыс. ₽'; bar.appendChild(seg);
       var card=document.createElement('div'); card.className='bud-card';
       card.innerHTML='<div class="h"><i style="background:'+b.c+'"></i>'+b.n+'</div><div class="sum">'+br(b.lo,b.hi)+'<small>тыс. ₽</small></div><ul>'+
         b.items.map(function(it){ return '<li><span>'+it[0]+'</span><b>'+br(it[1],it[2])+'</b></li>'; }).join('')+'</ul>';
