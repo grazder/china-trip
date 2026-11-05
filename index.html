@@ -1589,7 +1589,7 @@ body.lb-open{overflow:hidden}
   ];
   var budWho = 2;
   function bf(v){ return v<10 && v%1 ? v.toFixed(1).replace('.',',') : Math.round(v); }
-  function br(lo,hi){ lo/=budWho; hi/=budWho; var a=bf(lo), b=bf(hi); return a===b ? ''+a : a+'–'+b; }
+  function br(lo,hi){ var k=2/budWho; lo/=k; hi/=k; var a=bf(lo), b=bf(hi); return a===b ? ''+a : a+'–'+b; }
   function renderBudget(){
     var bar=document.getElementById('bud-bar'), grid=document.getElementById('bud-grid'); if(!bar||!grid) return;
     bar.innerHTML=''; grid.innerHTML='';
@@ -1603,7 +1603,7 @@ body.lb-open{overflow:hidden}
         b.items.map(function(it){ return '<li><span>'+it[0]+'</span><b>'+br(it[1],it[2])+'</b></li>'; }).join('')+'</ul>';
       grid.appendChild(card);
     });
-    var rl=Math.round(tl/budWho/10)*10, rh=Math.round(th/budWho/10)*10;
+    var k=2/budWho, rl=Math.round(tl/k/10)*10, rh=Math.round(th/k/10)*10;
     document.getElementById('bud-sum').textContent=rl+'–'+rh;
     document.getElementById('bud-who').textContent=(budWho===2?'на двоих':'на одного')+' за всю поездку, 21 ночь, без шопинга';
   }
