@@ -1397,7 +1397,7 @@ body.lb-open{overflow:hidden}
     </div>
     <div class="bud-bar" id="bud-bar" aria-hidden="true"></div>
     <div class="bud-grid" id="bud-grid"></div>
-    <p class="bud-note">Как считал: курсы <b>1 ¥ ≈ 11,5 ₽</b>, <b>1 HK$ ≈ 10,7 ₽</b>, <b>1 $ ≈ 83 ₽</b>. Отели из подборок выше, за двоих с налогами, цены Trip.com на наши даты от 5 ноября 2026. Перелёты по агрегаторам на зиму, вилка «купить сейчас / купить в декабре». Еда по вилке «стритфуд и лапша» / «рестораны и бары каждый вечер». Нижняя граница — экономно, верхняя — ни в чём себе не отказывая.</p>
+    <p class="bud-note">Как считал: курсы <b>1 ¥ ≈ 11,5 ₽</b>, <b>1 HK$ ≈ 10,7 ₽</b>, <b>1 $ ≈ 83 ₽</b>. Отели из подборок выше, за двоих с налогами, цены Trip.com на наши даты от 5 ноября 2026. Перелёты по агрегаторам на зиму, вилка «купить сейчас / купить в декабре». Еда по вилке «стритфуд и лапша» / «рестораны и бары каждый вечер». Нижняя граница — экономно, верхняя — ни в чём себе не отказывая. Метка <b>·1</b> — платится один раз на номер или машину, в режиме «если одному» не делится.</p>
   </div>
 </section>
 
@@ -1604,7 +1604,7 @@ body.lb-open{overflow:hidden}
     cats.forEach(function(c){
       var b=c.b; tl+=c.lo; th+=c.hi;
       var seg=document.createElement('div'); seg.style.flex=((c.lo+c.hi)/2); seg.style.background=b.c; if(b.dark) seg.className='dark';
-      if ((c.lo+c.hi)/2/mid>=0.07) seg.textContent=b.n.split(' ·')[0];
+      if ((c.lo+c.hi)/2/mid>=0.1) seg.textContent=b.n.split(' ·')[0];
       seg.title=b.n+': '+brange(c.lo,c.hi)+' тыс. ₽'; bar.appendChild(seg);
       var card=document.createElement('div'); card.className='bud-card';
       card.innerHTML='<div class="h"><i style="background:'+b.c+'"></i>'+b.n+'</div><div class="sum">'+brange(c.lo,c.hi)+'<small>тыс. ₽</small></div><ul>'+
