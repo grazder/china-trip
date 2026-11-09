@@ -308,6 +308,7 @@ section{padding-block:clamp(48px,8vw,96px)}
 .prac h2{color:var(--bg)}
 .pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
 @media (max-width:860px){.pgrid{grid-template-columns:1fr}}
+.gym{display:inline-block;font-size:12px;font-weight:700;line-height:1.4;padding:1px 8px;border-radius:999px;background:rgba(127,127,127,.16);white-space:nowrap;vertical-align:1px}.gym.no{opacity:.6;font-weight:600}
 .pc{border:2px solid rgba(255,255,255,.25);border-radius:22px;padding:20px;min-width:0}
 .pc h3{font-size:18px;margin-bottom:10px}
 .pc h3 span{display:inline-block;padding:4px 10px;border-radius:8px;margin-right:6px;color:#14122B}
@@ -358,8 +359,8 @@ body.lb-open{overflow:hidden}
     </h1>
     <div class="hero-sub">
       <span class="chip">✈️ из Москвы · ~8 ч туда, ~10 ч обратно</span>
-      <span class="chip o">🏯 Пекин · 5 ночей</span>
-      <span class="chip b">🌆 Шанхай · 4</span>
+      <span class="chip o">🏯 Пекин · 4 ночи</span>
+      <span class="chip b">🌆 Шанхай · 5</span>
       <span class="chip v">🏮 Гуанчжоу · 3</span>
       <span class="chip p">🎆 Гонконг · 3 + НГ</span>
       <span class="chip l">🏖 Вьетнам · 6</span>
@@ -430,8 +431,8 @@ body.lb-open{overflow:hidden}
       </div>
       <div class="legs">
         <div class="leg"><div class="n" style="background:var(--yellow)">✈</div><div><div class="t">Москва</div><div class="d">18 дек, вечерний вылет из Шереметьево · прямой Аэрофлот или Air China</div></div><div class="how">→ Пекин<b>самолёт ~8 ч</b></div></div>
-        <div class="leg"><div class="n" style="background:var(--orange);color:#fff">1</div><div><div class="t">Пекин</div><div class="d">прилёт утром 19-го · 4 ночи в отеле · Стена, Universal, хутуны</div></div><div class="how">→ Шанхай<b>поезд 4,5 ч</b></div></div>
-        <div class="leg"><div class="n" style="background:var(--blue);color:#fff">2</div><div><div class="t">Шанхай</div><div class="d">23–27 дек · 4 ночи · Рождество на Бунде</div></div><div class="how">→ Гуанчжоу<b>самолёт 2,5 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--orange);color:#fff">1</div><div><div class="t">Пекин</div><div class="d">прилёт утром 19-го · 3 ночи в отеле · Запретный город, Стена, Universal</div></div><div class="how">→ Шанхай<b>поезд 4,5 ч</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--blue);color:#fff">2</div><div><div class="t">Шанхай</div><div class="d">22–27 дек · 5 ночей · Рождество на Бунде</div></div><div class="how">→ Гуанчжоу<b>самолёт 2,5 ч</b></div></div>
         <div class="leg"><div class="n" style="background:var(--violet);color:#fff">3</div><div><div class="t">Гуанчжоу</div><div class="d">27–30 дек · 3 ночи · Canton Tower, димсам, дешёвые отели</div></div><div class="how">→ Гонконг<b>поезд 50 мин</b></div></div>
         <div class="leg"><div class="n" style="background:var(--pink);color:#fff">4</div><div><div class="t">Гонконг</div><div class="d">30 дек – 2 янв · 3 ночи · Новый год и день отойти</div></div><div class="how">→ Дананг<b>самолёт 2 ч</b></div></div>
         <div class="leg"><div class="n" style="background:var(--lime)">5</div><div><div class="t">Вьетнам</div><div class="d">2–8 янв · 6 ночей · одна база, пляж</div></div><div class="how">→ Москва 8 янв<b>~10 ч прямой · 13–14 ч со стыковкой</b></div></div>
@@ -453,9 +454,9 @@ body.lb-open{overflow:hidden}
     <h2 style="margin-top:14px">Каждому городу свой вайб</h2>
     <div class="tickets">
       <article class="ticket bj">
-        <div class="k">Билет 01 · 18–23 дек</div>
+        <div class="k">Билет 01 · 18–22 дек</div>
         <h3>Пекин</h3>
-        <div class="big">5<small>НОЧЕЙ · 1 В САМОЛЁТЕ</small></div>
+        <div class="big">4<small>НОЧИ · 1 В САМОЛЁТЕ</small></div>
         <ul>
           <li>Стена Мутяньюй, канатка и тобогган</li>
           <li>Universal: Хогвартс в рождественских огнях</li>
@@ -466,14 +467,14 @@ body.lb-open{overflow:hidden}
         <div class="vid"><a href="#beijing">🎬 18 рилсов по дням</a></div>
       </article>
       <article class="ticket sh">
-        <div class="k">Билет 02 · 23–27 дек</div>
+        <div class="k">Билет 02 · 22–27 дек</div>
         <h3>Шанхай</h3>
-        <div class="big">4<small>НОЧИ</small></div>
+        <div class="big">5<small>НОЧЕЙ</small></div>
         <ul>
           <li>Рождество 24–25 на Бунде</li>
           <li>Французская концессия: кофе, бутики</li>
           <li>Баня Shui Guo на Рождество</li>
-          <li>Сучжоу на полдня, если захочется</li>
+          <li>Лишний день: Сучжоу или просто город</li>
         </ul>
         <div class="temp">🌫 +3…+10° · сыро</div>
         <div class="vid"><a href="#shanghai">🎬 19 рилсов по дням</a></div>
@@ -525,7 +526,7 @@ body.lb-open{overflow:hidden}
 <section class="beijing" id="beijing">
   <div class="wrap">
     <span class="eyebrow">Пекин по дням</span>
-    <h2 style="margin-top:14px">Три главных места, два свободных дня</h2>
+    <h2 style="margin-top:14px">Три главных места за три дня, утром в Шанхай</h2>
     <div class="ratio">
       <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
       <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
@@ -535,20 +536,20 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>19–23 дек · 4 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <div class="head"><div class="date">🏨 Отель<small>19–22 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
           <h3>Отели до 10 тысяч, у каждого свой тикток</h3>
           <ul>
-            <li><span class="tm">1</span><span><b>SSAW Garden Hotel</b>, Beixinqiao. Наш район, 9.5, ¥635–675 ≈ 7 300–7 800 ₽. Мой выбор. <a href="https://www.trip.com/hotels/beijing-hotel-detail-116869379/ssaw-garden-hotel-beijing/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">2</span><span><b>Stey Wangfujing</b>, апарт-отель с кухней, 8.6, ¥659–700 ≈ 7 600–8 000 ₽, 20 минут пешком до хутунов. <a href="https://www.trip.com/hotels/beijing-hotel-detail-436918/stey-wangfujing/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li class="free"><span class="tm">3</span><span><b>TRUE GO</b>, твой вариант. Филиал Lanyue в Dongsi, двор-сыхэюань, 9.3, ¥388–411 ≈ 4 500–4 700 ₽, единственный в бюджете, <a href="https://www.trip.com/hotels/beijing-hotel-detail-76482399/true-go-hotel-lanyue/" target="_blank" rel="noopener">Trip.com</a>. Филиал Xidan из ролика: 9.5, ¥438–464 ≈ 5 000–5 300 ₽, <a href="https://www.trip.com/hotels/beijing-hotel-detail-45825753/true-go-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li class="free"><span class="tm">4</span><span><b>Atour Nanluoguxiang Shichahai</b>, из подборки, сетевой с китайским дизайном, в хутуне Xiyangwei, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li class="free"><span class="tm">5</span><span><b>JI Hotel Tian'anmen Wangfujing</b>, из подборки, минимализм, 9.6, ¥662–702 ≈ 7 600–8 100 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-67228147/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">1</span><span><b>SSAW Garden Hotel</b> <span class="gym">🏋️ зал</span>, Beixinqiao. Наш район, 9.5, ¥635–675 ≈ 7 300–7 800 ₽. Мой выбор. <a href="https://www.trip.com/hotels/beijing-hotel-detail-116869379/ssaw-garden-hotel-beijing/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">2</span><span><b>Stey Wangfujing</b> <span class="gym">🏋️ зал 24 ч</span>, апарт-отель с кухней, 8.6, ¥659–700 ≈ 7 600–8 000 ₽, 20 минут пешком до хутунов. <a href="https://www.trip.com/hotels/beijing-hotel-detail-436918/stey-wangfujing/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">3</span><span><b>TRUE GO</b> <span class="gym no">без зала</span>, твой вариант. Филиал Lanyue в Dongsi, двор-сыхэюань, 9.3, ¥388–411 ≈ 4 500–4 700 ₽, единственный в бюджете, <a href="https://www.trip.com/hotels/beijing-hotel-detail-76482399/true-go-hotel-lanyue/" target="_blank" rel="noopener">Trip.com</a>. Филиал Xidan из ролика: 9.5, ¥438–464 ≈ 5 000–5 300 ₽, <a href="https://www.trip.com/hotels/beijing-hotel-detail-45825753/true-go-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">4</span><span><b>Atour Nanluoguxiang Shichahai</b> <span class="gym no">без зала</span>, из подборки, сетевой с китайским дизайном, в хутуне Xiyangwei, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li class="free"><span class="tm">5</span><span><b>JI Hotel Tian'anmen Wangfujing</b> <span class="gym">🏋️ зал</span>, из подборки, минимализм, 9.6, ¥662–702 ≈ 7 600–8 100 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-67228147/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="alt-head">Ещё три с Trip.com по параметрам: до 5 тысяч, центр, оценка 9+, тысячи отзывов, без тиктоков</div>
           <ul class="alt">
-            <li><span class="tm">A</span><span><b>The Yard Hotel, Tian'anmen Square</b>, хутунный стиль у Qianmen, 9.3 по 7 800 отзывам, ¥361 ≈ 4 200 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-8986081/the-yard-hotel-beijing-tian-anmen-square/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">B</span><span><b>Manxin Hotel Temple of Heaven</b>, у Храма Неба и метро, 9.7 по 4 300 отзывам, ¥420 ≈ 4 800 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-61134552/manxin-hotel-beijing-temple-of-heaven/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">C</span><span><b>Atour Nanluoguxiang Shichahai</b>, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽, чуть выше бюджета, зато в хутуне. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">A</span><span><b>The Yard Hotel, Tian'anmen Square</b> <span class="gym no">без зала</span>, хутунный стиль у Qianmen, 9.3 по 7 800 отзывам, ¥361 ≈ 4 200 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-8986081/the-yard-hotel-beijing-tian-anmen-square/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>Manxin Hotel Temple of Heaven</b> <span class="gym">🏋️ маленький зал</span>, у Храма Неба и метро, 9.7 по 4 300 отзывам, ¥420 ≈ 4 800 ₽. <a href="https://www.trip.com/hotels/beijing-hotel-detail-61134552/manxin-hotel-beijing-temple-of-heaven/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Atour Nanluoguxiang Shichahai</b> <span class="gym no">без зала</span>, наш район, 9.3, ¥567–602 ≈ 6 500–6 900 ₽, чуть выше бюджета, зато в хутуне. <a href="https://www.trip.com/hotels/beijing-hotel-detail-12659788/atour-hotel-beijing-nanluoguxiang-shi-cha-hai-park/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="note">Фильтр для 1–2: ролик с 500+ лайками. У True Go ролик на 55 лайков, добавлен по твоей просьбе. Всё дороже 10 тысяч за ночь убрано (Qianmen Shàn, Atour Wangfujing). Цены Trip.com на наши даты, за двоих</div>
         </div>
@@ -659,22 +660,28 @@ body.lb-open{overflow:hidden}
           <div class="note">С собой в салон: паспорт, адрес отеля на китайском для карточки прилёта, VPN уже установлен, Alipay с привязанной картой</div>
         </div>
       </article>
-      <article class="dayrow">
+      <article class="dayrow anchor">
         <div class="plan">
-          <div class="head"><div class="date">19 дек<small>суббота · прилёт</small></div><span class="tag chill">чилл</span></div>
-          <h3>Приземлились, день без плана</h3>
+          <div class="head"><div class="date">19 дек<small>суббота · прилёт</small></div><span class="tag anch">главное</span></div>
+          <h3>Запретный город, Jingshan и закат на льду Houhai</h3>
           <ul>
-            <li><span class="tm">10:00</span><span>Прилёт. Didi или аэроэкспресс до отеля, около часа</span></li>
-            <li><span class="tm">12:00</span><span>Заселиться, бросить вещи, обед рядом с отелем</span></li>
-            <li class="free"><span class="tm">день</span><span>Озёра Houhai: лёд, коньки, санки-стулья, чай</span></li>
-            <li class="free"><span class="tm">16:00</span><span>Прогулка по Gulou East Street: винтаж, винил, скейт-шопы, мелкие бары</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Хутуны вокруг Nanluoguxiang, стритфуд. Ужин: старопекинский хого в медном котле, тонкая баранина, в 友涮 (Youshuan) на Dongsi, Chaoyangmennei 243. Одна станция по линии 6, около 61 ¥ на человека</span></li>
+            <li><span class="tm">10:00</span><span>Прилёт. Didi или аэроэкспресс до отеля, около часа. Бросить вещи, быстрый обед рядом</span></li>
+            <li><span class="tm">12:30</span><span>Запретный город: заходим с юга, через ворота Тяньаньмэнь и Меридиональные ворота, 2–2,5 часа по центральной оси, выходим через северные ворота Shenwumen</span></li>
+            <li><span class="tm">15:00</span><span>Напротив северных ворот холм в парке Jingshan: весь дворец сверху, 30–40 минут</span></li>
+            <li><span class="tm">16:00</span><span>Пешком минут 20 до озёр Shichahai / Houhai: ледовые велосипеды и санки-стулья, закат около 16:50</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Хутуны вокруг Nanluoguxiang и Gulou East Street, стритфуд. Ужин: старопекинский хого в медном котле, тонкая баранина, в 友涮 (Youshuan) на Dongsi, Chaoyangmennei 243. Одна станция по линии 6, около 61 ¥ на человека</span></li>
             <li class="free"><span class="tm">21:00</span><span>Первое пиво в Great Leap Brewing #6 во дворике в хутуне</span></li>
             <li class="free"><span class="tm">если силы</span><span>Панк-концерт в School Bar на Wudaoying или коктейли в баре-трубе</span></li>
           </ul>
-          <div class="note">Жить: Gulou / Nanluoguxiang / Dongsi, всё пешком, метро 2/5/8. Джетлаг +5 часов: спать сколько хочется</div>
+          <div class="note">Ночь спим в самолёте, поэтому сразу в главное. Билет в Запретный город продают онлайн за 7 дней, по паспорту: брать дневной слот (вход с 11:00), последний вход зимой около 15:30, так что даже при задержке рейса успеваем. По понедельникам закрыт. Каток на Shichahai открывают, когда встанет лёд, обычно во второй половине декабря. Жить: Gulou / Nanluoguxiang / Dongsi</div>
         </div>
         <div class="day-reels">
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video data-src="reels/beijing-forbidden-city.mp4" data-poster="reels/beijing-forbidden-city.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Запретный город · 19 дек</span>
+            <div class="cap">Самый большой дворец в мире, с дрона</div>
+            <div class="by">720 000 м², больше 8700 комнат · <a href="https://www.tiktok.com/@bastien.larnaud/video/7548182645105085718" target="_blank" rel="noopener">@bastien.larnaud</a></div>
+          </article>
           <article class="reel" style="--tilt:-1deg">
             <div class="frame"><video data-src="reels/beijing-nanluoguxiang-food.mp4" data-poster="reels/beijing-nanluoguxiang-food.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
             <span class="where">Nanluoguxiang</span>
@@ -711,6 +718,12 @@ body.lb-open{overflow:hidden}
             <div class="cap">Панк и метал в хутуне, концерты каждый вечер</div>
             <div class="by">Локальные группы, вход 100–200 ¥, в 5 минутах от храма Ламы · <a href="https://www.tiktok.com/@bella_adame_/video/7566507489752141070" target="_blank" rel="noopener">@bella_adame_</a></div>
           </article>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video data-src="reels/beijing-wudaoying.mp4" data-poster="reels/beijing-wudaoying.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Wudaoying hutong · рядом с отелем</span>
+            <div class="cap">Хутун с кофейнями у храма Ламы</div>
+            <div class="by">Кофейни и лавки на любое утро, School Bar на той же улице · <a href="https://www.tiktok.com/@18.rmm/video/7676942487327395105" target="_blank" rel="noopener">@18.rmm</a></div>
+          </article>
           <article class="reel" style="--tilt:-.8deg">
             <div class="frame"><video data-src="reels/beijing-chimney-bar.mp4" data-poster="reels/beijing-chimney-bar.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
             <span class="where">Бар в заводской трубе · адрес уточнить</span>
@@ -726,11 +739,11 @@ body.lb-open{overflow:hidden}
           <ul>
             <li><span class="tm">10:00</span><span>Выезд с водителем на Мутяньюй, 1,5 ч</span></li>
             <li><span class="tm">11:30</span><span>Канатка вверх, башни 14→20, вниз тобогган. На Стене 2–2,5 часа</span></li>
-            <li><span class="tm">15:30</span><span>Обратно в городе: поздний обед, душ, лежать</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Sanlitun: Taikoo Li, потом коктейли в Botany (топ-50 баров Азии) или спикизи Janes &amp; Hooch</span></li>
-            <li class="free"><span class="tm">или</span><span>Не ехать в Sanlitun: Modernista, хутунный бар в стиле 1930-х с живым джазом, или Mao Mao Chong с коктейлями на байцзю</span></li>
+            <li><span class="tm">15:30</span><span>Обратно в городе. Поздний обед: чжацзянмянь в No 69 Fangzhuanchang. По дороге кондитерская Honghua Dianxinju на Dongsi, Dongsi South Street 36, выход C: китайские пирожные, коробку взять в поезд, около 48 ¥ на человека. Потом душ и лежать</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Утка по-пекински: Siji Minfu у восточных ворот Запретного города или Da Dong. Рядом Wangfujing: Shonen Jump Cafe и Jump Shop в молле Wangfujing Xiyue, Ванфуцзин 301, до 22:00. В шоп просто зайти, на кафе бронь заранее</span></li>
+            <li class="free"><span class="tm">или</span><span>Бары: Sanlitun с Taikoo Li, Botany и Janes &amp; Hooch, или хутунные Modernista с живым джазом и Mao Mao Chong с коктейлями на байцзю</span></li>
           </ul>
-          <div class="note">Канатка зимой 8:30–16:30, при гололёде могут закрыть. Наличные с собой</div>
+          <div class="note">Канатка зимой 8:30–16:30, при гололёде могут закрыть. Наличные с собой. Утку бронировать через отель</div>
         </div>
         <div class="day-reels">
           <article class="reel" style="--tilt:.9deg">
@@ -750,6 +763,24 @@ body.lb-open{overflow:hidden}
             <span class="where">Sanlitun · вечер</span>
             <div class="cap">«Самый крутой молл», шопинг после Стены</div>
             <div class="by">Taikoo Li и соседние моллы, рядом Botany и Janes &amp; Hooch · <a href="https://www.tiktok.com/@giatort/video/7544775769440980255" target="_blank" rel="noopener">@giatort</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video data-src="reels/beijing-noodles-69.mp4" data-poster="reels/beijing-noodles-69.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">No 69 Fangzhuanchang · обед</span>
+            <div class="cap">Чжацзянмянь: лапша с соевой пастой</div>
+            <div class="by">Хутун Fangzhuanchang 69, метро Qianmen, мишленовский Bib Gourmand · <a href="https://www.tiktok.com/@jescbites/video/7658947751593528597" target="_blank" rel="noopener">@jescbites</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video data-src="reels/beijing-food-spots.mp4" data-poster="reels/beijing-food-spots.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Qianmen · Da Dong</span>
+            <div class="cap">Где есть в Пекине: три места</div>
+            <div class="by">No 69 Fangzhuanchang (лапша), Beijing Pie, Da Dong (утка) · <a href="https://www.tiktok.com/@rach.is.hungry/video/7693223039034543392" target="_blank" rel="noopener">@rach.is.hungry</a></div>
+          </article>
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video data-src="reels/beijing-jump-cafe.mp4" data-poster="reels/beijing-jump-cafe.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Shonen Jump Cafe · Wangfujing</span>
+            <div class="cap">Первое Jump-кафе в Китае: стена из манги, которая крутится, и шоп с мерчем</div>
+            <div class="by">Молл Wangfujing Xiyue, 10:00–22:00, кафе по брони, открылось в апреле 2026 · 4 тысячи лайков · <a href="https://www.tiktok.com/@hafizur_r/video/7675031320044604694" target="_blank" rel="noopener">@hafizur_r</a></div>
           </article>
         </div>
       </article>
@@ -780,64 +811,18 @@ body.lb-open{overflow:hidden}
           </article>
         </div>
       </article>
-      <article class="dayrow anchor">
-        <div class="plan">
-          <div class="head"><div class="date">22 дек<small>вторник</small></div><span class="tag anch">главное</span></div>
-          <h3>Запретный город, потом ничего</h3>
-          <ul>
-            <li><span class="tm">10:30</span><span>Вход, 2,5 часа по центральной оси, без попыток обойти всё</span></li>
-            <li><span class="tm">13:00</span><span>Северные ворота → парк Jingshan, вид сверху, 40 минут</span></li>
-            <li class="free"><span class="tm">14:00</span><span>Поздний обед: чжацзянмянь в No 69 Fangzhuanchang, хутун у Qianmen</span></li>
-            <li class="free"><span class="tm">день</span><span>Qianmen и Dashilan: старые улицы, лавки, кофе на Yangmeizhu Xiejie. Или Wangfujing: Shonen Jump Cafe и Jump Shop в молле Wangfujing Xiyue, Ванфуцзин 301, 1 этаж, метро Wangfujing E1. В шоп просто зайти, на кафе бронь заранее</span></li>
-            <li class="free"><span class="tm">19:00</span><span>Утка по-пекински: Siji Minfu или Da Dong</span></li>
-          </ul>
-          <div class="note">Билет продаётся за 7 дней, брать утренний слот (вход до 11:00), паспорт с собой. Закат ~16:40. Сегодня Дунчжи, зимнее солнцестояние: по пекинской традиции хотя бы раз за день съесть цзяоцзы, пельмени. Проще всего в сети Xijiade 喜家德, брать с креветкой</div>
-        </div>
-        <div class="day-reels">
-          <article class="reel" style="--tilt:-.9deg">
-            <div class="frame"><video data-src="reels/beijing-forbidden-city.mp4" data-poster="reels/beijing-forbidden-city.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Запретный город</span>
-            <div class="cap">Самый большой дворец в мире, с дрона</div>
-            <div class="by">720 000 м², больше 8700 комнат · <a href="https://www.tiktok.com/@bastien.larnaud/video/7548182645105085718" target="_blank" rel="noopener">@bastien.larnaud</a></div>
-          </article>
-          <article class="reel" style="--tilt:1deg">
-            <div class="frame"><video data-src="reels/beijing-food-spots.mp4" data-poster="reels/beijing-food-spots.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Qianmen · Da Dong</span>
-            <div class="cap">Где есть в Пекине: три места</div>
-            <div class="by">No 69 Fangzhuanchang (лапша), Beijing Pie, Da Dong (утка) · <a href="https://www.tiktok.com/@rach.is.hungry/video/7693223039034543392" target="_blank" rel="noopener">@rach.is.hungry</a></div>
-          </article>
-          <article class="reel" style="--tilt:-.8deg">
-            <div class="frame"><video data-src="reels/beijing-noodles-69.mp4" data-poster="reels/beijing-noodles-69.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">No 69 Fangzhuanchang · обед</span>
-            <div class="cap">Чжацзянмянь: лапша с соевой пастой</div>
-            <div class="by">Хутун Fangzhuanchang 69, метро Qianmen, мишленовский Bib Gourmand · <a href="https://www.tiktok.com/@jescbites/video/7658947751593528597" target="_blank" rel="noopener">@jescbites</a></div>
-          </article>
-          <article class="reel" style="--tilt:.9deg">
-            <div class="frame"><video data-src="reels/beijing-jump-cafe.mp4" data-poster="reels/beijing-jump-cafe.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Shonen Jump Cafe · Wangfujing</span>
-            <div class="cap">Первое Jump-кафе в Китае: стена из манги, которая крутится, и шоп с мерчем</div>
-            <div class="by">Молл Wangfujing Xiyue, 10:00–22:00, кафе по брони, открылось в апреле 2026 · 4 тысячи лайков · <a href="https://www.tiktok.com/@hafizur_r/video/7675031320044604694" target="_blank" rel="noopener">@hafizur_r</a></div>
-          </article>
-        </div>
-      </article>
       <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">23 дек<small>среда</small></div><span class="tag move">переезд</span></div>
-          <h3>Поезд в Шанхай</h3>
+          <div class="head"><div class="date">22 дек<small>вторник · утром в Шанхай</small></div><span class="tag move">переезд</span></div>
+          <h3>Утренний поезд, в Шанхае засветло</h3>
           <ul>
-            <li class="free"><span class="tm">10:00</span><span>Поздний завтрак на Wudaoying hutong: кофейни и лавки. Потом кондитерская Honghua Dianxinju на Dongsi, Dongsi South Street 36, выход C метро Dongsi: китайские пирожные коробкой в поезд, около 48 ¥ на человека. Потом выписаться</span></li>
-            <li><span class="tm">13:00</span><span>G-поезд с Beijing South, 4,5 часа. Из отеля в 11:45</span></li>
-            <li><span class="tm">17:30</span><span>Шанхай, заселение, Бунд вечером</span></li>
+            <li><span class="tm">8:00</span><span>Выписаться, Didi до Beijing South, 30–40 минут. Кофе и баоцзы на вокзале</span></li>
+            <li><span class="tm">9:00</span><span>Поезд G7 с Beijing South на Hongqiao, 4,5 часа, еду можно заказать к креслу</span></li>
+            <li><span class="tm">13:40</span><span>Шанхай. Дальше по шанхайскому плану: заселение и Бунд на закате</span></li>
           </ul>
-          <div class="note">На вокзал за 45 минут. Билеты за 2 недели</div>
+          <div class="note">Единственное раннее утро: так Шанхай видно при свете, закат там около 17:00. Время G7 на разных сайтах 9:00 или 10:00, сверить в 12306 при покупке, билеты за 2 недели. Ночной поезд отмели. Сегодня Дунчжи, зимнее солнцестояние: по традиции съесть цзяоцзы, Xijiade 喜家德 есть и в Шанхае, брать с креветкой</div>
         </div>
         <div class="day-reels">
-          <article class="reel" style="--tilt:-.6deg">
-            <div class="frame"><video data-src="reels/beijing-wudaoying.mp4" data-poster="reels/beijing-wudaoying.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Wudaoying hutong · 23 дек, утро</span>
-            <div class="cap">Хутун с кофейнями у храма Ламы</div>
-            <div class="by">Поздний завтрак перед поездом, School Bar на той же улице · <a href="https://www.tiktok.com/@18.rmm/video/7676942487327395105" target="_blank" rel="noopener">@18.rmm</a></div>
-          </article>
           <article class="reel" style="--tilt:.9deg">
             <div class="frame"><video data-src="reels/beijing-shanghai-train.mp4" data-poster="reels/beijing-shanghai-train.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
             <span class="where">Поезд Пекин → Шанхай</span>
@@ -863,16 +848,16 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>23–27 дек · 4 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <div class="head"><div class="date">🏨 Отель<small>22–27 дек · 5 ночей</small></div><span class="tag anch">выбрать</span></div>
           <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
           <ul>
-            <li><span class="tm">1</span><span><b>Tianhua Hotel</b>, People's Square, Huanghe Road. Обновлён в 2025, 9.3, ¥456–483 ≈ 5 200–5 600 ₽. Пешком до Nanjing Road и Бунда, вокруг едальни. Мой выбор. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-6738656/tianhua-hotel-shanghai-people-s-square-nanjing-road-walkway/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">1</span><span><b>Tianhua Hotel</b> <span class="gym no">без зала</span>, People's Square, Huanghe Road. Обновлён в 2025, 9.3, ¥456–483 ≈ 5 200–5 600 ₽. Пешком до Nanjing Road и Бунда, вокруг едальни. Мой выбор. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-6738656/tianhua-hotel-shanghai-people-s-square-nanjing-road-walkway/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="alt-head">Ещё три с Trip.com по параметрам: до 5 тысяч, центр, оценка 9+, тысячи отзывов, без тиктоков</div>
           <ul class="alt">
-            <li><span class="tm">A</span><span><b>Meta Tree Hotel, People's Square</b>, пешком до Бунда, 9.5 по 8 400 отзывам, ¥444 ≈ 5 100 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-431900/meta-tree-hotel-people-s-square-city-center-in-shanghai/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">B</span><span><b>Country Inn &amp; Suites Jing'an</b>, у вокзала и метро, 9.4 по 6 500 отзывам, ¥342 ≈ 3 900 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-106553471/country-inn-suites-by-radisson-shanghai-railway-station-jing-an/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">C</span><span><b>JI Hotel North Bund</b>, с завтраком, 9.6 по 4 900 отзывам, ¥333 ≈ 3 800 ₽, до Бунда 15 минут на метро. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-110435807/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">A</span><span><b>Meta Tree Hotel, People's Square</b> <span class="gym">🏋️ зал</span>, пешком до Бунда, 9.5 по 8 400 отзывам, ¥444 ≈ 5 100 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-431900/meta-tree-hotel-people-s-square-city-center-in-shanghai/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>Country Inn &amp; Suites Jing'an</b> <span class="gym">🏋️ зал, часть тренажёров сломана</span>, у вокзала и метро, 9.4 по 6 500 отзывам, ¥342 ≈ 3 900 ₽. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-106553471/country-inn-suites-by-radisson-shanghai-railway-station-jing-an/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>JI Hotel North Bund</b> <span class="gym">🏋️ зал</span>, с завтраком, 9.6 по 4 900 отзывам, ¥333 ≈ 3 800 ₽, до Бунда 15 минут на метро. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-110435807/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="note">Фильтр: ролик с 500+ лайками и до 10 тысяч за ночь. JOYA и Intercity из роликов дороже 10 тысяч и убраны. Yitel Premium за ¥250 из ролика на 3 тысячи лайков сейчас не принимает брони. Цены Trip.com за двоих</div>
         </div>
@@ -923,13 +908,13 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">23 дек<small>среда · приезд</small></div><span class="tag move">переезд</span></div>
-          <h3>Поезд пришёл, Бунд вечером</h3>
+          <div class="head"><div class="date">22 дек<small>вторник · приезд</small></div><span class="tag move">переезд</span></div>
+          <h3>Приехали днём, Бунд на закате</h3>
           <ul>
-            <li><span class="tm">17:30</span><span>Hongqiao, метро или Didi до отеля, 40–50 минут</span></li>
-            <li class="free"><span class="tm">19:00</span><span>Nanjing East Road: пешеходная улица до набережной. По дороге M&amp;M's World: драже с вашими лицами на заказ, минут 20, и магазин сладостей</span></li>
-            <li class="free"><span class="tm">20:00</span><span>Бунд в огнях: вид на Пудун с набережной, это главный вид Шанхая</span></li>
-            <li class="free"><span class="tm">21:00</span><span>Ужин: раменная в аниме-молле Bailian ZX, если хочется странного, или что-то у Бунда</span></li>
+            <li><span class="tm">13:40</span><span>Hongqiao, метро 2 или Didi до отеля, 40–50 минут. Заселение, поздний обед</span></li>
+            <li class="free"><span class="tm">16:00</span><span>Nanjing East Road: пешеходная улица до набережной. По дороге M&amp;M's World: драже с вашими лицами на заказ, минут 20, и магазин сладостей</span></li>
+            <li class="free"><span class="tm">16:50</span><span>Бунд на закате, потом в огнях: вид на Пудун с набережной, это главный вид Шанхая</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Ужин: раменная в аниме-молле Bailian ZX, если хочется странного, или что-то у Бунда</span></li>
           </ul>
           <div class="note">Жить: People's Square или Бунд, оттуда всё пешком и 10 минут метро до концессии</div>
         </div>
@@ -958,6 +943,19 @@ body.lb-open{overflow:hidden}
             <div class="cap">Раменная в аниме-молле</div>
             <div class="by">Идти ради атмосферы: весь ТЦ про аниме и игры · <a href="https://www.instagram.com/reel/DbM9nxrBHRr/" target="_blank" rel="noopener">@dr.dimitrova</a></div>
           </article>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">23 дек<small>среда · лишний день</small></div><span class="tag chill">чилл</span></div>
+          <h3>Сучжоу на день или просто город</h3>
+          <ul>
+            <li class="free"><span class="tm">10:30</span><span>Скоростной поезд в Сучжоу с Shanghai Station или Hongqiao, 25–30 минут</span></li>
+            <li class="free"><span class="tm">11:30</span><span>Сад Скромного управителя 拙政园: пруды, павильоны, мостики. Билет онлайн по паспорту</span></li>
+            <li class="free"><span class="tm">14:00</span><span>Pingjiang Road 平江路: каналы, чайные, лапша по-сучжоуски. К вечеру обратно в Шанхай</span></li>
+            <li class="free"><span class="tm">или</span><span>Остаться в городе: Tianzifang, Jing'an Temple и моллы вокруг, Shonen Jump Cafe в Metro City на Xujiahui</span></li>
+          </ul>
+          <div class="note">День, который забрали у Пекина. Если съездить в Сучжоу сегодня, 26-е остаётся под старый город и бары</div>
         </div>
       </article>
       <article class="dayrow">
@@ -1059,7 +1057,6 @@ body.lb-open{overflow:hidden}
             <li class="free"><span class="tm">10:00</span><span>Завтрак у лавки с данбином на Dingxing Road 6: старошанхайский яичный блин с ютяо, соусами и зеленью, 7–12 ¥. Выход 8 метро People's Square, 300 метров. Работает только утром, позже может закрыться</span></li>
             <li class="free"><span class="tm">11:00</span><span>Yu Garden и базар вокруг, 15 минут пешком: старый Шанхай, пельмени сяолунбао в Nanxiang</span></li>
             <li class="free"><span class="tm">день</span><span>Tianzifang: лабиринт переулков с лавками, или Jing'an Temple и моллы вокруг</span></li>
-            <li class="free"><span class="tm">опц.</span><span>Сучжоу на полдня: поезд 30 минут, сады и каналы. Только если очень захочется</span></li>
             <li class="free"><span class="tm">вечер</span><span>Ужин в Yat Lau Yat (一楼一): гонконгская закусочная в подвале Huashan Square, Huashan Road 328, у Jing'an Temple. Неон, красные стулья, claypot rice и жареное мясо. Потом Speak Low: спикизи за дверью барного магазина, топ-50 Азии</span></li>
           </ul>
           <div class="note">Самый свободный день Шанхая, план можно выкинуть целиком</div>
@@ -1103,10 +1100,11 @@ body.lb-open{overflow:hidden}
           <h3>Самолёт в Гуанчжоу</h3>
           <ul>
             <li class="free"><span class="tm">утро</span><span>Кофе, выписаться, последняя прогулка по Бунду</span></li>
-            <li><span class="tm">11:30</span><span>Из отеля в аэропорт, около часа. Рейс ~14:00, 2,5 часа</span></li>
-            <li><span class="tm">17:30</span><span>Гуанчжоу, заселение, вечером подсветка Canton Tower с набережной</span></li>
+            <li><span class="tm">13:30</span><span>Из отеля в Pudong, около часа</span></li>
+            <li><span class="tm">15:40</span><span>Air China бизнес-классом, PVG T2 → CAN T3, 2 ч 40 мин, кресла 2-2, багаж включён</span></li>
+            <li><span class="tm">18:20</span><span>Гуанчжоу, заселение, вечером подсветка Canton Tower с набережной</span></li>
           </ul>
-          <div class="note">Рейс из Hongqiao или Pudong смотря где дешевле. Поезд Шанхай → Гуанчжоу тоже есть, 7–8 часов, если захочется посмотреть страну из окна</div>
+          <div class="note">Бизнес у Air China дороже эконома всего на 4–5 тысяч: 15:40 за 17 457 ₽, осталось меньше 9 мест. Есть ещё 08:00–10:30 за 16 167 ₽, но там 2 места и выезд в 6 утра. Цены за билет на 9 ноября</div>
         </div>
       </article>
     </div>
@@ -1129,13 +1127,13 @@ body.lb-open{overflow:hidden}
           <div class="head"><div class="date">🏨 Отель<small>27–30 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
           <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
           <ul>
-            <li><span class="tm">1</span><span><b>Crowne Plaza Window of Canton</b>, Haizhu, набережная напротив Canton Tower, открыт в 2025. 9.5, ¥746–791 ≈ 8 600–9 100 ₽. Пятизвёздочный за цену трёшки, вид на башню из окна. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-131311026/crowne-plaza-guangzhou-window-of-canton-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">1</span><span><b>Crowne Plaza Window of Canton</b> <span class="gym">🏋️ зал, бассейн, сауна</span>, Haizhu, набережная напротив Canton Tower, открыт в 2025. 9.5, ¥746–791 ≈ 8 600–9 100 ₽. Пятизвёздочный за цену трёшки, вид на башню из окна. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-131311026/crowne-plaza-guangzhou-window-of-canton-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="alt-head">Ещё три с Trip.com по параметрам: центр, оценка 9+, тысячи отзывов, без тиктоков</div>
           <ul class="alt">
-            <li><span class="tm">A</span><span><b>Mercure Tianhe Sports Center</b>, Tianhe, у метро и East Station. 9.6 по 8 500 отзывам, ¥431–457 ≈ 5 000–5 300 ₽. Мой выбор по цене и оценке. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-90697851/mercure-guangzhou-tianhe-sports-center/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">B</span><span><b>JI Hotel Beijing Road</b>, пешеходная Beijing Road, открыт в 2025. 9.2 по 2 200 отзывам, ¥476–504 ≈ 5 500–5 800 ₽. Старый центр, еда вокруг. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-132017727/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">C</span><span><b>Holiday Inn Zhujiang New Town</b>, у Canton Tower и Huacheng Square, обновлён в 2025. 9.6 по 5 500 отзывам, ¥771–818 ≈ 8 900–9 400 ₽. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-8784327/holiday-inn-guangzhou-zhujiang-new-town-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">A</span><span><b>Mercure Tianhe Sports Center</b> <span class="gym">🏋️ зал</span>, Tianhe, у метро и East Station. 9.6 по 8 500 отзывам, ¥431–457 ≈ 5 000–5 300 ₽. Мой выбор по цене и оценке. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-90697851/mercure-guangzhou-tianhe-sports-center/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>JI Hotel Beijing Road</b> <span class="gym">🏋️ зал</span>, пешеходная Beijing Road, открыт в 2025. 9.2 по 2 200 отзывам, ¥476–504 ≈ 5 500–5 800 ₽. Старый центр, еда вокруг. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-132017727/ji-hotel/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Holiday Inn Zhujiang New Town</b> <span class="gym">🏋️ зал</span>, у Canton Tower и Huacheng Square, обновлён в 2025. 9.6 по 5 500 отзывам, ¥771–818 ≈ 8 900–9 400 ₽. <a href="https://www.trip.com/hotels/guangzhou-hotel-detail-8784327/holiday-inn-guangzhou-zhujiang-new-town-by-ihg/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="note">Правило «не дороже 10 тысяч». voco Shifu из ролика на 882 лайка стоит ¥1 068 и LN Garden Hotel из ролика на 980 тысяч лайков ¥1 261, оба убраны. Цены Trip.com за двоих на 27–30 дек, курс 1 ¥ ≈ 11,5 ₽</div>
         </div>
@@ -1189,8 +1187,8 @@ body.lb-open{overflow:hidden}
           <div class="head"><div class="date">27 дек<small>воскресенье · приезд</small></div><span class="tag move">переезд</span></div>
           <h3>Прилетели в Гуанчжоу</h3>
           <ul>
-            <li><span class="tm">17:00</span><span>Прилёт в Baiyun, метро или Didi до отеля, 40 минут</span></li>
-            <li class="free"><span class="tm">19:00</span><span>Заселение, ужин: кантонская кухня, утка, чар сиу</span></li>
+            <li><span class="tm">18:20</span><span>Прилёт в Baiyun T3, метро или Didi до отеля, 40 минут</span></li>
+            <li class="free"><span class="tm">19:30</span><span>Заселение, ужин: кантонская кухня, утка, чар сиу</span></li>
             <li class="free"><span class="tm">21:00</span><span>Canton Tower с набережной Haixinsha или площади Huacheng: башня меняет цвет всю ночь</span></li>
           </ul>
           <div class="note">Снова Китай: юани, Alipay, VPN. Теплее, чем в Шанхае, +15…+20°</div>
@@ -1244,7 +1242,7 @@ body.lb-open{overflow:hidden}
           <h3>Старый Кантон</h3>
           <ul>
             <li class="free"><span class="tm">11:00</span><span>Димсам-завтрак: Tao Tao Ju или Dian Dou De, брать всё по чуть-чуть</span></li>
-            <li class="free"><span class="tm">13:00</span><span>Shamian Island: колониальные виллы под платанами, кофе, ничего не делать</span></li>
+            <li class="free"><span class="tm">13:00</span><span>Shamian Island: колониальные виллы под платанами, ничего не делать. Кофе в Starbucks Reserve на Shamian 星巴克臻选 广州沙面店: первая в Китае кофейня в стиле Гарри Поттера, Хедвиг у входа, арка платформы 9¾, зал как в Хогвартсе. Тему запускали зимой 2025-го как временную, проверить в Dianping, осталась ли</span></li>
             <li class="free"><span class="tm">14:00</span><span>Liwan: озеро, старые улицы, чай в Panxi, десерты с рынка Shangxiajiu</span></li>
             <li class="free"><span class="tm">вечер</span><span>Ужин с видом на реку или круиз по Жемчужной реке, час, с башней в подсветке</span></li>
           </ul>
@@ -1327,14 +1325,14 @@ body.lb-open{overflow:hidden}
           <div class="head"><div class="date">🏨 Отель<small>30 дек – 2 янв · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
           <h3>До 10 тысяч за ночь на Новый год: почти ничего</h3>
           <ul>
-            <li><span class="tm">1</span><span><b>Mini Central</b>, Ice House Street, самый центр. 7.4, HK$758–779 ≈ 8 100–8 300 ₽. Крошечные «смарт»-номера, зато у Mid-Levels и баров. Единственный в центре до 10 тысяч. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-370823/mini-hotel-central/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">2</span><span><b>Wontonmeen</b>, хостел с отдельными комнатами в Sham Shui Po, Lai Chi Kok Road 135, 2 этаж. Дизайн старого Гонконга, тысячи винтажных вещей, крыша и джаз-уголок XS. 8.8 по 590 отзывам на Booking. Двухместный номер около HK$525–735 ≈ 5 600–7 900 ₽ за ночь. <b>На 30 дек – 2 янв сейчас всё занято</b>: на их сайте осталась только койка в женском дорме, Booking предлагает 28–30 дек, Trip.com брони не принимает. Следить за отменами или написать им в WhatsApp. Метро Prince Edward 10 минут пешком, рядом Oi Man Sang. <a href="https://www.wontonmeen.com/rooms" target="_blank" rel="noopener">Сайт</a> · <a href="https://www.trip.com/hotels/detail/?hotelId=2102856&amp;checkIn=2026-12-30&amp;checkOut=2027-01-02&amp;adult=2" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">1</span><span><b>Mini Central</b> <span class="gym no">без зала</span>, Ice House Street, самый центр. 7.4, HK$758–779 ≈ 8 100–8 300 ₽. Крошечные «смарт»-номера, зато у Mid-Levels и баров. Единственный в центре до 10 тысяч. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-370823/mini-hotel-central/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">2</span><span><b>Wontonmeen</b> <span class="gym no">без зала</span>, хостел с отдельными комнатами в Sham Shui Po, Lai Chi Kok Road 135, 2 этаж. Дизайн старого Гонконга, тысячи винтажных вещей, крыша и джаз-уголок XS. 8.8 по 590 отзывам на Booking. Двухместный номер около HK$525–735 ≈ 5 600–7 900 ₽ за ночь. <b>На 30 дек – 2 янв сейчас всё занято</b>: на их сайте осталась только койка в женском дорме, Booking предлагает 28–30 дек, Trip.com брони не принимает. Следить за отменами или написать им в WhatsApp. Метро Prince Edward 10 минут пешком, рядом Oi Man Sang. <a href="https://www.wontonmeen.com/rooms" target="_blank" rel="noopener">Сайт</a> · <a href="https://www.trip.com/hotels/detail/?hotelId=2102856&amp;checkIn=2026-12-30&amp;checkOut=2027-01-02&amp;adult=2" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="alt-head">Ещё до 10 тысяч на эти даты, но не в центре</div>
           <ul class="alt">
-            <li><span class="tm">A</span><span><b>Regala Skycity</b>, у аэропорта, 25 минут до центра на Airport Express. 8.7 по 13 000 отзывам, HK$894 ≈ 9 600 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-92764015/regala-skycity-hotel-by-regal-hotels/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">B</span><span><b>South Nest</b>, юг острова у Ocean Park, 25 минут до Central на метро. 8.0 по 590 отзывам, HK$847 ≈ 9 100 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-99817230/south-nest/" target="_blank" rel="noopener">Trip.com</a></span></li>
-            <li><span class="tm">C</span><span><b>Harbour Plaza Resort City</b>, Tin Shui Wai, Новые территории, 45 минут до центра. 8.4 по 10 600 отзывам, HK$813 ≈ 8 700 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-436835/harbour-plaza-resort-city/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">A</span><span><b>Regala Skycity</b> <span class="gym">🏋️ зал, бассейн</span>, у аэропорта, 25 минут до центра на Airport Express. 8.7 по 13 000 отзывам, HK$894 ≈ 9 600 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-92764015/regala-skycity-hotel-by-regal-hotels/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>South Nest</b> <span class="gym">🏋️ зал</span>, юг острова у Ocean Park, 25 минут до Central на метро. 8.0 по 590 отзывам, HK$847 ≈ 9 100 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-99817230/south-nest/" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">C</span><span><b>Harbour Plaza Resort City</b> <span class="gym">🏋️ зал, бассейн</span>, Tin Shui Wai, Новые территории, 45 минут до центра. 8.4 по 10 600 отзывам, HK$813 ≈ 8 700 ₽. <a href="https://www.trip.com/hotels/hong-kong-hotel-detail-436835/harbour-plaza-resort-city/" target="_blank" rel="noopener">Trip.com</a></span></li>
           </ul>
           <div class="note">Новогодняя неделя: всё приличное в центре стоит 16–25 тысяч и убрано по правилу «не дороже 10». Остаётся крошечный Mini Central в центре или отели у аэропорта и в Новых территориях. Курс 1 HK$ ≈ 10,7 ₽</div>
         </div>
@@ -1490,7 +1488,7 @@ body.lb-open{overflow:hidden}
     <span class="eyebrow">Сколько это стоит</span>
     <h2 style="margin-top:14px">Три недели Азии по цене одной Европы</h2>
     <div class="bud-top">
-      <div class="bud-total"><span id="bud-sum">400–630</span> тыс. ₽<small id="bud-who">на двоих, один номер на 20 ночей, без шопинга</small></div>
+      <div class="bud-total"><span id="bud-sum">420–640</span> тыс. ₽<small id="bud-who">на двоих, один номер на 20 ночей, без шопинга</small></div>
     </div>
     <div class="bud-bar" id="bud-bar" aria-hidden="true"></div>
     <div class="bud-grid" id="bud-grid"></div>
@@ -1514,12 +1512,12 @@ body.lb-open{overflow:hidden}
         <h3><i style="background:var(--orange)"></i>До 1 декабря</h3>
         <label><input type="checkbox" id="c4"><span>Отели Пекин и Шанхай</span></label>
         <label><input type="checkbox" id="c5"><span>Отель во Вьетнаме</span></label>
-        <label><input type="checkbox" id="c6"><span>Рейс Шанхай → Гуанчжоу, 27 дек</span></label>
+        <label><input type="checkbox" id="c6"><span>Рейс Шанхай → Гуанчжоу, 27 дек, Air China бизнес 15:40</span></label>
         <label><input type="checkbox" id="c7"><span>Рейс Гонконг → Вьетнам, 2 янв</span></label>
       </div>
       <div class="col">
         <h3><i style="background:var(--blue)"></i>За 2 недели</h3>
-        <label><input type="checkbox" id="c8"><span>Поезд Пекин → Шанхай, 23 дек</span></label>
+        <label><input type="checkbox" id="c8"><span>Поезд Пекин → Шанхай, 22 дек, G7 утром</span></label>
         <label><input type="checkbox" id="c9"><span>Поезд Гуанчжоу → Гонконг, 30 дек; билет Gulong Gorge с картом на 28 дек</span></label>
         <label><input type="checkbox" id="c10"><span>Билеты в Universal, 21 дек</span></label>
         <label><input type="checkbox" id="c11"><span>Запретный город (продажа за 7 дней)</span></label>
@@ -1576,6 +1574,28 @@ body.lb-open{overflow:hidden}
           <li>Zaoyang 早阳 baozi на завтрак, взять два: с говядиной 牛肉 и с луком и яйцом 韭菜鸡蛋. Сеть из Чжэцзяна, чаще встречается в Шанхае</li>
           <li>Европейские завтраки: Wagas, Baker &amp; Spice, Gaga. Больше всего их в Шанхае</li>
         </ul>
+      </div>
+      <div class="pc" style="grid-column:1/-1">
+        <h3><span style="background:var(--violet)">Пилатес на английском</span></h3>
+        <ul>
+          <li>Пекин: Alona Pilates Studio в Sanlitun, 1 Xinyuan Nanlu, 5 этаж: reformer, mat, персональные, в листинге «English speaking instructors», цену не нашёл, тел. 139 1029 0260. Ms. Uptown в Galaxy SOHO у Dongsi, только для женщин, тренеры с английским</li>
+          <li>Шанхай: Body Concept в Jing'an, Qinghai Lu: reformer и mat, английские и двуязычные классы. Ориентир по городу: группа на reformer 300–450 ¥ ≈ 3 500–5 200 ₽, персональная 600–800 ¥, пробные пакеты 99–299 ¥</li>
+          <li>Гуанчжоу: Studio Pilates в Zhujiang New Town напротив IGC, reformer 40 минут, разовое 200 ¥ ≈ 2 300 ₽, язык не указан. Ying's Authentic Pilates, Nantian Square 7F, Huacheng Avenue, классы на английском (данные старые)</li>
+          <li>Гонконг: PILATESBEAT и T Pilates в Sheung Wan, у обоих английские классы, бронь через ClassPass. relevé на Bonham Strand West, reformer на 4 человека, код SASSYRELEVE −20% на первый класс</li>
+          <li>Хойан: Hoi An Pilates Studio, 55 Phan Dinh Phung в старом городе, филиал в Дананге: reformer, tower, mat, около 350 000 VND ≈ 1 100 ₽, бронь на bookwhen.com/hoianpilates или WhatsApp +84 867 246 041</li>
+        </ul>
+        <p style="margin-top:10px;font-size:13px;opacity:.75">В материковом Китае запись через WeChat или Dianping, просить англоязычного тренера. Листинги местами старые, перед походом написать студии</p>
+      </div>
+      <div class="pc" style="grid-column:1/-1">
+        <h3><span style="background:var(--pink)">Секонды и винтаж</span></h3>
+        <ul>
+          <li>Пекин, Gulou East Street, по пути 19 дек: Mega Mega Vintage, 鼓楼东大街191-1, 10:00–21:00, самый известный, цены средние и выше. Callus, 鼓楼东大街241号, с 13:30. Trash &amp; Diamond дешевле соседей и берёт вещи в обмен</li>
+          <li>Шанхай: Max &amp; Match на Xinle Road 54 (新乐路54号), американский спорт и ворквир, дорого. Рядом винтажные лавки на Changle, Julu и Yongkang Road. Дёшево: обменник книг и одежды 多抓鱼循环商店 Duozhuayu у Anfu Road и рынок 灵石路服装市场 Lingshi Road, торговаться</li>
+          <li>Гуанчжоу, Dongshankou 东山口: Candy Plus Vintage, 龟岗四马路2号, 12:30–21:00; Clasico, 六运二街7号102, 13:00–21:00. Данные 2023 года, проверить</li>
+          <li>Гонконг, Sham Shui Po, по пути 1 янв: Redress Closet, 78 Apliu St, благотворительный и дешёвый; Sing Jai Kee, 140 Ki Lung St; Kanamoto Hardware Store на Nam Cheong St, японский и европейский винтаж. Сеть Mee &amp; Gee: вещи по HK$5–50</li>
+          <li>Дананг: OldSchool.Cloth, 50 Văn Cao; Magenta Vintage, 92–94 Dương Bá Trạc; Góc Nhỏ Vintage, 143/18 Nguyễn Chí Thanh. Самое дешёвое, с торгом, вокруг рынков Chợ Hàn и Chợ Cồn</li>
+        </ul>
+        <p style="margin-top:10px;font-size:13px;opacity:.75">Секонда на вес в Китае не нашлось, там это в основном кураторский винтаж, 古着. Часы и адреса сверить в Dianping или Google Maps</p>
       </div>
     </div>
   </div>
@@ -1687,8 +1707,8 @@ body.lb-open{overflow:hidden}
   // ---- budget ----
   // items: [название, min, max, shared] — shared = платится один раз (номер, водитель), не делится на человека
   var BUD = [
-    {n:'Перелёты', c:'var(--pink)', items:[['Москва → Пекин, прямой',45,70],['Шанхай → Гуанчжоу',12,18],['Гонконг → Дананг',18,32],['Дананг → Москва, 8 янв, через Ханой',60,100]]},
-    {n:'Отели · 20 ночей · за номер', c:'var(--blue)', items:[['Пекин · 4',17,32,1],['Шанхай · 4',15,22,1],['Гуанчжоу · 3',15,27,1],['Гонконг · 3 + НГ',24,29,1],['Вьетнам · 6',8,19,1]]},
+    {n:'Перелёты', c:'var(--pink)', items:[['Москва → Пекин, прямой',45,70],['Шанхай → Гуанчжоу, бизнес',32,35],['Гонконг → Дананг',18,32],['Дананг → Москва, 8 янв, через Ханой',60,100]]},
+    {n:'Отели · 20 ночей · за номер', c:'var(--blue)', items:[['Пекин · 3',13,24,1],['Шанхай · 5',19,28,1],['Гуанчжоу · 3',15,27,1],['Гонконг · 3 + НГ',24,29,1],['Вьетнам · 6',8,19,1]]},
     {n:'Еда и бары', c:'var(--orange)', items:[['Китай · 12 дней',50,85],['Гонконг · 3 дня',21,36],['Вьетнам · 6 дней',18,30]]},
     {n:'Активности', c:'var(--violet)', items:[['Стена: водитель на день',6,7,1],['Стена: вход, канатка, тобогган',5,6],['Universal',9,12],['Gulong Gorge: водитель',7,9,1],['Gulong Gorge: вход и карт',4,5],['Баня Shui Guo',6,7],['Пик и Lantau',9,9],['Запретный город, круиз',3,4]]},
     {n:'Поезда', c:'var(--lime)', dark:true, items:[['Пекин → Шанхай, G',13,15],['Гуанчжоу → Гонконг',5,5]]},
