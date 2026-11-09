@@ -300,6 +300,15 @@ section{padding-block:clamp(48px,8vw,96px)}
 .col label:first-of-type{border-top:0}
 .col input{width:20px;height:20px;accent-color:var(--pink);margin-top:2px}
 .col label:has(input:checked){text-decoration:line-through;color:var(--ink-2)}
+.pay-title{font-size:clamp(20px,2.4vw,26px);margin-top:48px}
+.pay-sub{margin-top:6px;font-size:14px;font-weight:600;color:var(--ink-2)}
+.cols.pay{margin-top:18px}
+.pay .pay-sum{font-family:var(--display);font-weight:900;font-size:30px;letter-spacing:-.03em;line-height:1;margin-bottom:6px}
+.pay .pay-sum small{font-family:var(--body);font-size:13px;font-weight:700;color:var(--ink-2);letter-spacing:0;margin-left:4px}
+.pay ul{list-style:none;margin:0;padding:0}
+.pay li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;font-weight:600}
+.pay li b{white-space:nowrap;font-variant-numeric:tabular-nums}
+.pay-note{margin-top:16px;font-size:14px;color:var(--ink-2);max-width:80ch}
 .progress{margin-top:22px;display:flex;align-items:center;gap:14px;font-weight:800;font-variant-numeric:tabular-nums}
 .progress .pb{flex:1;height:14px;border-radius:999px;border:2px solid var(--ink);overflow:hidden;background:var(--card)}
 .progress .pb div{height:100%;background:linear-gradient(90deg,var(--pink),var(--yellow));width:0;transition:width .4s}
@@ -1420,6 +1429,15 @@ body.lb-open{overflow:hidden}
         <label><input type="checkbox" id="c15"><span>Бронь утки: Siji Minfu / Da Dong</span></label>
       </div>
     </div>
+    <h3 class="pay-title">С какой зарплаты что брать</h3>
+    <p class="pay-sub">Зарплаты 10 и 25 числа. Суммы на двоих, в тысячах рублей, если пополам, то вдвое меньше</p>
+    <div class="cols pay">
+      <div class="col"><h3><i style="background:var(--pink)"></i>10 ноября</h3><div class="pay-sum">116–145<small>тыс. ₽</small></div><ul><li>Москва → Пекин, 18 дек <b>45–70</b></li><li>Гуанчжоу → Москва, 2 янв, прямой <b>71–75</b></li><li>Отель в Гуанчжоу на Новый год: забронировать сразу, лучше с оплатой в отеле <b>бронь</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--orange)"></i>25 ноября</h3><div class="pay-sum">78–138<small>тыс. ₽</small></div><ul><li>Отель в Пекине <b>13–24</b></li><li>Отель в Шанхае <b>23–34</b></li><li>Отель в Гуанчжоу, если не платим на месте <b>25–45</b></li><li>Шанхай → Гуанчжоу, 28 дек <b>17–35</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--blue)"></i>10 декабря</h3><div class="pay-sum">98–143<small>тыс. ₽</small></div><ul><li>Поезд G7, продажа около 7 дек <b>13–15</b></li><li>Universal <b>9–12</b></li><li>Запретный город (продажа около 12 дек) и круиз <b>3–4</b></li><li>Страховка, eSIM, VPN <b>6–8</b></li><li>На карту на Пекин и Шанхай: еда <b>37–64</b></li><li>Такси и метро <b>13–20</b></li><li>Стена с водителем, баня Shui Guo <b>17–20</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--lime)"></i>25 декабря, уже в поездке</h3><div class="pay-sum">45–70<small>тыс. ₽</small></div><ul><li>Гуанчжоу: еда и новогодний ужин <b>25–42</b></li><li>Картинг Gulong Gorge с водителем <b>11–14</b></li><li>Такси и метро <b>9–14</b></li></ul></div>
+    </div>
+    <p class="pay-note">Если 10 ноября два перелёта сразу не тянем, первым берём обратный 2 января: он праздничный и дорожает быстрее. Зарплата 25 декабря придёт в Шанхае и покроет Гуанчжоу, если карту, привязанную к Alipay, можно пополнять из-за границы. Проверить до вылета, иначе эти 45–70 положить на карту 10 декабря</p>
   </div>
 </section>
 
