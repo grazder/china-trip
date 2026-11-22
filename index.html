@@ -116,7 +116,8 @@ section{padding-block:clamp(48px,8vw,96px)}
 .bar div .s{display:none}
 @media (max-width:760px){.bar div{font-size:12px}.bar .gz .l,.bar .hk .l{display:none}.bar .gz .s,.bar .hk .s{display:inline}}
 .bar .bj{background:var(--orange);color:#fff;flex:4}
-.bar .sh{background:var(--blue);color:#fff;flex:8}
+.bar .sh{background:var(--blue);color:#fff;flex:5}
+.bar .sy{background:var(--lime);color:#14122B;flex:3}
 .bar .gz{background:var(--violet);color:#fff;flex:5}
 .bar .hk{background:var(--pink);color:#fff;flex:3}
 .bar .vn{background:var(--lime);flex:6}
@@ -371,7 +372,8 @@ body.lb-open{overflow:hidden}
     <div class="hero-sub">
       <span class="chip">✈️ из Москвы · ~8 ч туда, ~10 ч обратно, оба прямые</span>
       <span class="chip o">🏯 Пекин · 4 ночи</span>
-      <span class="chip b">🌆 Шанхай · 8</span>
+      <span class="chip b">🌆 Шанхай · 5</span>
+      <span class="chip y">🏝 Санья · 3</span>
       <span class="chip v">🌴 Шэньчжэнь · 5 + НГ</span>
       <span class="chip l">🏠 домой 2 янв</span>
     </div>
@@ -417,7 +419,7 @@ body.lb-open{overflow:hidden}
         <text x="50" y="68" text-anchor="middle" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC',serif" font-weight="900" font-size="54" fill="#FFF1CF">出发</text>
       </svg>
       <div class="sticker s1">16 дек → 2 янв</div>
-      <div class="sticker s2">17 ночей · 2 переезда</div>
+      <div class="sticker s2">17 ночей · 3 переезда</div>
     </div>
   </div>
 </header>
@@ -433,22 +435,23 @@ body.lb-open{overflow:hidden}
 <section class="route" id="route">
   <div class="wrap">
     <span class="eyebrow">Маршрут</span>
-    <h2 style="margin-top:14px">С севера на юг, от −5° до +20°</h2>
+    <h2 style="margin-top:14px">С севера на юг, от −5° до +26°</h2>
     <div class="route-grid">
       <div class="map" id="map">
-        <svg viewBox="0 0 440 720" role="img" aria-label="Схема маршрута: Пекин, Шанхай, Шэньчжэнь"></svg>
+        <svg viewBox="0 0 440 720" role="img" aria-label="Схема маршрута: Пекин, Шанхай, Санья, Шэньчжэнь"></svg>
         <div class="legend"><span><i></i>поезд</span><span><i class="air"></i>самолёт</span></div>
       </div>
       <div class="legs">
         <div class="leg"><div class="n" style="background:var(--yellow)">✈</div><div><div class="t">Москва</div><div class="d">16 дек вечером, билет уже куплен</div></div><div class="how">→ Пекин<b>самолёт ~8 ч</b></div></div>
         <div class="leg"><div class="n" style="background:var(--orange);color:#fff">1</div><div><div class="t">Пекин</div><div class="d">прилёт 17-го · 3 ночи в отеле · Запретный город, Universal, храм Ламы, 798</div></div><div class="how">→ Шанхай<b>поезд 4,5 ч</b></div></div>
-        <div class="leg"><div class="n" style="background:var(--blue);color:#fff">2</div><div><div class="t">Шанхай</div><div class="d">20–28 дек · 8 ночей · Рождество на Бунде</div></div><div class="how">→ Шэньчжэнь<b>самолёт 2 ч 45 мин</b></div></div>
-        <div class="leg"><div class="n" style="background:var(--violet);color:#fff">3</div><div><div class="t">Шэньчжэнь</div><div class="d">28 дек – 2 янв · 5 ночей · Новый год, день в Гонконге, пляж</div></div><div class="how">→ Москва 2 янв<b>прямой, 10 ч 45 мин</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--blue);color:#fff">2</div><div><div class="t">Шанхай</div><div class="d">20–25 дек · 5 ночей · баня, Чжуцзяцзяо, сочельник на Бунде</div></div><div class="how">→ Санья<b>самолёт 3 ч 15 мин</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--lime)">3</div><div><div class="t">Санья</div><div class="d">25–28 дек · 3 ночи · пляж, массаж, рынок морепродуктов</div></div><div class="how">→ Шэньчжэнь<b>самолёт 1 ч 45 мин</b></div></div>
+        <div class="leg"><div class="n" style="background:var(--violet);color:#fff">4</div><div><div class="t">Шэньчжэнь</div><div class="d">28 дек – 2 янв · 5 ночей · Новый год, день в Гонконге</div></div><div class="how">→ Москва 2 янв<b>прямой, 10 ч 45 мин</b></div></div>
       </div>
     </div>
     <div class="nights">
       <div class="bar" aria-label="17 ночей по городам">
-        <div class="bj">Пекин 4</div><div class="sh">Шанхай 8</div><div class="gz"><span class="l">Шэньчжэнь 5</span><span class="s">Шэнь 5</span></div>
+        <div class="bj">Пекин 4</div><div class="sh">Шанхай 5</div><div class="sy">Санья 3</div><div class="gz"><span class="l">Шэньчжэнь 5</span><span class="s">Шэнь 5</span></div>
       </div>
       <div class="bar-cap"><span>16 дек</span><span>Новый год — 31 дек в Шэньчжэне</span><span>2 янв</span></div>
     </div>
@@ -476,26 +479,36 @@ body.lb-open{overflow:hidden}
         <div class="vid"><a href="#beijing">🎬 17 рилсов по дням</a></div>
       </article>
       <article class="ticket sh">
-        <div class="k">Билет 02 · 20–28 дек</div>
+        <div class="k">Билет 02 · 20–25 дек</div>
         <h3>Шанхай</h3>
-        <div class="big">8<small>НОЧЕЙ</small></div>
+        <div class="big">5<small>НОЧЕЙ</small></div>
         <ul>
-          <li>Рождество 24–25 на Бунде</li>
+          <li>Сочельник 24-го на Бунде</li>
           <li>Li-Ning на Nanjing East Road: мерч LPL</li>
-          <li>Французская концессия: кофе, бутики</li>
-          <li>Баня Shui Guo на Рождество</li>
-          <li>Чжуцзяцзяо, Сучжоу, оранжерея Expo Park</li>
+          <li>Весь день в бане Shui Guo</li>
+          <li>Чжуцзяцзяо и Французская концессия</li>
         </ul>
         <div class="temp">🌫 +3…+10° · сыро</div>
         <div class="vid"><a href="#shanghai">🎬 19 рилсов по дням</a></div>
       </article>
+      <article class="ticket vn">
+        <div class="k">Билет 03 · 25–28 дек</div>
+        <h3>Санья</h3>
+        <div class="big">3<small>НОЧИ</small></div>
+        <ul>
+          <li>Пляж Sanya Bay и закаты</li>
+          <li>Море около 25°</li>
+          <li>Массаж</li>
+          <li>Ужин на рынке морепродуктов</li>
+        </ul>
+        <div class="temp">☀️ +22…+26° · купаемся</div>
+      </article>
       <article class="ticket gz">
-        <div class="k">Билет 03 · 28 дек – 2 янв</div>
+        <div class="k">Билет 04 · 28 дек – 2 янв</div>
         <h3>Шэньчжэнь</h3>
         <div class="big">5<small>НОЧЕЙ + НГ</small></div>
         <ul>
           <li>День в Гонконге: Star Ferry, Пик, Sham Shui Po</li>
-          <li>Пляж Xiaomeisha или Xichong</li>
           <li>Электроника в Huaqiangbei</li>
           <li>Новый год, домой прямым за 21,5 тысячи</li>
         </ul>
@@ -510,7 +523,7 @@ body.lb-open{overflow:hidden}
 <section class="beijing" id="beijing">
   <div class="wrap">
     <span class="eyebrow">Пекин по дням</span>
-    <h2 style="margin-top:14px">Три дня: Запретный город, Universal, храм Ламы и 798</h2>
+    <h2 style="margin-top:14px">Три дня без спешки: хутуны, Universal, Запретный город</h2>
     <div class="ratio">
       <span class="pill"><i style="background:var(--yellow)"></i>Главное: полдня на одно место, потом свободно</span>
       <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
@@ -665,29 +678,20 @@ body.lb-open{overflow:hidden}
           <div class="note">С собой в салон: паспорт, адрес отеля на китайском для карточки прилёта, VPN уже установлен, Alipay с привязанной картой</div>
         </div>
       </article>
-      <article class="dayrow anchor">
+      <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">17 дек<small>четверг · прилёт</small></div><span class="tag anch">главное</span></div>
-          <h3>Запретный город, Jingshan и закат на льду Houhai</h3>
+          <div class="head"><div class="date">17 дек<small>четверг · прилёт</small></div><span class="tag chill">чилл</span></div>
+          <h3>Прилетели: выспаться, Houhai на закате, хого</h3>
           <ul>
-            <li><span class="tm">10:00</span><span>Прилёт, время уточнить по билету. Didi или аэроэкспресс до отеля, около часа. Бросить вещи, быстрый обед: чжацзянмянь в No 69 Fangzhuanchang, это в хутунах рядом</span></li>
-            <li><span class="tm">12:30</span><span>Запретный город: заходим с юга, через ворота Тяньаньмэнь и Меридиональные ворота, 2–2,5 часа по центральной оси, выходим через северные ворота Shenwumen</span></li>
-            <li><span class="tm">15:00</span><span>Напротив северных ворот холм в парке Jingshan: весь дворец сверху, 30–40 минут</span></li>
-            <li><span class="tm">16:00</span><span>Пешком минут 20 до озёр Shichahai / Houhai: ледовые велосипеды и санки-стулья, закат около 16:50</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Хутуны вокруг Nanluoguxiang и Gulou East Street, стритфуд. Ужин: старопекинский хого в медном котле, тонкая баранина, в 友涮 (Youshuan) на Dongsi, Chaoyangmennei 243. Одна станция по линии 6, около 61 ¥ на человека</span></li>
-            <li class="free"><span class="tm">или</span><span>Утка по-пекински в Siji Minfu у восточных ворот Запретного города или в Da Dong, бронь через отель. По дороге кондитерская Honghua Dianxinju на Dongsi, Dongsi South Street 36: пирожные коробкой в поезд, около 48 ¥ на человека</span></li>
-            <li class="free"><span class="tm">21:00</span><span>Первое пиво в Great Leap Brewing #6 во дворике в хутуне</span></li>
-            <li class="free"><span class="tm">если силы</span><span>Панк-концерт в School Bar на Wudaoying или коктейли в баре-трубе</span></li>
+            <li><span class="tm">10:00</span><span>Прилёт, время уточнить по билету. Didi или аэроэкспресс до отеля, около часа. Заселиться и поспать</span></li>
+            <li class="free"><span class="tm">13:30</span><span>Обед рядом: чжацзянмянь в No 69 Fangzhuanchang</span></li>
+            <li class="free"><span class="tm">16:00</span><span>Озёра Shichahai / Houhai: лёд, ледовые велосипеды, закат около 16:50</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин: старопекинский хого в медном котле в 友涮 (Youshuan) на Dongsi, Chaoyangmennei 243, около 61 ¥ на человека</span></li>
+            <li class="free"><span class="tm">если силы</span><span>Пиво в Great Leap Brewing #6 во дворике в хутуне</span></li>
           </ul>
-          <div class="note">Ночь спим в самолёте, поэтому сразу в главное. Билет в Запретный город продают онлайн за 7 дней, по паспорту: брать дневной слот (вход с 11:00), последний вход зимой около 15:30, так что даже при задержке рейса успеваем. По понедельникам закрыт. Каток на Shichahai открывают, когда встанет лёд, обычно во второй половине декабря. Жить: Gulou / Nanluoguxiang / Dongsi</div>
+          <div class="note">После ночного перелёта без главного: только погулять и поесть. Каток на Shichahai открывают, когда встанет лёд, обычно во второй половине декабря</div>
         </div>
         <div class="day-reels">
-          <article class="reel" style="--tilt:-.9deg">
-            <div class="frame"><video data-src="reels/beijing-forbidden-city.mp4" data-poster="reels/beijing-forbidden-city.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Запретный город · 17 дек</span>
-            <div class="cap">Самый большой дворец в мире, с дрона</div>
-            <div class="by">720 000 м², больше 8700 комнат · <a href="https://www.tiktok.com/@bastien.larnaud/video/7548182645105085718" target="_blank" rel="noopener">@bastien.larnaud</a></div>
-          </article>
           <article class="reel" style="--tilt:-1deg">
             <div class="frame"><video data-src="reels/beijing-nanluoguxiang-food.mp4" data-poster="reels/beijing-nanluoguxiang-food.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
             <span class="where">Nanluoguxiang</span>
@@ -777,29 +781,37 @@ body.lb-open{overflow:hidden}
           </article>
         </div>
       </article>
-      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+      <article class="dayrow anchor">
         <div class="plan">
-          <div class="head"><div class="date">19 дек<small>суббота</small></div><span class="tag chill">чилл</span></div>
-          <h3>Храм Ламы, Wudaoying, 798 и вечер в Sanlitun</h3>
+          <div class="head"><div class="date">19 дек<small>суббота</small></div><span class="tag anch">главное</span></div>
+          <h3>Запретный город и Jingshan, вечер в хутунах</h3>
           <ul>
-            <li class="free"><span class="tm">10:00</span><span>Храм Ламы Yonghegong: тибетский монастырь с 18-метровым Буддой, благовония, 1 час</span></li>
-            <li class="free"><span class="tm">11:30</span><span>Через дорогу хутун Wudaoying: кофейни, лавки, поздний завтрак</span></li>
-            <li class="free"><span class="tm">14:00</span><span>798 Art District: бывшие заводы с галереями, стрит-арт и кофе, 20 минут на Didi</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Sanlitun рядом с 798: молл Taikoo Li, потом коктейли в Botany (топ-50 баров Азии) или спикизи Janes &amp; Hooch. Рано спать: утром поезд</span></li>
+            <li><span class="tm">11:00</span><span>Запретный город: вход с юга через Тяньаньмэнь и Меридиональные ворота, 2–2,5 часа по центральной оси, выход через северные ворота</span></li>
+            <li><span class="tm">14:00</span><span>Холм Jingshan напротив северных ворот: весь дворец сверху</span></li>
+            <li class="free"><span class="tm">15:00</span><span>Поздний обед и отдых в отеле</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Утка по-пекински в Siji Minfu у восточных ворот или в Da Dong, бронь через отель. По дороге кондитерская Honghua Dianxinju на Dongsi: пирожные коробкой в поезд</span></li>
           </ul>
-          <div class="note">Все места дня на северо-востоке, переезды короткие. Храм Неба и Qianmen не влезли: если хочется, можно заменить ими 798</div>
+          <div class="note">Билет продают онлайн за 7 дней, около 12 декабря, по паспорту. Суббота, народу больше, поэтому слот на 11:00 брать сразу. Храм Ламы и 798 убраны, чтобы не бегать</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video data-src="reels/beijing-forbidden-city.mp4" data-poster="reels/beijing-forbidden-city.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Запретный город · 19 дек</span>
+            <div class="cap">Самый большой дворец в мире, с дрона</div>
+            <div class="by">720 000 м², больше 8700 комнат · <a href="https://www.tiktok.com/@bastien.larnaud/video/7548182645105085718" target="_blank" rel="noopener">@bastien.larnaud</a></div>
+          </article>
         </div>
       </article>
       <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">20 дек<small>воскресенье · утром в Шанхай</small></div><span class="tag move">переезд</span></div>
-          <h3>Утренний поезд, в Шанхае засветло</h3>
+          <div class="head"><div class="date">20 дек<small>воскресенье · в Шанхай</small></div><span class="tag move">переезд</span></div>
+          <h3>Поезд в Шанхай без раннего подъёма</h3>
           <ul>
-            <li><span class="tm">8:00</span><span>Выписаться, Didi до Beijing South, 30–40 минут. Кофе и баоцзы на вокзале</span></li>
-            <li><span class="tm">9:00</span><span>Поезд G7 с Beijing South на Hongqiao, 4,5 часа, еду можно заказать к креслу</span></li>
-            <li><span class="tm">13:40</span><span>Шанхай. Дальше по шанхайскому плану: заселение и Бунд на закате</span></li>
+            <li><span class="tm">9:30</span><span>Выписаться, Didi до Beijing South, 30–40 минут. Кофе и баоцзы на вокзале</span></li>
+            <li><span class="tm">10:30</span><span>Скоростной поезд с Beijing South на Hongqiao, 4,5 часа, еду можно заказать к креслу</span></li>
+            <li><span class="tm">15:00</span><span>Шанхай. Дальше по шанхайскому плану: заселение и Бунд вечером</span></li>
           </ul>
-          <div class="note">Единственное раннее утро: так Шанхай видно при свете, закат там около 17:00. Время G7 на разных сайтах 9:00 или 10:00, сверить в 12306 при покупке, билеты за 2 недели. Ночной поезд отмели.</div>
+          <div class="note">Конкретный поезд на 10–11 утра выбрать в 12306 или Trip.com, продажа на 20 декабря откроется около 5 декабря. Закат в Шанхае около 17:00, успеваем</div>
         </div>
         <div class="day-reels">
           <article class="reel" style="--tilt:.9deg">
@@ -827,7 +839,7 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>20–28 дек · 8 ночей</small></div><span class="tag anch">выбрать</span></div>
+          <div class="head"><div class="date">🏨 Отель<small>20–25 дек · 5 ночей</small></div><span class="tag anch">выбрать</span></div>
           <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
           <ul>
             <li><span class="tm">1</span><span><b>Tianhua Hotel</b> <span class="gym no">без зала</span>, People's Square, Huanghe Road. Обновлён в 2025, 9.3, ¥456–483 ≈ 5 200–5 600 ₽. Пешком до Nanjing Road и Бунда, вокруг едальни. Мой выбор. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-6738656/tianhua-hotel-shanghai-people-s-square-nanjing-road-walkway/" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -930,13 +942,12 @@ body.lb-open{overflow:hidden}
       <article class="dayrow">
         <div class="plan">
           <div class="head"><div class="date">20 дек<small>воскресенье · приезд</small></div><span class="tag move">переезд</span></div>
-          <h3>Приехали днём, Бунд на закате</h3>
+          <h3>Приехали, вечером Nanjing Road и Бунд</h3>
           <ul>
-            <li><span class="tm">13:40</span><span>Hongqiao, метро 2 или Didi до отеля, 40–50 минут. Заселение, поздний обед</span></li>
-            <li><span class="tm">15:30</span><span><b>Обязательно: Li-Ning за мерчем LPL.</b> Глобальный флагман 李宁龙店 (Loong Store) на пешеходной Nanjing East Road, открыт 21 сентября 2026, два этажа. Li-Ning шьёт форму для лиги LPL. Наличие мерча LPL в этом магазине не подтверждено, спросить на кассе «LPL 系列». Если его нет, заказать в мини-приложении Li-Ning или на Tmall с доставкой в отель</span></li>
-            <li class="free"><span class="tm">16:00</span><span>Дальше по Nanjing East Road до набережной. По дороге M&amp;M's World: драже с вашими лицами на заказ, минут 20, и магазин сладостей</span></li>
-            <li class="free"><span class="tm">16:30</span><span>Rockbund 洛克·外滩源 у северного конца Бунда: здания 1920-х, галереи и уютные улочки</span></li>
-            <li class="free"><span class="tm">16:50</span><span>Бунд на закате, потом в огнях: вид на Пудун с набережной, это главный вид Шанхая</span></li>
+            <li><span class="tm">15:00</span><span>Hongqiao, метро 2 или Didi до отеля, 40–50 минут. Заселение</span></li>
+            <li><span class="tm">16:30</span><span><b>Обязательно: Li-Ning за мерчем LPL.</b> Глобальный флагман 李宁龙店 (Loong Store) на пешеходной Nanjing East Road, открыт 21 сентября 2026, два этажа. Li-Ning шьёт форму для лиги LPL. Наличие мерча LPL в этом магазине не подтверждено, спросить на кассе «LPL 系列». Если его нет, заказать в мини-приложении Li-Ning или на Tmall с доставкой в отель</span></li>
+            <li class="free"><span class="tm">17:15</span><span>Дальше по Nanjing East Road до набережной. По дороге M&amp;M's World: драже с вашими лицами на заказ, минут 20, и магазин сладостей</span></li>
+            <li class="free"><span class="tm">18:00</span><span>Бунд в огнях: вид на Пудун с набережной, это главный вид Шанхая</span></li>
             <li class="free"><span class="tm">19:00</span><span>Ужин: раменная в аниме-молле Bailian ZX, если хочется странного, или что-то у Бунда</span></li>
           </ul>
           <div class="note">Жить: People's Square или Бунд, оттуда всё пешком и 10 минут метро до концессии</div>
@@ -968,109 +979,26 @@ body.lb-open{overflow:hidden}
           </article>
         </div>
       </article>
-      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
-        <div class="plan">
-          <div class="head"><div class="date">21 дек<small>понедельник</small></div><span class="tag chill">чилл</span></div>
-          <h3>Columbia Circle и Jing'an</h3>
-          <ul>
-            <li class="free"><span class="tm">11:00</span><span>Columbia Circle 上生·新所 в Changning: особняки 1920-х, бывший загородный клуб с бассейном, кофейни. Совет из Threads</span></li>
-            <li class="free"><span class="tm">14:00</span><span>Jing'an Temple: золотой храм посреди небоскрёбов, вокруг моллы</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Ужин по списку «Где есть»: Dopasta, Shake Shack или Wagas, потом бар</span></li>
-          </ul>
-          <div class="note">День, который переехал из Пекина. Понедельник: оранжерея Expo Park в этот день закрыта, она стоит на 27-е</div>
-        </div>
-      </article>
-      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
-        <div class="plan">
-          <div class="head"><div class="date">22 дек<small>вторник · Дунчжи</small></div><span class="tag chill">чилл</span></div>
-          <h3>Чжуцзяцзяо: городок на каналах</h3>
-          <ul>
-            <li class="free"><span class="tm">10:30</span><span>Метро 17 до станции Zhujiajiao 朱家角, около часа из центра</span></li>
-            <li class="free"><span class="tm">11:30</span><span>Сразу у выхода взять лодку за 40 ¥ и проплыть по деревне по воде</span></li>
-            <li class="free"><span class="tm">13:00</span><span>Обратно пешком по старым торговым улочкам: пробовать всё, что предлагают, чайная, кафе у воды, лавки мастеров</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Обратно в город. Сегодня Дунчжи, зимнее солнцестояние: по традиции съесть цзяоцзы, проще всего в Xijiade 喜家德, брать с креветкой</span></li>
-          </ul>
-          <div class="note">Совет из Threads @azymi: «обязательно к посещению всем, кто в Шанхае». Его же советуют в соседнем треде вместе с оранжереей Expo Park и Rockbund</div>
-        </div>
-      </article>
-      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
-        <div class="plan">
-          <div class="head"><div class="date">23 дек<small>среда</small></div><span class="tag chill">чилл</span></div>
-          <h3>Сучжоу на день или просто город</h3>
-          <ul>
-            <li class="free"><span class="tm">10:30</span><span>Скоростной поезд в Сучжоу с Shanghai Station или Hongqiao, 25–30 минут</span></li>
-            <li class="free"><span class="tm">11:30</span><span>Сад Скромного управителя 拙政园: пруды, павильоны, мостики. Билет онлайн по паспорту</span></li>
-            <li class="free"><span class="tm">14:00</span><span>Pingjiang Road 平江路: каналы, чайные, лапша по-сучжоуски. К вечеру обратно в Шанхай</span></li>
-            <li class="free"><span class="tm">или</span><span>Остаться в городе: Tianzifang, лабиринт переулков с лавками и кафе</span></li>
-          </ul>
-          <div class="note">Если съездить в Сучжоу сегодня, 26-е остаётся под старый город и бары</div>
-        </div>
-      </article>
-      <article class="dayrow">
-        <div class="plan">
-          <div class="head"><div class="date">24 дек<small>четверг · сочельник</small></div><span class="tag chill">чилл</span></div>
-          <h3>Французская концессия и Рождество</h3>
-          <ul>
-            <li class="free"><span class="tm">11:00</span><span>Бранч в концессии: Anfu Road, кофе и выпечка</span></li>
-            <li class="free"><span class="tm">день</span><span>Платаны и виллы: Wukang Road, дом-«утюг» Wukang Mansion (淮海中路1850号), маленькие магазины. Рядом 13DE MARZO с гигантскими мишками и кофе с мишкой на стакане</span></li>
-            <li class="free"><span class="tm">15:00</span><span>Шопинг: Yongyuan Road с локальными брендами, потом Huaihai Middle Road, где Gentle Monster и Tamburins сделаны как арт-пространства</span></li>
-            <li class="free"><span class="tm">17:00</span><span>Nanjing West Road 789: The Louis, корабль Louis Vuitton с выставкой и кафе, и Starbucks Reserve Roastery с обжаркой на виду. Отсюда до Бунда 15 минут на метро</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Рождество на Бунде: ёлки, иллюминация, ужин с видом на Пудун, потом бокал в Condé Bar в Regent с видом на всю гавань. Бронь столика заранее</span></li>
-          </ul>
-          <div class="note">Сочельник в Шанхае празднуют по-западному, ресторанов с видом много, но на 24-е они забиты</div>
-        </div>
-        <div class="day-reels">
-          <article class="reel" style="--tilt:.9deg">
-            <div class="frame"><video data-src="reels/shanghai-top10.mp4" data-poster="reels/shanghai-top10.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Шанхай · маршрут на день</span>
-            <div class="cap">Топ-10 Шанхая за 24 часа: от дома-«утюга» до Луцзяцзуя</div>
-            <div class="by">Wukang, мишки 13DE MARZO, Huaihai, LV-корабль, Starbucks Roastery, M&amp;M's с лицами, Yu Garden, Бунд · 4,6 тысячи лайков · <a href="https://www.instagram.com/reel/DdOkz6-yaMt/" target="_blank" rel="noopener">@patipaco</a></div>
-          </article>
-          <article class="reel" style="--tilt:-.8deg">
-            <div class="frame"><video data-src="reels/shanghai-conde-bar.mp4" data-poster="reels/shanghai-conde-bar.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Condé Bar · Regent, North Bund</span>
-            <div class="cap">Самый нереальный вид на Бунд, без минимального чека</div>
-            <div class="by">5-й этаж, Huangpu Road 60, с 17:30. Сюда на рождественский бокал · 53 тысячи лайков · <a href="https://www.tiktok.com/@nom_life/video/7645121689201757471" target="_blank" rel="noopener">@nom_life</a></div>
-          </article>
-          <article class="reel" style="--tilt:-.7deg">
-            <div class="frame"><video data-src="reels/shanghai-harmay-anfu.mp4" data-poster="reels/shanghai-harmay-anfu.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Anfu Road · Harmay</span>
-            <div class="cap">Бьюти-склад Harmay на Anfu Road</div>
-            <div class="by">Первый магазин сети в бывшем складе, в сердце концессии · 5 тысяч лайков · <a href="https://www.tiktok.com/@offwithsam/video/7686925158581341472" target="_blank" rel="noopener">@offwithsam</a></div>
-          </article>
-          <article class="reel" style="--tilt:1deg">
-            <div class="frame"><video data-src="reels/shanghai-solo-day.mp4" data-poster="reels/shanghai-solo-day.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Концессия · день</span>
-            <div class="cap">Соло-день в Шанхае: кофе, улицы, еда</div>
-            <div class="by">62 тысячи лайков, полтора минуты про то, как здесь просто гулять · <a href="https://www.tiktok.com/@maddieborge/video/7618226226339106070" target="_blank" rel="noopener">@maddieborge</a></div>
-          </article>
-          <article class="reel" style="--tilt:-.6deg">
-            <div class="frame"><video data-src="reels/shanghai-yongyuan-shopping.mp4" data-poster="reels/shanghai-yongyuan-shopping.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Yongyuan Road · Французская концессия</span>
-            <div class="cap">Шопинг: локальные бренды вместо Zara</div>
-            <div class="by">Улица отдельных магазинов и флагманов, плюс TX Huaihai · <a href="https://www.instagram.com/reel/DeMk4VdPRDV/" target="_blank" rel="noopener">@meewmoore</a></div>
-          </article>
-          <article class="reel" style="--tilt:1deg">
-            <div class="frame"><video data-src="reels/shanghai-apoli-bakery.mp4" data-poster="reels/shanghai-apoli-bakery.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Apoli Itabakery</span>
-            <div class="cap">Пекарня с азиатскими бейглами и матча-тортами</div>
-            <div class="by">Рисовые бейглы, фисташки, «почему так вкусно, хотя просто» · <a href="https://www.instagram.com/reel/DbphxfkNIFj/" target="_blank" rel="noopener">@anelia_macaron</a></div>
-          </article>
-        </div>
-      </article>
       <article class="dayrow anchor">
         <div class="plan">
-          <div class="head"><div class="date">25 дек<small>пятница · Рождество</small></div><span class="tag anch">главное</span></div>
-          <h3>Баня с утра, Рождество вечером</h3>
+          <div class="head"><div class="date">21 дек<small>понедельник</small></div><span class="tag anch">главное</span></div>
+          <h3>Весь день в бане Shui Guo</h3>
           <ul>
+            <li class="free"><span class="tm">10:00</span><span>Завтрак у лавки с данбином на Dingxing Road 6 у People's Square: яичный блин с ютяо, 7–12 ¥, работает только утром</span></li>
             <li><span class="tm">11:00</span><span>Shui Guo Tangquan, точка Wujiaochang: метро 10 до Wujiaochang, 25 минут от центра. Паспорт с собой</span></li>
             <li class="free"><span class="tm">день</span><span>Горячие бассейны, сауны, соляная комната, скраб за 50–100 ¥, потом пижама, безлимитные фрукты и мороженое, обед внутри, подремать в зале с диванами</span></li>
             <li class="free"><span class="tm">17:00</span><span>Выйти разваренными, вернуться в центр</span></li>
-            <li class="free"><span class="tm">19:00</span><span>Рождественский ужин: Xintiandi, там ёлка, ярмарка и много ресторанов</span></li>
+            <li class="free"><span class="tm">19:00</span><span>Ужин в Xintiandi: рестораны и рождественская ярмарка</span></li>
           </ul>
           <div class="note">Билет 238 ¥ за 8 часов, 298 ¥ за 16. Мокрые зоны раздельные и без купальников, телефон туда нельзя. Платить Alipay. Shanghai Tower убран по твоей просьбе</div>
         </div>
         <div class="day-reels">
+          <article class="reel" style="--tilt:-.7deg">
+            <div class="frame"><video data-src="reels/shanghai-danbing.mp4" data-poster="reels/shanghai-danbing.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Данбин на Dingxing Road · завтрак</span>
+            <div class="cap">Яичный блин с ютяо внутри за 2 $, жарят на сковороде при тебе</div>
+            <div class="by">Лавка «老上海鸡蛋饼», Dingxing Road 6, у Народной площади, только утром · 5,5 тысячи лайков · <a href="https://www.instagram.com/reel/DbvgF-CuiYb/" target="_blank" rel="noopener">@chefstuckas</a></div>
+          </article>
           <article class="reel" style="--tilt:-.8deg">
             <div class="frame"><video data-src="reels/shanghai-spa-shuiguo.mp4" data-poster="reels/shanghai-spa-shuiguo.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
             <span class="where">Shui Guo · Wujiaochang</span>
@@ -1097,36 +1025,62 @@ body.lb-open{overflow:hidden}
           </article>
         </div>
       </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">22 дек<small>вторник · Дунчжи</small></div><span class="tag chill">чилл</span></div>
+          <h3>Чжуцзяцзяо: городок на каналах</h3>
+          <ul>
+            <li class="free"><span class="tm">10:30</span><span>Метро 17 до станции Zhujiajiao 朱家角, около часа из центра</span></li>
+            <li class="free"><span class="tm">11:30</span><span>Сразу у выхода взять лодку за 40 ¥ и проплыть по деревне по воде</span></li>
+            <li class="free"><span class="tm">13:00</span><span>Обратно пешком по старым торговым улочкам: пробовать всё, что предлагают, чайная, кафе у воды, лавки мастеров</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Обратно в город. Сегодня Дунчжи, зимнее солнцестояние: по традиции съесть цзяоцзы, проще всего в Xijiade 喜家德, брать с креветкой</span></li>
+          </ul>
+          <div class="note">Совет из Threads @azymi: «обязательно к посещению всем, кто в Шанхае». Его же советуют в соседнем треде вместе с оранжереей Expo Park и Rockbund</div>
+        </div>
+      </article>
       <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">26 дек<small>суббота</small></div><span class="tag chill">чилл</span></div>
-          <h3>Старый город и бары</h3>
+          <div class="head"><div class="date">23 дек<small>среда</small></div><span class="tag chill">чилл</span></div>
+          <h3>Французская концессия без плана</h3>
           <ul>
-            <li class="free"><span class="tm">10:00</span><span>Завтрак у лавки с данбином на Dingxing Road 6: старошанхайский яичный блин с ютяо, соусами и зеленью, 7–12 ¥. Выход 8 метро People's Square, 300 метров. Работает только утром, позже может закрыться</span></li>
-            <li class="free"><span class="tm">11:00</span><span>Yu Garden и базар вокруг, 15 минут пешком: старый Шанхай, пельмени сяолунбао в Nanxiang</span></li>
-            <li class="free"><span class="tm">день</span><span>Tianzifang: лабиринт переулков с лавками, или Jing'an Temple и моллы вокруг</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Ужин в Yat Lau Yat (一楼一): гонконгская закусочная в подвале Huashan Square, Huashan Road 328, у Jing'an Temple. Неон, красные стулья, claypot rice и жареное мясо. Потом Speak Low: спикизи за дверью барного магазина, топ-50 Азии</span></li>
+            <li class="free"><span class="tm">11:00</span><span>Бранч в концессии: Anfu Road, кофе и выпечка</span></li>
+            <li class="free"><span class="tm">день</span><span>Платаны и виллы: Wukang Road, дом-«утюг» Wukang Mansion (淮海中路1850号), маленькие магазины. Рядом 13DE MARZO с гигантскими мишками и кофе с мишкой на стакане</span></li>
+            <li class="free"><span class="tm">15:00</span><span>Шопинг: Yongyuan Road с локальными брендами, потом Huaihai Middle Road, где Gentle Monster и Tamburins сделаны как арт-пространства</span></li>
+            <li class="free"><span class="tm">17:00</span><span>Nanjing West Road 789: The Louis, корабль Louis Vuitton с выставкой и кафе, и Starbucks Reserve Roastery с обжаркой на виду. Отсюда до Бунда 15 минут на метро</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин в Yat Lau Yat (一楼一), гонконгская закусочная в подвале Huashan Square, Huashan Road 328: неон, красные стулья, claypot rice. Потом Speak Low, спикизи за дверью барного магазина</span></li>
           </ul>
-          <div class="note">Самый свободный день Шанхая, план можно выкинуть целиком</div>
+          <div class="note">Гулять по концессии без маршрута: всё из списка по желанию</div>
         </div>
         <div class="day-reels">
+          <article class="reel" style="--tilt:.9deg">
+            <div class="frame"><video data-src="reels/shanghai-top10.mp4" data-poster="reels/shanghai-top10.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Шанхай · маршрут на день</span>
+            <div class="cap">Топ-10 Шанхая за 24 часа: от дома-«утюга» до Луцзяцзуя</div>
+            <div class="by">Wukang, мишки 13DE MARZO, Huaihai, LV-корабль, Starbucks Roastery, M&amp;M's с лицами, Yu Garden, Бунд · 4,6 тысячи лайков · <a href="https://www.instagram.com/reel/DdOkz6-yaMt/" target="_blank" rel="noopener">@patipaco</a></div>
+          </article>
           <article class="reel" style="--tilt:-.7deg">
-            <div class="frame"><video data-src="reels/shanghai-danbing.mp4" data-poster="reels/shanghai-danbing.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Данбин на Dingxing Road · завтрак</span>
-            <div class="cap">Яичный блин с ютяо внутри за 2 $, жарят на сковороде при тебе</div>
-            <div class="by">Лавка «老上海鸡蛋饼», Dingxing Road 6, у Народной площади, только утром · 5,5 тысячи лайков · <a href="https://www.instagram.com/reel/DbvgF-CuiYb/" target="_blank" rel="noopener">@chefstuckas</a></div>
+            <div class="frame"><video data-src="reels/shanghai-harmay-anfu.mp4" data-poster="reels/shanghai-harmay-anfu.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Anfu Road · Harmay</span>
+            <div class="cap">Бьюти-склад Harmay на Anfu Road</div>
+            <div class="by">Первый магазин сети в бывшем складе, в сердце концессии · 5 тысяч лайков · <a href="https://www.tiktok.com/@offwithsam/video/7686925158581341472" target="_blank" rel="noopener">@offwithsam</a></div>
           </article>
-          <article class="reel" style="--tilt:.8deg">
-            <div class="frame"><video data-src="reels/shanghai-yuyuan.mp4" data-poster="reels/shanghai-yuyuan.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Yu Garden · базар</span>
-            <div class="cap">Старый Шанхай: крыши, фонари, толпа</div>
-            <div class="by">1,4 миллиона лайков, самый залайканный ролик поездки · <a href="https://www.tiktok.com/@tepy_im/video/7554995055811939591" target="_blank" rel="noopener">@tepy_im</a></div>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video data-src="reels/shanghai-solo-day.mp4" data-poster="reels/shanghai-solo-day.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Концессия · день</span>
+            <div class="cap">Соло-день в Шанхае: кофе, улицы, еда</div>
+            <div class="by">62 тысячи лайков, полтора минуты про то, как здесь просто гулять · <a href="https://www.tiktok.com/@maddieborge/video/7618226226339106070" target="_blank" rel="noopener">@maddieborge</a></div>
           </article>
-          <article class="reel" style="--tilt:-.9deg">
-            <div class="frame"><video data-src="reels/shanghai-yuyuan-night.mp4" data-poster="reels/shanghai-yuyuan-night.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
-            <span class="where">Yu Garden · ночь</span>
-            <div class="cap">Yuyuan ночью, вход бесплатный</div>
-            <div class="by">234 тысячи лайков. Можно вернуться вечером вместо дневного визита · <a href="https://www.tiktok.com/@hangrybynature/video/7520595487737564434" target="_blank" rel="noopener">@hangrybynature</a></div>
+          <article class="reel" style="--tilt:-.6deg">
+            <div class="frame"><video data-src="reels/shanghai-yongyuan-shopping.mp4" data-poster="reels/shanghai-yongyuan-shopping.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yongyuan Road · Французская концессия</span>
+            <div class="cap">Шопинг: локальные бренды вместо Zara</div>
+            <div class="by">Улица отдельных магазинов и флагманов, плюс TX Huaihai · <a href="https://www.instagram.com/reel/DeMk4VdPRDV/" target="_blank" rel="noopener">@meewmoore</a></div>
+          </article>
+          <article class="reel" style="--tilt:1deg">
+            <div class="frame"><video data-src="reels/shanghai-apoli-bakery.mp4" data-poster="reels/shanghai-apoli-bakery.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Apoli Itabakery</span>
+            <div class="cap">Пекарня с азиатскими бейглами и матча-тортами</div>
+            <div class="by">Рисовые бейглы, фисташки, «почему так вкусно, хотя просто» · <a href="https://www.instagram.com/reel/DbphxfkNIFj/" target="_blank" rel="noopener">@anelia_macaron</a></div>
           </article>
           <article class="reel" style="--tilt:-.8deg">
             <div class="frame"><video data-src="reels/shanghai-yat-lau-yat.mp4" data-poster="reels/shanghai-yat-lau-yat.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
@@ -1142,30 +1096,114 @@ body.lb-open{overflow:hidden}
           </article>
         </div>
       </article>
-      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+      <article class="dayrow">
         <div class="plan">
-          <div class="head"><div class="date">27 дек<small>воскресенье</small></div><span class="tag chill">чилл</span></div>
-          <h3>West Bund и оранжерея Expo Park</h3>
+          <div class="head"><div class="date">24 дек<small>четверг · сочельник</small></div><span class="tag anch">главное</span></div>
+          <h3>Сочельник на Бунде</h3>
           <ul>
-            <li class="free"><span class="tm">11:00</span><span>Бранч, потом набережная West Bund: Long Museum и West Bund Museum, кофе у реки</span></li>
-            <li class="free"><span class="tm">14:00</span><span>Через реку в Expo Culture Park: огромный зелёный парк у воды и Greenhouse Garden, футуристическая оранжерея. Билет в выходные 128 ¥, бронь в мини-приложении 上海世博文化公园, вт–вс 9:00–21:00</span></li>
-            <li class="free"><span class="tm">17:30</span><span>Xujiahui: Shonen Jump Cafe в Metro City, если хочется</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Последний вечер в Шанхае: Lujiazui в огнях с набережной или бар, куда не успели</span></li>
+            <li class="free"><span class="tm">день</span><span>До обеда ничего. Если захочется: Yu Garden и базар, сяолунбао в Nanxiang</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Рождество на Бунде: ёлки, иллюминация, ужин с видом на Пудун, потом бокал в Condé Bar в Regent. Столик бронировать заранее</span></li>
+            <li><span class="tm">22:00</span><span>Спать: завтра в 5:30 подъём на самолёт, вещи собрать днём</span></li>
           </ul>
-          <div class="note">Expo Park и оранжерею советуют в двух тредах. Если 23-го остались в городе, вместо этого можно съездить в Сучжоу</div>
+          <div class="note">На 24-е рестораны с видом забиты, бронировать за пару недель</div>
+        </div>
+        <div class="day-reels">
+          <article class="reel" style="--tilt:-.8deg">
+            <div class="frame"><video data-src="reels/shanghai-conde-bar.mp4" data-poster="reels/shanghai-conde-bar.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Condé Bar · Regent, North Bund</span>
+            <div class="cap">Самый нереальный вид на Бунд, без минимального чека</div>
+            <div class="by">5-й этаж, Huangpu Road 60, с 17:30. Сюда на рождественский бокал · 53 тысячи лайков · <a href="https://www.tiktok.com/@nom_life/video/7645121689201757471" target="_blank" rel="noopener">@nom_life</a></div>
+          </article>
+          <article class="reel" style="--tilt:.8deg">
+            <div class="frame"><video data-src="reels/shanghai-yuyuan.mp4" data-poster="reels/shanghai-yuyuan.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yu Garden · базар</span>
+            <div class="cap">Старый Шанхай: крыши, фонари, толпа</div>
+            <div class="by">1,4 миллиона лайков, самый залайканный ролик поездки · <a href="https://www.tiktok.com/@tepy_im/video/7554995055811939591" target="_blank" rel="noopener">@tepy_im</a></div>
+          </article>
+          <article class="reel" style="--tilt:-.9deg">
+            <div class="frame"><video data-src="reels/shanghai-yuyuan-night.mp4" data-poster="reels/shanghai-yuyuan-night.webp" preload="none" playsinline loop></video><div class="play"><span><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></div><button class="zoom" type="button" aria-label="Увеличить">⤢</button></div>
+            <span class="where">Yu Garden · ночь</span>
+            <div class="cap">Yuyuan ночью, вход бесплатный</div>
+            <div class="by">234 тысячи лайков. Можно вернуться вечером вместо дневного визита · <a href="https://www.tiktok.com/@hangrybynature/video/7520595487737564434" target="_blank" rel="noopener">@hangrybynature</a></div>
+          </article>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SANYA DAYS ============ -->
+<section class="beijing" id="sanya" style="background:var(--bg-2)">
+  <div class="wrap">
+    <span class="eyebrow">Санья по дням</span>
+    <h2 style="margin-top:14px">Три дня моря: пляж, массаж и рынок морепродуктов</h2>
+    <div class="ratio">
+      <span class="pill"><i style="background:var(--lime)"></i>Чилл: без плана</span>
+      <span class="pill"><i style="background:var(--violet)"></i>Переезд</span>
+    </div>
+    <div class="days">
+      <article class="dayrow hotels" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">🏨 Отель<small>25–28 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <h3>Sanya Bay: длинный пляж, закаты, отель через дорогу от моря</h3>
+          <ul>
+            <li><span class="tm">1</span><span><b>Luoke Platinum Sea View</b> 三亚湾洛克铂金海景酒店: через дорогу от пляжа Sanya Bay, 3 минуты пешком, номера с видом на море и большими балконами, вокруг рестораны и ночные рынки. 4 000 отзывов, ¥420 ≈ 4 800 ₽. Мой выбор. <a href="https://www.trip.com/hotels/detail/?hotelId=17325404&amp;checkIn=2026-12-25&amp;checkOut=2026-12-28&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="alt-head">Запасные</div>
+          <ul class="alt">
+            <li><span class="tm">A</span><span><b>Vienna Hotel Sanya Bay</b>, у аэропорта: удобно для утреннего рейса 28-го, расстояние до пляжа не проверял. ¥374 ≈ 4 300 ₽. <a href="https://www.trip.com/hotels/detail/?hotelId=108961836&amp;checkIn=2026-12-25&amp;checkOut=2026-12-28&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
+            <li><span class="tm">B</span><span><b>Ocean Courtyard</b> 三亚四季海庭酒店, ближе к Dadonghai, есть шаттл до пляжа. Это не сеть Four Seasons. ¥386 ≈ 4 400 ₽. <a href="https://www.trip.com/hotels/detail/?hotelId=843599&amp;checkIn=2026-12-25&amp;checkOut=2026-12-28&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
+          </ul>
+          <div class="note">Цены Trip.com на 25–28 дек за ночь с налогами. Санья на Рождество и Новый год в высоком сезоне, бронировать сразу. В одном отзыве пишут, что вода на Sanya Bay мутноватая: самая прозрачная на Yalong Bay, туда можно съездить на такси на полдня</div>
         </div>
       </article>
       <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
-          <div class="head"><div class="date">28 дек<small>понедельник</small></div><span class="tag move">переезд</span></div>
-          <h3>Самолёт в Шэньчжэнь</h3>
+          <div class="head"><div class="date">25 дек<small>пятница · перелёт</small></div><span class="tag move">переезд</span></div>
+          <h3>Утром из Шанхая, днём уже на пляже</h3>
           <ul>
-            <li class="free"><span class="tm">утро</span><span>Кофе, выписаться, последняя прогулка по Бунду</span></li>
-            <li><span class="tm">11:30</span><span>Из отеля в Hongqiao, 30–40 минут</span></li>
-            <li><span class="tm">13:05</span><span>Hongqiao → Shenzhen Bao'an, 2 ч 45 мин, около 10 800 ₽</span></li>
-            <li><span class="tm">15:50</span><span>Шэньчжэнь</span></li>
+            <li><span class="tm">5:45</span><span>Из отеля в Hongqiao, 30–40 минут</span></li>
+            <li><span class="tm">7:30</span><span>China Eastern Hongqiao → Санья, прилёт в 10:45, около 17 000 ₽ на человека. Есть ещё рейс в 7:00</span></li>
+            <li class="free"><span class="tm">12:00</span><span>Заселение, попросить ранний заезд, поспать</span></li>
+            <li class="free"><span class="tm">16:00</span><span>Пляж Sanya Bay, закат над морем около 18:00</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин рядом с отелем</span></li>
           </ul>
-          <div class="note">Прямые из Hongqiao в Шэньчжэнь летают весь день, 9–11 тысяч на человека по Google Flights на 11 ноября. Самый дешёвый утром в 7:30, 9 353 ₽</div>
+          <div class="note">Вода в декабре около 25°, воздух днём 22–26°</div>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">26 дек<small>суббота</small></div><span class="tag chill">чилл</span></div>
+          <h3>Пляж и массаж</h3>
+          <ul>
+            <li class="free"><span class="tm">11:00</span><span>Пляж: купаться, лежать, бассейн</span></li>
+            <li class="free"><span class="tm">15:00</span><span>Массаж: китайский массаж ног и спины, салоны вдоль набережной, недорого</span></li>
+            <li class="free"><span class="tm">18:00</span><span>Закат на пляже</span></li>
+          </ul>
+          <div class="note">Если хочется воды прозрачнее, полдня на Yalong Bay, около 40 минут на такси</div>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">27 дек<small>воскресенье</small></div><span class="tag chill">чилл</span></div>
+          <h3>Пляж и ужин на рынке морепродуктов</h3>
+          <ul>
+            <li class="free"><span class="tm">день</span><span>Пляж, бассейн, сон</span></li>
+            <li class="free"><span class="tm">18:00</span><span>Рынок морепродуктов 三亚第一市场 First Market в центре: выбрать рыбу, креветки, гребешки, отнести в кафе рядом, там приготовят за плату за обработку</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Собрать вещи, завтра утром вылет</span></li>
+          </ul>
+          <div class="note">Цену за обработку и вес уточнять до заказа. От Sanya Bay до рынка 15–20 минут на Didi</div>
+        </div>
+      </article>
+      <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
+        <div class="plan">
+          <div class="head"><div class="date">28 дек<small>понедельник · перелёт</small></div><span class="tag move">переезд</span></div>
+          <h3>Утром в Шэньчжэнь</h3>
+          <ul>
+            <li><span class="tm">8:00</span><span>Из отеля в аэропорт Phoenix, около 20 минут</span></li>
+            <li><span class="tm">9:55</span><span>China Southern Санья → Шэньчжэнь, прилёт в 11:40, около 17 500 ₽ на человека</span></li>
+          </ul>
+          <div class="note">Дальше по плану Шэньчжэня. Цены Google Flights на 17 ноября</div>
         </div>
       </article>
     </div>
@@ -1187,7 +1225,7 @@ body.lb-open{overflow:hidden}
       <article class="dayrow hotels" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
           <div class="head"><div class="date">🏨 Отель<small>28 дек – 2 янв · 5 ночей</small></div><span class="tag anch">выбрать</span></div>
-          <h3>Жить в Futian: 14 минут поездом до Гонконга, метро до пляжа и аэропорта</h3>
+          <h3>Жить в Futian: 14 минут поездом до Гонконга, метро до аэропорта</h3>
           <ul>
             <li><span class="tm">1</span><span><b>Hui Hotel</b>, дизайн-отель в Huaqiangbei, рядом электронный рынок и метро. 9.3, ¥610 ≈ 7 000 ₽. Мой выбор. <a href="https://www.trip.com/hotels/detail/?hotelId=1212062&amp;checkIn=2026-12-28&amp;checkOut=2027-01-02&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
             <li><span class="tm">2</span><span><b>Hampton by Hilton Futian Huaqiangbei</b>, 9.7 по 12 900 отзывам, высокие этажи. ¥882 ≈ 10 100 ₽, на грани лимита. <a href="https://www.trip.com/hotels/detail/?hotelId=114658239&amp;checkIn=2026-12-28&amp;checkOut=2027-01-02&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -1206,7 +1244,7 @@ body.lb-open{overflow:hidden}
           <div class="head"><div class="date">28 дек<small>понедельник · приезд</small></div><span class="tag move">переезд</span></div>
           <h3>Прилетели в Шэньчжэнь</h3>
           <ul>
-            <li><span class="tm">15:50</span><span>Прилёт в Bao'an, метро 11 или Didi до Futian, 40 минут</span></li>
+            <li><span class="tm">11:40</span><span>Прилёт из Саньи в Bao'an, метро 11 или Didi до Futian, 40 минут. Обед, заселение</span></li>
             <li class="free"><span class="tm">19:00</span><span>Ужин и бары в Coco Park, Futian вечером в подсветке</span></li>
           </ul>
           <div class="note">Снова юани, Alipay, VPN. Тепло, +15…+22°</div>
@@ -1215,14 +1253,13 @@ body.lb-open{overflow:hidden}
       <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
           <div class="head"><div class="date">29 дек<small>вторник</small></div><span class="tag chill">чилл</span></div>
-          <h3>Город: электроника, Shekou и закат у залива</h3>
+          <h3>Отсыпаемся, вечером закат у залива</h3>
           <ul>
-            <li class="free"><span class="tm">11:00</span><span>Huaqiangbei: самый большой электронный рынок, гаджеты и всё для техники. Вечером многие этажи закрываются, поэтому днём</span></li>
-            <li class="free"><span class="tm">15:00</span><span>OCT Loft, бывшие фабрики с галереями и кофейнями, потом Shekou и Sea World</span></li>
+            <li class="free"><span class="tm">день</span><span>Ничего. По желанию электронный рынок Huaqiangbei, днём, вечером этажи закрываются</span></li>
             <li class="free"><span class="tm">17:30</span><span>Закат в парке Shenzhen Bay, напротив Гонконг</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Ужин и бары в Shekou</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин в Shekou</span></li>
           </ul>
-          <div class="note">Можно поменять местами с пляжем, если 29-го будет теплее</div>
+          <div class="note">День без программы перед Гонконгом</div>
         </div>
       </article>
       <article class="dayrow anchor">
@@ -1230,7 +1267,7 @@ body.lb-open{overflow:hidden}
           <div class="head"><div class="date">30 дек<small>среда · Гонконг</small></div><span class="tag anch">главное</span></div>
           <h3>Гонконг на день</h3>
           <ul>
-            <li><span class="tm">9:30</span><span>Скоростной поезд со станции Futian до West Kowloon, 14 минут, около HK$75–87. Паспортный контроль на обоих концах, приходить за 30–45 минут</span></li>
+            <li><span class="tm">10:00</span><span>Скоростной поезд со станции Futian до West Kowloon, 14 минут, около HK$75–87. Паспортный контроль на обоих концах, приходить за 30–45 минут</span></li>
             <li><span class="tm">10:30</span><span>Star Ferry из Tsim Sha Tsui в Central через гавань</span></li>
             <li class="free"><span class="tm">11:30</span><span>Завтрак в Sang Kee Congee, Burd Street 7: рисовая каша с рыбой или говядиной, около 4 $</span></li>
             <li><span class="tm">13:00</span><span>Peak Tram на Victoria Peak, вид на всю гавань</span></li>
@@ -1280,14 +1317,13 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
-          <div class="head"><div class="date">1 янв<small>пятница · пляж</small></div><span class="tag chill">чилл</span></div>
-          <h3>День на пляже</h3>
+          <div class="head"><div class="date">1 янв<small>пятница</small></div><span class="tag chill">чилл</span></div>
+          <h3>Ничего не делаем</h3>
           <ul>
-            <li class="free"><span class="tm">11:00</span><span>Xiaomeisha или Dameisha: около часа на метро 8 из центра, широкий пляж, плавают в огороженной зоне</span></li>
-            <li class="free"><span class="tm">или</span><span>Xichong на полуострове Dapeng: самый красивый пляж Шэньчжэня, около 1,5 часа на Didi</span></li>
-            <li class="free"><span class="tm">вечер</span><span>Обратно в город, ужин, собрать вещи</span></li>
+            <li class="free"><span class="tm">день</span><span>Спать, массаж или пилатес, собрать вещи</span></li>
+            <li class="free"><span class="tm">вечер</span><span>Ужин рядом с отелем</span></li>
           </ul>
-          <div class="note">Вода в конце декабря около 16–21°, купаться бодро. Воздух до +20°, если повезёт с солнцем. Если день выйдет пасмурным, меняем с 29-м</div>
+          <div class="note">Купались в Санье, здесь пляж не нужен</div>
         </div>
       </article>
       <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
@@ -1316,7 +1352,7 @@ body.lb-open{overflow:hidden}
     <span class="eyebrow">Сколько это стоит</span>
     <h2 style="margin-top:14px">Две недели Китая по цене одной Европы</h2>
     <div class="bud-top">
-      <div class="bud-total"><span id="bud-sum">310–480</span> тыс. ₽<small id="bud-who">на двоих, один номер на 16 ночей, без шопинга</small></div>
+      <div class="bud-total"><span id="bud-sum">370–530</span> тыс. ₽<small id="bud-who">на двоих, один номер на 16 ночей, без шопинга</small></div>
     </div>
     <div class="bud-bar" id="bud-bar" aria-hidden="true"></div>
     <div class="bud-grid" id="bud-grid"></div>
@@ -1339,19 +1375,19 @@ body.lb-open{overflow:hidden}
       <div class="col">
         <h3><i style="background:var(--orange)"></i>До 1 декабря</h3>
         <label><input type="checkbox" id="c4"><span>Отели Пекин и Шанхай</span></label>
-        <label><input type="checkbox" id="c6"><span>Рейс Шанхай → Шэньчжэнь, 28 дек, 13:05 из Hongqiao</span></label>
+        <label><input type="checkbox" id="c6"><span>Рейсы Шанхай → Санья 25 дек в 7:30 и Санья → Шэньчжэнь 28 дек в 9:55</span></label>
         <label><input type="checkbox" id="c16"><span>Мерч LPL: проверить в мини-приложении Li-Ning, что есть в шанхайском флагмане, при необходимости заказать в отель</span></label>
       </div>
       <div class="col">
         <h3><i style="background:var(--blue)"></i>За 2 недели</h3>
-        <label><input type="checkbox" id="c8"><span>Поезд Пекин → Шанхай, 20 дек, G7 утром, продажа около 5 дек</span></label>
+        <label><input type="checkbox" id="c8"><span>Поезд Пекин → Шанхай, 20 дек, около 10–11 утра, продажа около 5 дек</span></label>
         <label><input type="checkbox" id="c9"><span>Поезд Futian → West Kowloon на 30 дек и обратно</span></label>
         <label><input type="checkbox" id="c10"><span>Билеты в Universal, 18 дек, пятница</span></label>
-        <label><input type="checkbox" id="c11"><span>Запретный город на 17 дек (продажа за 7 дней, около 10 дек)</span></label>
+        <label><input type="checkbox" id="c11"><span>Запретный город на 19 дек (продажа за 7 дней, около 12 дек)</span></label>
       </div>
       <div class="col">
         <h3><i style="background:var(--lime)"></i>За неделю</h3>
-        <label><input type="checkbox" id="c17"><span>Оранжерея Expo Park, 27 дек: бронь в мини-приложении 上海世博文化公园</span></label>
+        <label><input type="checkbox" id="c18"><span>Отель в Санье 25–28 дек: Luoke Sea View на Sanya Bay</span></label>
         <label><input type="checkbox" id="c13"><span>Новогодний ужин в Шэньчжэне, 31 дек</span></label>
         <label><input type="checkbox" id="c14"><span>Проверить часы Universal зимой</span></label>
         <label><input type="checkbox" id="c15"><span>Бронь утки: Siji Minfu / Da Dong</span></label>
@@ -1361,11 +1397,11 @@ body.lb-open{overflow:hidden}
     <p class="pay-sub">Зарплаты 10 и 25 числа. Суммы на двоих, в тысячах рублей, если пополам, то вдвое меньше</p>
     <div class="cols pay">
       <div class="col"><h3><i style="background:var(--pink)"></i>10 ноября</h3><div class="pay-sum">оба билета куплены<small></small></div><ul><li>Москва → Пекин, 16 дек <b>куплен</b></li><li>Шэньчжэнь → Москва, 2 янв <b>куплен</b></li><li>Отель в Шэньчжэне на Новый год: забронировать сразу, лучше с оплатой в отеле <b>бронь</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--orange)"></i>25 ноября</h3><div class="pay-sum">83–137<small>тыс. ₽</small></div><ul><li>Отель в Пекине, 3 ночи <b>13–24</b></li><li>Отель в Шанхае, 8 ночей <b>31–46</b></li><li>Отель в Шэньчжэне, если не платим на месте <b>20–45</b></li><li>Шанхай → Шэньчжэнь, 28 дек <b>19–22</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--blue)"></i>10 декабря</h3><div class="pay-sum">100–151<small>тыс. ₽</small></div><ul><li>Поезд G7, продажа около 5 дек <b>13–15</b></li><li>Universal <b>9–12</b></li><li>Запретный город (продажа около 10 дек) и круиз <b>3–4</b></li><li>Храм Ламы, 798 <b>1–2</b></li><li>Страховка, eSIM, VPN <b>6–8</b></li><li>На карту на Пекин и Шанхай: еда <b>45–78</b></li><li>Такси и метро <b>13–20</b></li><li>Баня Shui Guo, оранжерея, Чжуцзяцзяо <b>10–12</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--lime)"></i>25 декабря, уже в поездке</h3><div class="pay-sum">42–71<small>тыс. ₽</small></div><ul><li>Шэньчжэнь: еда и новогодний ужин <b>22–38</b></li><li>Гонконг на день: поезд, Пик, паром, еда <b>10–16</b></li><li>Пляж: метро или такси <b>1–3</b></li><li>Такси и метро <b>9–14</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--orange)"></i>25 ноября</h3><div class="pay-sum">134–187<small>тыс. ₽</small></div><ul><li>Отель в Пекине, 3 ночи <b>13–24</b></li><li>Отель в Шанхае, 5 ночей <b>19–29</b></li><li>Отель в Санье, 3 ночи <b>13–17</b></li><li>Отель в Шэньчжэне, если не платим на месте <b>20–45</b></li><li>Шанхай → Санья, 25 дек <b>34–36</b></li><li>Санья → Шэньчжэнь, 28 дек <b>35–36</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--blue)"></i>10 декабря</h3><div class="pay-sum">85–127<small>тыс. ₽</small></div><ul><li>Поезд в Шанхай, продажа около 5 дек <b>13–15</b></li><li>Universal <b>9–12</b></li><li>Запретный город (продажа около 12 дек) и круиз <b>3–4</b></li><li>Страховка, eSIM, VPN <b>6–8</b></li><li>На карту на Пекин и Шанхай: еда <b>34–59</b></li><li>Такси и метро <b>13–20</b></li><li>Баня Shui Guo, Чжуцзяцзяо <b>7–9</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--lime)"></i>25 декабря, уже в поездке</h3><div class="pay-sum">61–103<small>тыс. ₽</small></div><ul><li>Санья: еда <b>13–21</b></li><li>Санья: рынок морепродуктов и массаж <b>7–14</b></li><li>Шэньчжэнь: еда и новогодний ужин <b>22–38</b></li><li>Гонконг на день: поезд, Пик, паром, еда <b>10–16</b></li><li>Такси и метро <b>9–14</b></li></ul></div>
     </div>
-    <p class="pay-note">Зарплата 25 декабря придёт в Шанхае и покроет Шэньчжэнь, если карту, привязанную к Alipay, можно пополнять из-за границы. Проверить до вылета, иначе эти 42–71 положить на карту 10 декабря</p>
+    <p class="pay-note">Зарплата 25 декабря придёт в день перелёта в Санью и покроет Санью и Шэньчжэнь, если карту, привязанную к Alipay, можно пополнять из-за границы. Проверить до вылета, иначе эти 61–103 положить на карту 10 декабря</p>
   </div>
 </section>
 
@@ -1472,7 +1508,8 @@ body.lb-open{overflow:hidden}
   var cities = [
     {n:'Пекин', lon:116.4, lat:39.9, c:'var(--orange)', dx:14, dy:-10, big:true},
     {n:'Шанхай', lon:121.5, lat:31.2, c:'var(--blue)', dx:14, dy:4, big:true},
-    {n:'Шэньчжэнь', lon:114.06, lat:22.54, c:'var(--violet)', dx:14, dy:12, big:true}
+    {n:'Шэньчжэнь', lon:114.06, lat:22.54, c:'var(--violet)', dx:14, dy:12, big:true},
+    {n:'Санья', lon:109.5, lat:18.25, c:'var(--lime)', dx:14, dy:4, big:true}
   ];
   var byName = {}; cities.forEach(function(c){ byName[c.n]=c; });
   function pathBetween(a,b,curve){
@@ -1483,7 +1520,8 @@ body.lb-open{overflow:hidden}
   }
   var legs = [
     {a:'Пекин', b:'Шанхай', air:false, curve:-60},
-    {a:'Шанхай', b:'Шэньчжэнь', air:true, curve:70}
+    {a:'Шанхай', b:'Санья', air:true, curve:70},
+    {a:'Санья', b:'Шэньчжэнь', air:true, curve:-30}
   ];
   var routes = el('g',{fill:'none',stroke:'var(--route-stroke)','stroke-width':'3.5','stroke-linecap':'round'});
   legs.forEach(function(l){
@@ -1514,10 +1552,10 @@ body.lb-open{overflow:hidden}
   // ---- budget ----
   // items: [название, min, max, shared] — shared = платится один раз (номер, водитель), не делится на человека
   var BUD = [
-    {n:'Перелёты', c:'var(--pink)', items:[['Москва → Пекин, 16 дек, куплен',45,70],['Шанхай → Шэньчжэнь, 28 дек',19,22],['Шэньчжэнь → Москва, 2 янв, куплен',43,46]]},
-    {n:'Отели · 16 ночей · за номер', c:'var(--blue)', items:[['Пекин · 3',13,24,1],['Шанхай · 8',31,46,1],['Шэньчжэнь · 5 + НГ',20,45,1]]},
-    {n:'Еда и бары', c:'var(--orange)', items:[['Китай · 17 дней',68,116],['Гонконг · день',4,8]]},
-    {n:'Активности', c:'var(--violet)', items:[['Universal',9,12],['Баня Shui Guo',6,7],['Запретный город, круиз',3,4],['Храм Ламы, 798',1,2],['Чжуцзяцзяо: метро и лодка',1,2],['Оранжерея Expo Park',3,3],['Гонконг: поезд, Пик, Star Ferry',6,8],['Пляж: дорога',1,3]]},
+    {n:'Перелёты', c:'var(--pink)', items:[['Москва → Пекин, 16 дек, куплен',45,70],['Шанхай → Санья, 25 дек',34,36],['Санья → Шэньчжэнь, 28 дек',35,36],['Шэньчжэнь → Москва, 2 янв, куплен',43,46]]},
+    {n:'Отели · 16 ночей · за номер', c:'var(--blue)', items:[['Пекин · 3',13,24,1],['Шанхай · 5',19,29,1],['Санья · 3',13,17,1],['Шэньчжэнь · 5 + НГ',20,45,1]]},
+    {n:'Еда и бары', c:'var(--orange)', items:[['Китай · 17 дней',68,116],['Гонконг · день',4,8],['Санья: ужин на рынке морепродуктов',4,8]]},
+    {n:'Активности', c:'var(--violet)', items:[['Universal',9,12],['Баня Shui Guo',6,7],['Запретный город, круиз',3,4],['Массаж в Санье',3,6],['Чжуцзяцзяо: метро и лодка',1,2],['Гонконг: поезд, Пик, Star Ferry',6,8]]},
     {n:'Поезда', c:'var(--lime)', dark:true, items:[['Пекин → Шанхай, G',13,15]]},
     {n:'Метро и такси', c:'var(--yellow)', dark:true, items:[['Didi и такси',11,16,1],['Метро',7,10],['Аэропорты и вокзалы',4,8,1]]},
     {n:'Связь и страховка', c:'var(--ink)', items:[['eSIM на 2 недели',2,3],['Страховка',3,4],['VPN',1,1,1]]}
