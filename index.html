@@ -355,6 +355,22 @@ body.lb-open{overflow:hidden}
   .ticket,.leg{transition:none}
 }
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+/* polish: alignment */
+.hero h1 .w2,.hero h1 .w3{white-space:nowrap}
+@supports (font-size:1cqi){.hero-text{container-type:inline-size}.hero h1{font-size:clamp(30px,9.6cqi,100px)}}
+.ic{display:inline-block;margin-right:.4em}
+.chip .ic{margin-right:0}
+.dayrow ul,.day ul{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:10px;row-gap:8px}
+.dayrow li,.day li{grid-column:1/-1;grid-template-columns:subgrid}
+.tickets{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (min-width:1101px){.ticket h3{font-size:clamp(24px,2.4vw,34px)}}
+@media (max-width:1100px){.tickets{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.tickets{grid-template-columns:1fr}}
+@media (max-width:760px){.bar div{white-space:normal;text-align:center;line-height:1.05;padding:0 4px}}
+@media (max-width:480px){.leg .how{max-width:none}}
+@media (max-width:560px){.dayrow .date small,.day .date small{letter-spacing:.05em}.dayrow .head.titled{flex-wrap:wrap-reverse;align-items:flex-end;row-gap:10px}}
+#bud-sum{white-space:nowrap}
+.pay .col{display:flex;flex-direction:column}.pay .col ul{flex:1;display:flex;flex-direction:column}.pay .col li:last-child{margin-top:auto}
 </style>
 </head>
 <body>
@@ -370,12 +386,12 @@ body.lb-open{overflow:hidden}
       <span class="w3"><span class="arrow">→</span> Шэньчжэнь</span>
     </h1>
     <div class="hero-sub">
-      <span class="chip">✈️ из Москвы · ~8 ч туда, ~10 ч обратно, оба прямые</span>
-      <span class="chip o">🏯 Пекин · 4 ночи</span>
-      <span class="chip b">🌆 Шанхай · 5</span>
-      <span class="chip y">🏝 Санья · 3</span>
-      <span class="chip v">🌴 Шэньчжэнь · 5 + НГ</span>
-      <span class="chip l">🏠 домой 2 янв</span>
+      <span class="chip"><span class="ic" aria-hidden="true">✈️</span>из Москвы · ~8 ч туда, ~10 ч обратно, оба прямые</span>
+      <span class="chip o"><span class="ic" aria-hidden="true">🏯</span>Пекин · 4 ночи</span>
+      <span class="chip b"><span class="ic" aria-hidden="true">🌆</span>Шанхай · 5</span>
+      <span class="chip y"><span class="ic" aria-hidden="true">🏝</span>Санья · 3</span>
+      <span class="chip v"><span class="ic" aria-hidden="true">🌴</span>Шэньчжэнь · 5 + НГ</span>
+      <span class="chip l"><span class="ic" aria-hidden="true">🏠</span>домой 2 янв</span>
     </div>
     <div class="countdown" id="cd" aria-live="polite">
       <div class="cd"><b id="cd-d">—</b><small>дней</small></div>
@@ -461,7 +477,7 @@ body.lb-open{overflow:hidden}
 <!-- ============ CITIES ============ -->
 <section class="cities" id="cities">
   <div class="wrap">
-    <span class="eyebrow">Пять билетов</span>
+    <span class="eyebrow">Четыре билета</span>
     <h2 style="margin-top:14px">Каждому городу свой вайб</h2>
     <div class="tickets">
       <article class="ticket bj">
@@ -533,7 +549,7 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>17–20 дек · 3 ночи</small></div><span class="tag chill">выбран</span></div>
+          <div class="head titled"><div class="date">🏨&nbsp;Отель<small>17–20 дек · 3 ночи</small></div><span class="tag chill">выбран</span></div>
           <h3>TRUE GO у Санлитуня: бары в пяти минутах пешком</h3>
           <ul>
             <li><span class="tm">✓</span><span><b>TRUE GO Hotel, Chaoyangmen Sanlitun</b> 秋果酒店(北京朝阳门三里屯店), 芳草地西街11号 (No. 11 Fangcaodi West Street). 9.6 по 2 470 отзывам. <a href="https://www.trip.com/hotels/detail/?hotelId=54527609&amp;checkIn=2026-12-17&amp;checkOut=2026-12-20&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -560,7 +576,7 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow extras">
         <div class="plan">
-          <div class="head"><div class="date">🧘 Пилатес<small>на английском · Пекин</small></div><span class="tag chill">для себя</span></div>
+          <div class="head titled"><div class="date">🧘&nbsp;Пилатес<small>на английском · Пекин</small></div><span class="tag chill">для себя</span></div>
           <ul>
             <li><span class="tm">1</span><span><b>Alona Pilates Studio</b>, Sanlitun, 1 Xinyuan Nanlu, 5 этаж (朝阳区新源南路1号5层). Reformer, mat, персональные. В листинге «English speaking instructors». Цену не нашёл, тел. 139 1029 0260. <a href="https://www.thebeijinger.com/directory/alona-pilates-studio" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=%E6%96%B0%E6%BA%90%E5%8D%97%E8%B7%AF1%E5%8F%B7%20%E6%99%AE%E6%8B%89%E6%8F%90&amp;city=110000" target="_blank" rel="noopener">карта</a></span></li>
             <li><span class="tm">2</span><span><b>Ms. Uptown</b>, Galaxy SOHO, 10 минут от Dongsi. Только для женщин, тренеры говорят по-английски. Reformer не подтверждён. <a href="https://thebeijinger.com/node/1056528" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=%E9%93%B6%E6%B2%B3SOHO&amp;city=110000" target="_blank" rel="noopener">карта</a></span></li>
@@ -569,7 +585,7 @@ body.lb-open{overflow:hidden}
           <div class="note">Запись по телефону или в WeChat, просить англоязычного тренера. Листинги старые, сначала позвонить</div>
         </div>
         <div class="plan">
-          <div class="head"><div class="date">👕 Секонды<small>и винтаж · Пекин</small></div><span class="tag chill">для себя</span></div>
+          <div class="head titled"><div class="date">👕&nbsp;Секонды<small>и винтаж · Пекин</small></div><span class="tag chill">для себя</span></div>
           <ul class="alt">
             <li><span class="tm">A</span><span><b>Mega Mega Vintage</b>, 鼓楼东大街191-1, метро Gulou Dajie или Beixinqiao, 10:00–21:00. Самый известный на улице, цены средние и выше. <a href="https://english.visitbeijing.com.cn/article/47ON1XrJioS" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=%E9%BC%93%E6%A5%BC%E4%B8%9C%E5%A4%A7%E8%A1%97191-1&amp;city=110000" target="_blank" rel="noopener">карта</a></span></li>
             <li><span class="tm">B</span><span><b>Callus</b>, 鼓楼东大街241号, 13:30–21:30. Кураторский винтаж. <a href="https://english.visitbeijing.com.cn/article/47OLiIeZSIA" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=%E9%BC%93%E6%A5%BC%E4%B8%9C%E5%A4%A7%E8%A1%97241%E5%8F%B7&amp;city=110000" target="_blank" rel="noopener">карта</a></span></li>
@@ -581,7 +597,7 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow vibe">
         <div class="plan">
-          <div class="head"><div class="date">❄️ Вайб<small>зимний Пекин</small></div><span class="tag chill">настрой</span></div>
+          <div class="head titled"><div class="date">❄️&nbsp;Вайб<small>зимний Пекин</small></div><span class="tag chill">настрой</span></div>
           <h3>Красные стены, серое небо, иногда снег</h3>
           <ul>
             <li><span class="tm">погода</span><span>−5…+3°, сухо, часто ясно. Снег бывает, но редко и быстро тает</span></li>
@@ -784,7 +800,7 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>20–25 дек · 5 ночей</small></div><span class="tag anch">выбрать</span></div>
+          <div class="head titled"><div class="date">🏨&nbsp;Отель<small>20–25 дек · 5 ночей</small></div><span class="tag anch">выбрать</span></div>
           <h3>Отель до 10 тысяч с тиктоком плюс три по параметрам</h3>
           <ul>
             <li><span class="tm">1</span><span><b>Tianhua Hotel</b> <span class="gym no">без зала</span>, People's Square, Huanghe Road. Обновлён в 2025, 9.3, ¥456–483 ≈ 5 200–5 600 ₽. Пешком до Nanjing Road и Бунда, вокруг едальни. Мой выбор. <a href="https://www.trip.com/hotels/shanghai-hotel-detail-6738656/tianhua-hotel-shanghai-people-s-square-nanjing-road-walkway/" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -850,7 +866,7 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow extras">
         <div class="plan">
-          <div class="head"><div class="date">🧘 Пилатес<small>на английском · Шанхай</small></div><span class="tag chill">для себя</span></div>
+          <div class="head titled"><div class="date">🧘&nbsp;Пилатес<small>на английском · Шанхай</small></div><span class="tag chill">для себя</span></div>
           <ul>
             <li><span class="tm">1</span><span><b>Body Concept</b>, Jing'an, филиал на Qinghai Lu, всего 5 студий. Reformer, mat, Gyrotonic, английские и двуязычные классы. <a href="https://www.thatsmags.com/beijing/directory/10374/body-concept-pilates-studio-jing-an" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=Body%20Concept%20%E6%99%AE%E6%8B%89%E6%8F%90%20%E9%9D%92%E6%B5%B7%E8%B7%AF&amp;city=310000" target="_blank" rel="noopener">карта</a></span></li>
             <li><span class="tm">2</span><span><b>Pike Six</b>, Wuding Lu, Jing'an. Reformer-студия, язык не подтверждён. <a href="https://www.thatsmags.com/china/post/38131/pike-six-redefining-pilates-in-shanghai" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=Pike%20Six%20%E6%99%AE%E6%8B%89%E6%8F%90%20%E6%AD%A6%E5%AE%9A%E8%B7%AF&amp;city=310000" target="_blank" rel="noopener">карта</a></span></li>
@@ -859,7 +875,7 @@ body.lb-open{overflow:hidden}
           <div class="note">Ориентир по Шанхаю: группа на reformer 300–450 ¥ ≈ 3 500–5 200 ₽, персональная 600–800 ¥, пробные пакеты 99–299 ¥ (<a href="https://localshanghai.com/pilates-studios-shanghai-english-classes-price/" target="_blank" rel="noopener">LocalShanghai, 2026</a>). Запись в WeChat или Dianping</div>
         </div>
         <div class="plan">
-          <div class="head"><div class="date">👕 Секонды<small>и винтаж · Шанхай</small></div><span class="tag chill">для себя</span></div>
+          <div class="head titled"><div class="date">👕&nbsp;Секонды<small>и винтаж · Шанхай</small></div><span class="tag chill">для себя</span></div>
           <ul class="alt">
             <li><span class="tm">A</span><span><b>Max &amp; Match</b> (Times Remake Vintage), 新乐路54号, метро Shaanxi Road South. Американский спорт и ворквир: Nike, Carhartt, Ralph Lauren. Дорого, редкая джерси NBA стоит 2 899 ¥, но бывает и дешевле. <a href="https://english.shanghai.gov.cn/en-EditorsPick-ShopinShanghai/20250527/2499c34533a446c29e5bc62bd4d21d52.html" target="_blank" rel="noopener">источник</a> · <a href="https://uri.amap.com/search?keyword=%E6%96%B0%E4%B9%90%E8%B7%AF54%E5%8F%B7&amp;city=310000" target="_blank" rel="noopener">карта</a></span></li>
             <li><span class="tm">B</span><span><b>Changle, Julu и Yongkang Road</b> (长乐路, 巨鹿路, 永康路): винтажные лавки с варсити-куртками и милитари, TROPHY MARKET на Changle. <a href="https://www.smartshanghai.com/listings/shopping/vintage/" target="_blank" rel="noopener">список SmartShanghai</a> · <a href="https://uri.amap.com/search?keyword=%E9%95%BF%E4%B9%90%E8%B7%AF%20%E5%8F%A4%E7%9D%80&amp;city=310000" target="_blank" rel="noopener">карта</a></span></li>
@@ -871,7 +887,7 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
-          <div class="head"><div class="date">🍜 Где есть<small>советы из Threads · Шанхай</small></div><span class="tag chill">по пути</span></div>
+          <div class="head titled"><div class="date">🍜&nbsp;Где есть<small>советы из Threads · Шанхай</small></div><span class="tag chill">по пути</span></div>
           <ul>
             <li class="free"><span class="tm">паста</span><span><b>Dopasta</b>: «очень вкусная паста»</span></li>
             <li class="free"><span class="tm">безлимит</span><span><b>Dong Sheng</b>, ресторан «ешь сколько хочешь», один из них в Huangpu, в здании трёхэтажного Uniqlo</span></li>
@@ -886,12 +902,12 @@ body.lb-open{overflow:hidden}
       </article>
       <article class="dayrow extras" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
-          <div class="head"><div class="date">📍 Подборка Corner<small>кофе, ужины, бары, шопинг · Шанхай</small></div><span class="tag chill">по пути</span></div>
+          <div class="head titled"><div class="date">📍&nbsp;Подборка Corner<small>кофе, ужины, бары, шопинг · Шанхай</small></div><span class="tag chill">по пути</span></div>
           <ul>
             <li class="free"><span class="tm">кофе</span><span><b>Shimmer</b>, Julu Road 661, у Anfu Road: днём эспрессо, вечером коктейли. <b>Seesaw</b>, Yuyuan Road 433: деревянный дом с белой лестницей. <b>Café del Volcán</b>, Yongkang Road 80: пуровер, восемь мест. <b>M Stand</b>, Huashan Road 1126: латте с камелией и ласточкиным гнездом. <b>Ops Cafe</b>, Taiyuan Road 177: стоячая кофе-лаборатория с сезонными напитками. <b>Mietal Hands</b>: фисташковый латте</span></li>
             <li class="free"><span class="tm">с видом</span><span><b>Manner Coffee</b> в Baiyulan Plaza, North Bund: кофе с видом на Oriental Pearl и Бунд</span></li>
             <li class="free"><span class="tm">Бунд</span><span>Ужин с видом на Пудун: <b>Canton Table</b> (Bund 3, 5 этаж, димсамы со звездой Michelin), <b>Mercato</b> (Bund 3, 6 этаж, пицца и вино), <b>Dragon Phoenix</b> (Fairmont Peace Hotel, 8 этаж, пекинская утка), <b>M on the Bund</b> (терраса, послеобеденный чай)</span></li>
-            <li class="free"><span class="tm">шанхайская</span><span><b>Jesse</b>, Tianping Road 41: курица «нищего» и шанхайская классика. <b>Chun</b>, Jinxian Road 124: крошечная, домашняя кухня. <b>Fu 1088</b>, Zhenning Road 375: старая вилла. <b>Lost Heaven</b>, Gaoyou Road 38: юньнаньская кухня. <b>Ye Shanghai</b> и <b>Rong</b> в Xintiandi</span></li>
+            <li class="free"><span class="tm">местная</span><span><b>Jesse</b>, Tianping Road 41: курица «нищего» и шанхайская классика. <b>Chun</b>, Jinxian Road 124: крошечная, домашняя кухня. <b>Fu 1088</b>, Zhenning Road 375: старая вилла. <b>Lost Heaven</b>, Gaoyou Road 38: юньнаньская кухня. <b>Ye Shanghai</b> и <b>Rong</b> в Xintiandi</span></li>
             <li class="free"><span class="tm">бары</span><span><b>Sober Company</b>, Yandang Road 99: японский бар на нескольких этажах, на первом живой джаз. <b>The Odd Couple</b>, Xintiandi: бар-аркада с балконами над улицей. <b>Kor Shanghai</b>: ужин, потом хип-хоп клуб</span></li>
             <li class="free"><span class="tm">шопинг</span><span><b>Huaihai 755</b>: огромный Muji, Jellycat. <b>Harmay</b>: склад косметики с пробниками. <b>K11</b>, Huaihai Road 300: арт-молл. <b>Soho Fuxing</b>: этажи-сады. <b>Гигантский MINISO</b>, Nanjing East Road 154. <b>The Gundam Base</b>: Super Brand Mall, 5 этаж, Lujiazui. <b>Xingguang</b>, Luban Road 300: камеры и плёнка</span></li>
           </ul>
@@ -1103,7 +1119,7 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels" style="grid-template-columns:minmax(0,1fr)">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>25–28 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
+          <div class="head titled"><div class="date">🏨&nbsp;Отель<small>25–28 дек · 3 ночи</small></div><span class="tag anch">выбрать</span></div>
           <h3>Sanya Bay: длинный пляж, закаты, отель через дорогу от моря</h3>
           <ul>
             <li><span class="tm">1</span><span><b>Luoke Platinum Sea View</b> 三亚湾洛克铂金海景酒店: через дорогу от пляжа Sanya Bay, 3 минуты пешком, номера с видом на море и большими балконами, вокруг рестораны и ночные рынки. 4 000 отзывов, ¥420 ≈ 4 800 ₽. Мой выбор. <a href="https://www.trip.com/hotels/detail/?hotelId=17325404&amp;checkIn=2026-12-25&amp;checkOut=2026-12-28&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -1185,7 +1201,7 @@ body.lb-open{overflow:hidden}
     <div class="days">
       <article class="dayrow hotels">
         <div class="plan">
-          <div class="head"><div class="date">🏨 Отель<small>28 дек – 2 янв · 5 ночей</small></div><span class="tag chill">выбран</span></div>
+          <div class="head titled"><div class="date">🏨&nbsp;Отель<small>28 дек – 2 янв · 5 ночей</small></div><span class="tag chill">выбран</span></div>
           <h3>Hui Hotel у Central Park: сад и небоскрёбы из окна</h3>
           <ul>
             <li><span class="tm">✓</span><span><b>Hui Hotel</b> 深圳回酒店, 红荔路3015号 (No. 3015 Hongli Road), Futian. Дизайн-отель, 9.3 по 2 853 отзывам, открыт в 2014. <a href="https://www.trip.com/hotels/detail/?hotelId=1212062&amp;checkIn=2026-12-28&amp;checkOut=2027-01-02&amp;adult=2&amp;crn=1" target="_blank" rel="noopener">Trip.com</a></span></li>
@@ -1330,7 +1346,7 @@ body.lb-open{overflow:hidden}
     <span class="eyebrow">Сколько это стоит</span>
     <h2 style="margin-top:14px">Две недели Китая по цене одной Европы</h2>
     <div class="bud-top">
-      <div class="bud-total"><span id="bud-sum">450–590</span> тыс. ₽<small id="bud-who">на двоих, один номер на 16 ночей, с шопингом 70</small></div>
+      <div class="bud-total"><span id="bud-sum">450–590</span> тыс.&nbsp;₽<small id="bud-who">на двоих, один номер на 16 ночей, с шопингом 70</small></div>
     </div>
     <div class="bud-bar" id="bud-bar" aria-hidden="true"></div>
     <div class="bud-grid" id="bud-grid"></div>
@@ -1374,10 +1390,10 @@ body.lb-open{overflow:hidden}
     <h3 class="pay-title">С какой зарплаты что брать</h3>
     <p class="pay-sub">Считаем по верхней границе, обычно уходит столько. С каждой зарплаты свободно 150, на жизнь в Москве около 60 за две недели, в декабре меньше: половину месяца мы в Китае. Суммы на двоих, в тысячах рублей. Перелёты Москва — Китай уже куплены</p>
     <div class="cols pay">
-      <div class="col"><h3><i style="background:var(--pink)"></i>25 ноября</h3><div class="pay-sum">89<small>из 90 свободных</small></div><ul><li>Отель в Шэньчжэне: Hui Hotel, предоплата <b>46</b></li><li>Отель в Пекине: TRUE GO Sanlitun <b>15</b></li><li>Санья → Шэньчжэнь, 28 дек, 22:00 <b>28</b></li><li>Жизнь в Москве до 10 дек <b>60</b></li><li>✅ Остаётся <b>1</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--orange)"></i>10 декабря</h3><div class="pay-sum">233<small>из ~120 свободных</small></div><ul><li>Шанхай → Санья, 25 дек, 7:00 <b>44</b></li><li>Universal, 18 дек <b>12</b></li><li>Поезд в Шанхай, продажа около 5 дек <b>15</b></li><li>Запретный город, продажа около 12 дек <b>2</b></li><li>Страховка, eSIM, VPN <b>8</b></li><li>На месте: отель в Шанхае при заселении 20 дек <b>29</b></li><li>На месте: еда в Пекине и Шанхае <b>59</b></li><li>На месте: такси и метро <b>20</b></li><li>На месте: баня Shui Guo, Чжуцзяцзяо <b>9</b></li><li>На месте: шопинг <b>35</b></li><li>Жизнь в Москве до 16 дек <b>~30</b></li><li>❌ Не хватает <b>113</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--blue)"></i>25 декабря</h3><div class="pay-sum">155<small>из ~115 свободных</small></div><ul><li>Отель в Санье при заселении <b>17</b></li><li>Санья: еда, рынок морепродуктов, массаж <b>35</b></li><li>Шэньчжэнь: еда и новогодний ужин <b>38</b></li><li>Гонконг на день: поезд, Пик, паром, еда <b>16</b></li><li>Такси и метро <b>14</b></li><li>Шопинг <b>35</b></li><li>Жизнь в Москве с 3 янв <b>~35</b></li><li>❌ Не хватает <b>40</b></li></ul></div>
-      <div class="col"><h3><i style="background:var(--lime)"></i>10 и 25 января</h3><div class="pay-sum">180<small>свободно</small></div><ul><li>Поездки уже нет: по 90 с каждой зарплаты после жизни в Москве <b>180</b></li><li>Вернуть в подушку взятое в декабре <b>153</b></li><li>✅ Остаётся <b>27</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--pink)"></i>25 ноября</h3><div class="pay-sum">89<small>из 90 свободных</small></div><ul><li>Отель в Шэньчжэне: Hui Hotel, предоплата <b>46</b></li><li>Отель в Пекине: TRUE GO Sanlitun <b>15</b></li><li>Санья → Шэньчжэнь, 28 дек, 22:00 <b>28</b></li><li>Жизнь в Москве до 10 дек <b>60</b></li><li><span><span class="ic" aria-hidden="true">✅</span>Остаётся</span> <b>1</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--orange)"></i>10 декабря</h3><div class="pay-sum">233<small>из ~120 свободных</small></div><ul><li>Шанхай → Санья, 25 дек, 7:00 <b>44</b></li><li>Universal, 18 дек <b>12</b></li><li>Поезд в Шанхай, продажа около 5 дек <b>15</b></li><li>Запретный город, продажа около 12 дек <b>2</b></li><li>Страховка, eSIM, VPN <b>8</b></li><li>На месте: отель в Шанхае при заселении 20 дек <b>29</b></li><li>На месте: еда в Пекине и Шанхае <b>59</b></li><li>На месте: такси и метро <b>20</b></li><li>На месте: баня Shui Guo, Чжуцзяцзяо <b>9</b></li><li>На месте: шопинг <b>35</b></li><li>Жизнь в Москве до 16 дек <b>~30</b></li><li><span><span class="ic" aria-hidden="true">❌</span>Не хватает</span> <b>113</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--blue)"></i>25 декабря</h3><div class="pay-sum">155<small>из ~115 свободных</small></div><ul><li>Отель в Санье при заселении <b>17</b></li><li>Санья: еда, рынок морепродуктов, массаж <b>35</b></li><li>Шэньчжэнь: еда и новогодний ужин <b>38</b></li><li>Гонконг на день: поезд, Пик, паром, еда <b>16</b></li><li>Такси и метро <b>14</b></li><li>Шопинг <b>35</b></li><li>Жизнь в Москве с 3 янв <b>~35</b></li><li><span><span class="ic" aria-hidden="true">❌</span>Не хватает</span> <b>40</b></li></ul></div>
+      <div class="col"><h3><i style="background:var(--lime)"></i>10 и 25 января</h3><div class="pay-sum">180<small>свободно</small></div><ul><li>Поездки уже нет: по 90 с каждой зарплаты после жизни в Москве <b>180</b></li><li>Вернуть в подушку взятое в декабре <b>153</b></li><li><span><span class="ic" aria-hidden="true">✅</span>Остаётся</span> <b>27</b></li></ul></div>
     </div>
     <p class="pay-note">Не хватает около 150 тысяч: берём из подушки в декабре и возвращаем с январских зарплат. Или режем: шопинг до −70, ICON LAB вместо Hui −7, отель в Шанхае до 20 −10, еда и такси попроще −30–45. Hui Hotel берём с предоплатой: только так работает скидка Flyer Exclusive для тех, кто летел с Trip.com, около 10 тысяч. Если она разовая, Пекин бронируем раньше и без неё. Отели в Шанхае и Санье бронируем на Trip.com с оплатой в отеле: номер держится, платим при заселении. Universal берём 10 декабря, за неделю до похода. Зарплата 25 декабря придёт, когда мы в Китае: карту, привязанную к Alipay, проверить на пополнение из-за границы до вылета</p>
   </div>
@@ -1555,14 +1571,28 @@ body.lb-open{overflow:hidden}
       var seg=document.createElement('div'); seg.style.flex=((c.lo+c.hi)/2); seg.style.background=b.c; if(b.dark) seg.className='dark';
       if ((c.lo+c.hi)/2/mid>=0.1) seg.textContent=b.n.split(' ·')[0];
       seg.title=b.n+': '+brange(c.lo,c.hi)+' тыс. ₽'; bar.appendChild(seg);
+      if ((c.lo+c.hi)/2/mid>=0.1) seg.dataset.n=b.n.split(' ·')[0];
       var card=document.createElement('div'); card.className='bud-card';
       card.innerHTML='<div class="h"><i style="background:'+b.c+'"></i>'+b.n+'</div><div class="sum">'+brange(c.lo,c.hi)+'<small>тыс. ₽</small></div><ul>'+
         b.items.map(function(it){ return '<li><span>'+it[0]+''+'</span><b>'+brange(bv(it,1),bv(it,2))+'</b></li>'; }).join('')+'</ul>';
       grid.appendChild(card);
     });
     document.getElementById('bud-sum').textContent=Math.round(tl/10)*10+'–'+Math.round(th/10)*10;
+    fitBar();
+  }
+  function fitBar(){
+    Array.prototype.forEach.call(document.querySelectorAll('#bud-bar div[data-n]'), function(seg){
+      var full=seg.dataset.n, opts=[full, full.split(' ')[0], ''];
+      for (var i=0;i<opts.length;i++){
+        seg.innerHTML='<span>'+opts[i]+'</span>';
+        if (seg.firstChild.offsetWidth <= seg.clientWidth-8) break;
+      }
+      seg.textContent=seg.textContent;
+    });
   }
   renderBudget();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitBar);
+  window.addEventListener('resize', fitBar);
   // ---- lazy posters / sources for reels ----
   var lazyVideos = Array.prototype.slice.call(document.querySelectorAll('video[data-poster]'));
   // poster only: iOS keeps a small budget of media elements with a source, so src is attached on tap and detached from the others
